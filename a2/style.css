@@ -1,1 +1,471 @@
 /* Insert your styles here */
+
+/*General CSS*/
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+    background-color:#004A61;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+  }
+
+h1 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    margin: 48px;
+    padding-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin: 48px;
+    padding-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+h3 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 48px;
+    padding-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+h4 {
+    font-size: 30px;
+    font-weight: normal;
+    text-align: center;
+    margin: 48px;
+    padding-bottom: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+
+hr {
+    color: #45C0E6;
+    width: 60%;
+  }
+
+section {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.box1 {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-top: 400px;
+    padding-bottom: 500px;
+  }
+
+.box2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+/*Navigation Bar*/
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #004A61;
+    color: white;
+    margin: -8px;
+    padding: 8px 8px 0 8px;
+    z-index: 2;
+    display:inline-block;
+    min-width: 680px;
+    box-shadow: 0 1px 4px #45C0E6;
+    border-bottom: 2px #45C0E6;
+  }
+  
+#lunardoLogo {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    float:left;
+    margin-left: 20px;
+  }
+  
+#lunardoLogo img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    vertical-align: middle;
+  }
+  
+#lunardoLogo a{
+    text-decoration: none;
+    color: white;
+  }
+  
+nav img {
+  height: 40px;
+  background-color: white;
+  vertical-align: middle;
+  margin-right: 20px;
+  border-radius: 25px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  display: inline;
+}
+
+nav ul {
+    text-align: right;
+    width: 97%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    top: 40px;
+  }
+  
+nav ul li {
+    display: inline;
+    margin-left: -2px;
+    margin-right: 16px;
+  }
+  
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+  }
+  
+nav a:hover {
+    color : #756838;
+    transition: color 0.3s;
+  }
+  
+nav a.active {
+    border-bottom: 2px solid #756838;
+    transition: border-bottom 0.3s;
+  }
+
+/*Banner*/
+
+#Banner {
+  background-image: url("../../media/cinema.jpg");
+}
+
+#bannerContent {
+    position: relative;
+    margin: -8px;
+  }
+  
+.bannertext{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    text-shadow: 4px 4px black;
+  }
+  
+.bannertext h1{
+    font-size: 36px;
+  }
+  
+.bannertext p {
+    font-size: 24px;
+  }
+
+/*About Us*/
+  
+#aboutUs {
+    background-image: url("../../media/avatar-background.png");
+  }
+
+/*History*/
+
+#History p {
+  text-align: center;
+}
+
+/*Renovation*/
+
+#Renovation {
+  text-align: center;
+  }
+  
+#Renovation img {
+    width: 400px;
+    display: inline;
+    margin: 20px 40px 20px 0;
+    vertical-align: middle;
+  }
+  
+#Renovation p {
+    display: inline-block;
+    width: 40vw;
+    vertical-align: middle;
+    text-align: left;
+  }
+  
+
+
+/*Seats*/
+
+#Seats {
+    text-align: center;
+  }
+
+
+#Seats p {
+    text-align: center;
+    display: inline-block;
+  }
+  
+.seatInfo {
+    width: 600px;
+    display: inline;
+    padding: 15px;
+  }
+  
+.seatInfo img {
+    display: inline;
+    width: 300px;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+  
+.seatInfo ul {
+    display: inline-block;
+    text-align: inherit;
+    width: 200px;
+  }
+  
+.seatInfo ul li{
+    margin-top: 5px;
+  }
+
+/*Dolby*/
+
+#Dolby {
+    text-align: center;
+  }
+  
+#Dolby img {
+    display: inline;
+    vertical-align: middle;
+    width: 180px;
+    padding: 0 5% 5% 5%;
+  }
+  
+#Dolby p {
+    display:inline-block;
+    width: 50vw;
+    text-align: left;
+  }
+
+/*Pricing*/ 
+  
+#prices {
+    background-image: url("../../media/puss-background.jpg");
+    text-align: center;
+  }
+  
+table, tr, th, td {
+    text-align: center;
+    padding: 15%;
+  }
+  
+table {
+    width: 100%;
+    margin: 30px auto;
+  }
+  
+th, td {
+    padding: 15px;
+  }
+  
+th {
+    font-weight: normal;
+  }
+  
+td {
+    background-color: rgba(0,0,0,0.6);
+  }
+  
+#labels {
+      background-color: #45C0E6;
+      height: 100%;
+  }
+
+/*Now Showing*/
+
+#nowShowing {
+    background-image: url("../../media/weird-background.png");
+    text-align: center;
+  }
+
+.now-showing-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+
+.flip-card-flow-container {
+
+  width: 50%;
+}
+
+.flip-card-container {
+    height: auto;
+    width: 100%
+  }
+
+.flip-card {
+    width: 560px;
+    height: 650px;
+    display: inline-block;
+    margin: 30% auto;
+  }
+
+.flip-card-front, .times-booking{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility: hidden;
+    justify-content: center;
+    align-items: center;
+  }  
+
+.flip-card-front {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+
+.flip-card:focus .flip-card-front,
+.flip-card:active .flip-card-front,
+.flip-card:hover .flip-card-front{
+    transform:  rotateY(180deg);
+  }
+  
+
+.movies, .times-booking {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    float: left;
+  }
+  
+
+.movies {
+    background-color:transparent;
+    background-color: rgba(0,0,0,0.5);
+    width: 600px;
+    height: 600px;
+    backface-visibility: hidden;
+  }
+
+.movies img {
+    width: 300px;
+    height: 300px;
+  }  
+
+.times-booking {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    backface-visibility: hidden;
+  } 
+
+.times-booking h4 {
+    font-size: 25px;
+  }
+
+.times-booking p {
+  font-size: 18px;
+  text-align: center;
+  }
+
+/*iFrame*/
+
+iframe {
+  width: 556px;
+  height: 315px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.7);
+}
+
+
+/*Booking Button*/ 
+
+.button-link{
+    background-color: white;
+    border-radius: 5px;
+    border-color: #004A61;
+    width: 70%;
+    color: #004A61;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    box-shadow: inherit;
+    align-self: center;
+    transition-duration: 200ms;
+    align-items: center;
+}
+
+.button-link:hover,
+.button-link:active,
+.button-link:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition-duration: 200ms;
+}
+
+.button-link:hover,
+.button-link:active,
+.button-link:focus{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition-duration: 200ms;
+}
+
+/*Footer*/
+
+footer {
+    border-top: 1px solid #45C0E6;
+    font-size: 10px;
+    background-color: #004A61;
+  }
+  
+.footer {
+    padding: 5px 15px;
+    font-size: 12px;
+    background-color: #004A61;
+  }
+  
+.footer a {
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/*Screen Adjustment CSS*/

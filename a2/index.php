@@ -7,84 +7,85 @@
 
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
     <script src='../wireframe.js'></script>
+
+    <!--webfonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">  
   </head>
 
   <body>
 
     <div id="navbar">
       <header>
-        <div id='companyLogo'><a href="#"><img src='../../media/cinema-logo.png' alt='Lunardo-logo' />Lunardo Cinema</a></div>
+        <div id='lunardoLogo'><a href="#"><img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a></div>
       </header>
       <nav>
           <ul>
-            <li id="aboutUsLink"><a href="#aboutUs" >ABOUT US</a></li>
-            <li id ="pricesLink"><a href="#prices">PRICES</a></li>
-            <li id="nowShowingLink"><a href="#nowShowing">NOW SHOWING</a></li>
-            <li id="bookingLink"> <a href="booking.php" target="_blank">BOOKING</a></li>
+            <li id="aboutUsLink"><a href="#aboutUs"><img src='../../media/aboutus-icon.png' alt='ABOUT US'>ABOUT US</a></li>
+            <li id ="pricesLink"><a href="#prices"><img src='../../media/prices-icon.png' alt='PRICES'>PRICES</a></li>
+            <li id="nowShowingLink"><a href="#nowShowing"><img src='../../media/nowshowing-icon.png' alt='NOW SHOWING'>NOW SHOWING</a></li>
+            <li id="bookingLink"> <a href="booking.php"><img src='../../media/booking-icon.png' alt='BOOKING'>BOOKING</a></li>
           </ul>
       </nav>
     </div>
 
     <main>
-      <div id="banner">
-        <img src="../../media/cinema.jpg"/>
+      <section id='Banner'>
+      <div class="box1">
+      <div id="bannerContent">
         <div class="bannertext">
-          <h1>Movie Watching In The Finest Form</h1>
+          <h1>A Cinematic Experience In The Finest Form</h1>
           <p>With the comfort and luxury of Lunardo Cinema, come and create an unforgettable experience.</p>
         </div>
       </div>
-      <div class = "mainnav">
-        <ul>
-          <a href="#aboutUs" ><li><img src='../../media/aboutus-icon.png' alt='ABOUT US'/>ABOUT US</li></a>
-          <a href="#prices"><li><img src='../../media/prices-icon.png' alt='PRICES'/>PRICES</li></a>
-          <a href="#nowShowing"><li><img src='../../media/nowshowing-icon.png' alt='NOW SHOWING'/>NOW SHOWING</li></a>
-        </ul>
-      </div>
+    </div>
+  </section>
 
       <section id='aboutUs'>
-        <div class="box">
-          <div class="boxText">
-            <a name="aboutUs">
+        <div class="box2">
+            <a id="aboutUs-A"></a>
             <h2>ABOUT US</h2>
             <hr>
 
             <div id = 'History'>
-              <h3>Our History</h3>
-              <p>
+              <h3>Lunardo History</h3>
+              <p>Lunardo Cinema is locally owned and has been screening films for the past 40 years! we have 3 individual screening rooms, a cafeteria and lolly bar!
+                <br>At Lunardo Cinema we are always showing the latest and greatest box office films. For information on upcoming movies and events subscribe to our mailing list!
               </p>
             </div>
             <hr>
 
             <div id = 'Renovation'>
-              <h3>Renovated for the Future</h3>
+              <h3>Recent Renovations</h3>
               <img src="../../media/renovated-cinema.jpg" alt="Renovated Cinema">
-              <p></p>
+              <p>We have currently undergone a huge renovation to all 3 of our screening rooms over the past 6 months and are welcoming everyone to come try out the latest cinematic experience. We have 
+                partnered up with the team at Dolby bringing you the latest sound, display and visual technologies to give you an even greater experience than before. 
+              </p>
             </div>
             <hr>
 
             <div id = 'Seats'>
-              <h3>Upgraded seatings</h3>
-              <p></p>
-              <div class="seatFeature">
+              <h3>Upgraded Seating</h3>
+              <div class="seatInfo">
                 <h4>Standard Seats</h4>
                 <img src="../../media/Profern-Standard-Twin.png" alt="Standard seats">
                 <ul>
                   <li>Leather headrest</li>
                   <li>Foldable armrest</li>
-                  <li>Ergonomic design</li>
+                  <li>Drink Holders</li>
                 </ul>
               </div>
-              <div class="seatFeature">
+              <div class="seatInfo">
                 <h4>First Class Seats</h4>
                 <img src="../../media/Profern-Verona-Twin.png" alt="Premium First Class Maximum Comfort Deluxe Seats">
                 <ul>
                   <li>Full leather seats</li>
                   <li>Full power reclinable</li>
                   <li>Table trays</li>
+                  <li>Drink holders</li>
                   <li>Mood lighting</li>
-                  <li>Foldable middle armrest</li>
+                  <li>Foldable armrest</li>
                 </ul>
               </div>
             </div>
@@ -93,21 +94,20 @@
             <div id = 'Dolby'>
               <h3>3D Dolby Vision and Dolby Atmos</h3>
               <img src="../../media/dolby-logo.png" alt="Dolby Atmos">
-              <p></p>
+              <p>Dolby Atmos is a unique audio system designed for the theatre, featuring sound that travels around you in a realistic atmosphere.
+                <br>
+                Sound can be precisely positioned everywhere in the theatre, including overhead, with Dolby Atmos, producing an engaging environment that sounds more like reality.</p>
             </div>
-          </a>
           </div>
-        </div>
       </section>
 
       <section id='prices'>
-        <a name="prices">
-        <div class='box'>
-          <div class='boxText'>
+        <a id="prices-A"></a>
+        <div class='box2'>
             <h2>PRICES</h2>
             <p>The Cinema offers discounted pricing weekday afternoons (ie 12pm weekday matinée sessions) and all day on Mondays.</p>
             <table>
-              <tr id='firstrow'>
+              <tr id='labels'>
                 <th>Seat Type</th>
                 <th>Seat Code</th>
                 <th>All day Monday AND from 12pm on Weekdays</th>
@@ -151,72 +151,146 @@
               </tr>
             </table>
           </div>
-        </div>
-        </a>
       </section>
 
+
       <section id='nowShowing'>
-        <a name="nowShowing">
-          <div class='box'>
-            <div class='boxText'>
-              <h2>NOW SHOWING</h2>
-              <div class='screenTimes'>
-                <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
-                <div class='movieInfo'>
-                  <h3>Avatar: The Way of Water</h3>
-                  <h4>PG-13</h4>
-                  <ul>
-                    <li>Wed - 2100</li>
-                    <li>Thu - 2100</li>
-                    <li>Fri - 2100</li>
-                    <li>Sat - 1800</li>
-                    <li>Sun - 1800</li>
-                  </ul>
+        <a id="nowShowing-A"></a>
+          <div class='box2'>
+            <h2>NOW SHOWING</h2>
+            <div class="now-showing-container">
+            <div class="flip-card-flow-container">
+              <div class='flip-card-container'>
+                <div class="flip-card">
+                  <div class="flip-card-front">
+                    <div class='movies'>
+                      <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
+                      <h4>Avatar: The Way of Water</h4>
+                      <h4>PG-13</h4>
+                    </div>
+                    <div class="times-booking">
+                    <h4>Show Times</h4>
+                      <ul>
+                        <li>Wed - 2100</li>
+                        <li>Thu - 2100</li>
+                        <li>Fri - 2100</li>
+                        <li>Sat - 1800</li>
+                        <li>Sun - 1800</li>
+                      </ul>
+                      <br>
+                      <h4>Synopsis</h4>
+                      <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.<p>
+                      <br>
+                      <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <form method="GET" action="booking.php">
+                        <input type="hidden" name="Avatar-The-Way" value="ACT">
+                        <input type="submit" class="button-link" value="Book Now">
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class='screenTimes'>
-                <img src='../../media/WeirdTheAlYankovicStory-poster.jpg' alt='WeirdAl-poster'>
-                <div class='movieInfo'>
-                  <h3>Weird: The Al Yankovic Story</h3>
-                  <h4>TV-14</h4>
-                  <ul>
-                    <li>Wed - 1200</li>
-                    <li>Thu - 1200</li>
-                    <li>Fri - 1200</li>
-                    <li>Sat - 1500</li>
-                    <li>Sun - 1500</li>
-                  </ul>
+            </div>
+            <div class="flip-card-flow-container">
+              <div class='flip-card-container'>
+                  <div class="flip-card">
+                    <div class="flip-card-front">
+                      <div class='movies'>
+                        <img src='../../media/WeirdTheAlYankovicStory-poster.jpg' alt='WeirdAl-poster'>
+                        <h4>Weird: The Al Yankovic Story</h4>
+                        <h4>TV-14</h4>
+                      </div>
+                      <div class="times-booking">
+                      <h4>Show Times</h4>
+                        <ul>
+                          <li>Wed - 1200</li>
+                          <li>Thu - 1200</li>
+                          <li>Fri - 1200</li>
+                          <li>Sat - 1500</li>
+                          <li>Sun - 1500</li>
+                        </ul>
+                        <br>
+                        <h4>Synopsis</h4>
+                        <p>Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.<p>
+                        <br>
+                        <iframe src="https://www.youtube.com/embed/Ols03gpTjW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <form method="GET" action="booking.php">
+                          <input type="hidden" name="Weird-Al" value="RMC">
+                          <input type="submit" class="button-link" value="Book Now">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class='screenTimes'>
-                <img src='../../media/PussinBootsTheLastWish-poster.jpg' alt='PussInBoots-poster'>
-                <div class='movieInfo'>
-                  <h3>Puss in Boots: The Last Wish</h3>
-                  <h4>PG-13</h4>
-                  <ul>
-                    <li>Mon - 1200</li>
-                    <li>Tue - 1200</li>
-                    <li>Wed - 1800</li>
-                    <li>Thu - 1800</li>
-                    <li>Fri - 1800</li>
-                    <li>Sat - 1200</li>
-                    <li>Sun - 1200</li>
-                  </ul>
+              <div class="flip-card-flow-container">
+                <div class='flip-card-container'>
+                  <div class="flip-card">
+                    <div class="flip-card-front">
+                      <div class='movies'>
+                        <img src='../../media/PussinBootsTheLastWish-poster.jpg' alt='PussInBoots-poster'>
+                        <h4>Puss in Boots: The Last Wish</h4>
+                        <h4>PG-13</h4>
+                      </div>
+                      <div class="times-booking">
+                      <h4>Show Times</h4>
+                        <ul>
+                          <li>Mon - 1200</li>
+                          <li>Tue - 1200</li>
+                          <li>Wed - 1800</li>
+                          <li>Thu - 1800</li>
+                          <li>Fri - 1800</li>
+                          <li>Sat - 1200</li>
+                          <li>Sun - 1200</li>
+                        </ul>
+                        <br>
+                        <h4>Synopsis</h4>
+                        <p>Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.<p>
+                        <br>
+                        <iframe src="https://www.youtube.com/embed/tHb7WlgyaUc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <form method="GET" action="booking.php">
+                          <input type="hidden" name="Puss-In-Boots" value="FAM">
+                          <input type="submit" class="button-link" value="Book Now">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class='screenTimes'>
-                <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
-                <div class='movieInfo'>
-                  <h3>Margrete: Queen of the North</h3>
-                  <h4>MA-15+</h4>
-                  <ul>
-                    <li>Mon - 1800</li>
-                    <li>Tue - 1800</li>
-                    <li>Sat - 2100</li>
-                    <li>Sun - 2100</li>
-                  </ul>
+                <div class="flip-card-flow-container">
+                  <div class='flip-card-container'>
+                  <div class="flip-card">
+                    <div class="flip-card-front">
+                    <div class='movies'>
+                      <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
+                      <h4>Margrete: Queen of the North</h4>
+                      <h4>MA-15+</h4>
+                    </div>
+                    <div class="times-booking">
+                    <h4>Show Times</h4>
+                      <ul>
+                        <li>Mon - 1800</li>
+                        <li>Tue - 1800</li>
+                        <li>Sat - 2100</li>
+                        <li>Sun - 2100</li>
+                      </ul>
+                      <br>
+                      <h4>Synopsis</h4>
+                      <p>1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.<p>
+                      <br>
+                      <iframe src="https://www.youtube.com/embed/-7OCX98JgGk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <br>
+                      <form method="GET" action="booking.php">
+                        <input type="hidden" name="Margrete-Queen" value="AHF">
+                        <input type="submit" class="button-link" value="Book Now">
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+      </section>
     </main>
 
     <footer>
