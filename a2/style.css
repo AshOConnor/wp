@@ -77,7 +77,6 @@ section {
     padding-bottom: 20px;
   }
 
-
 /*Navigation Bar*/
 
 #navbar {
@@ -206,7 +205,7 @@ nav a.active {
 #Renovation img {
     width: 400px;
     display: inline;
-    margin: 20px 40px 20px 0;
+    padding: 0 5% 5% 5%;
     vertical-align: middle;
   }
   
@@ -467,5 +466,104 @@ footer {
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
   }
+
+/*Booking Page CSS*/
+
+.box3 {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  
+}
+
+.box3 p {
+  text-align: center;
+}
+
+.box3 iframe {
+  width: 50%;
+  height: 600px;
+}
+#AvatarBook {
+  background-image: url("../../media/avatar-background.png");
+}
+
+#WeirdBook {
+  background-image: url("../../media/weird-background.png");
+}
+
+#PussBook {
+  background-image: url("../../media/puss-background.jpg");
+}
+
+#MargreteBook {
+  background-image: url("../../media/margrete-background.jpg");
+}
+
+#booking-form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: auto;
+}
+
+
+#tickets legend {
+  padding-top: 100px;
+}
+
+#tickets {
+  width: fit-content;
+  text-align: left;
+  border-width: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times legend {
+  text-align: left;
+  padding-bottom: 1em;
+  font-weight:bold;
+  margin: 0 0;
+  color: white;
+}
+
+#times {
+  width: fit-content;
+  text-align: left;
+  border-width: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#times input[type="radio"]{
+  display: none;
+}
+
+#times input[type="radio"] + label{
+  padding: 5px;
+  box-shadow: rgb(232, 204, 204) 3px 3px 6px 0px , rgba(255, 255, 255, 0.5) -3px -3px 6px 1px ;
+  border-radius: 8px;
+  margin: auto;
+}
+
+#times input[type="radio"]:checked + label{
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: rgb(59, 28, 28) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+#info {
+  width: fit-content;
+  text-align: left;
+  border-width: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /*Screen Adjustment CSS*/
