@@ -76,7 +76,10 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
+                </option>
+                <option value="10">
+                  10
                 </option>
               </select> <label for="seats[STA]">Standard Adult Seats</label><br>
               <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
@@ -108,7 +111,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -143,7 +146,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -178,7 +181,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -213,7 +216,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -248,7 +251,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -323,7 +326,10 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
+                </option>
+                <option value="10">
+                  10
                 </option>
               </select> <label for="seats[STA]">Standard Adult Seats</label><br>
               <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
@@ -355,7 +361,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -390,7 +396,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -425,7 +431,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -460,7 +466,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -495,7 +501,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -568,7 +574,10 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
+                </option>
+                <option value="10">
+                  10
                 </option>
               </select> <label for="seats[STA]">Standard Adult Seats</label><br>
               <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
@@ -600,7 +609,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -635,7 +644,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -670,7 +679,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -705,7 +714,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -740,7 +749,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -815,7 +824,10 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
+                </option>
+                <option value="10">
+                  10
                 </option>
               </select> <label for="seats[STA]">Standard Adult Seats</label><br>
               <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
@@ -847,7 +859,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -882,7 +894,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -917,7 +929,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -952,7 +964,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -987,7 +999,7 @@
                   8
                 </option>
                 <option value="9">
-                  8
+                  9
                 </option>
                 <option value="10">
                   10
@@ -1032,7 +1044,6 @@
       </ul>
     </div>
     <div>
-      © 
       <script>
 
 
