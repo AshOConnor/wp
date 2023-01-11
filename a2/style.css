@@ -1,5 +1,6 @@
 /* Insert your styles here */
-/*GENERAL CSS*/
+
+/*General CSS*/
 html{
 	scroll-behavior: smooth;
 	height: 100%
@@ -50,7 +51,9 @@ section{
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
+	margin-left: -8px;
+	margin-right: -8px
 }
 .box1{
 	background-color: rgba(0,0,0,.7);
@@ -65,7 +68,7 @@ section{
 	padding-top: 20px;
 	padding-bottom: 20px
 }
-/*NAVBAR CSS*/
+/*NAV CSS*/
 #navbar{
 	position: fixed;
 	width: 100%;
@@ -125,7 +128,7 @@ ul li a{
 	font-family: 'Cinzel Decorative',cursive
 }
 nav a:hover{
-	color: #756838;
+	color: #000;
 	transition: color .3s
 }
 /*BANNER CSS*/
@@ -159,15 +162,15 @@ nav a:hover{
 #History p{
 	text-align: center
 }
-/*RENOVATION CSS*/
+/*Renovation CSS*/
 #Renovation{
 	text-align: center
 }
 #Renovation img{
-	width: 400px;
-	display: inline;
-	padding: 0 5% 5% 5%;
-	vertical-align: middle
+  display: inline;
+	width: 600px;
+	vertical-align: middle;
+  margin-bottom: 20px;
 }
 #Renovation p{
 	display: inline-block;
@@ -202,7 +205,7 @@ nav a:hover{
 .seatInfo ul li{
 	margin-top: 5px
 }
-/*DOLBYCSS*/
+/*DOLBY CSS*/
 #Dolby{
 	text-align: center
 }
@@ -217,7 +220,7 @@ nav a:hover{
 	width: 50vw;
 	text-align: left
 }
-/*PRICE CSS*/
+/*PRICES CSS*/
 #prices{
 	background-image: url(../../media/puss-background.jpg);
 	text-align: center
@@ -243,7 +246,7 @@ td{
 	background-color: #45c0e6;
 	height: 100%
 }
-/*NowShowing CSS*/
+/*NOW SHOWING CSS*/
 #nowShowing{
 	background-image: url(../../media/weird-background.png);
 	text-align: center
@@ -323,12 +326,14 @@ td{
 	font-size: 18px;
 	text-align: center
 }
+/*iNDEX IFRAME CSS*/
 iframe{
 	width: 556px;
 	height: 315px;
 	border-style: solid;
 	border-color: rgba(0,0,0,.7)
 }
+/*BUTTON CSS*/
 .button-link{
 	background-color: #fff;
 	border-radius: 5px;
@@ -351,10 +356,13 @@ iframe{
 	box-shadow: rgba(0,0,0,.25) 0 .0625em .0625em,rgba(0,0,0,.25) 0 .125em .5em,rgba(255,255,255,.1) 0 0 0 1px inset;
 	transition-duration: .2s
 }
+/*FOOTER CSS*/
 footer{
 	border-top: 1px solid #45c0e6;
 	font-size: 10px;
-	background-color: #004a61
+	background-color: #004a61;
+	margin-left: -8px;
+	margin-right: -8px
 }
 .footer{
 	padding: 5px 15px;
@@ -365,7 +373,7 @@ footer{
 	text-decoration: underline;
 	font-family: 'Open Sans',sans-serif
 }
-/*BOOKING.PHP CSS*/
+/*BOOKING PAG CSS*/
 .box3{
 	background-color: rgba(0,0,0,.7);
 	width: 100%;
@@ -378,8 +386,9 @@ footer{
 	text-align: center
 }
 .box3 iframe{
-	width: 50%;
-	height: 600px
+	width: 560px;
+	height: 315px;
+	margin-bottom: 50px
 }
 #AvatarBook{
 	background-image: url(../../media/avatar-background.png)
@@ -393,7 +402,7 @@ footer{
 #MargreteBook{
 	background-image: url(../../media/margrete-background.jpg)
 }
-#booking-form{
+#booking-form-avatar{
 	display: flex;
 	width: 100%;
 	flex-direction: row;
@@ -402,47 +411,36 @@ footer{
 	flex-wrap: wrap;
 	margin-bottom: auto
 }
-#tickets legend{
-	padding-top: 100px
-}
-#tickets{
-	width: fit-content;
-	text-align: left;
-	border-width: 0;
+#booking-form-weird{
 	display: flex;
-	flex-wrap: wrap
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-bottom: auto
 }
-#times legend{
-	text-align: left;
-	padding-bottom: 1em;
-	font-weight: 700;
-	margin: 0 0;
-	color: #fff
-}
-#times{
-	width: fit-content;
-	text-align: left;
-	border-width: 0;
+#booking-form-puss{
 	display: flex;
-	flex-wrap: wrap
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-bottom: auto
 }
-#times input[type=radio]{
-	display: none
-}
-#times input[type=radio]+label{
-	padding: 5px;
-	box-shadow: #e8cccc 3px 3px 6px 0,rgba(255,255,255,.5) -3px -3px 6px 1px;
-	border-radius: 8px;
-	margin: auto
-}
-#times input[type=radio]:checked+label{
-	background-color: rgba(0,0,0,.7);
-	box-shadow: #3b1c1c 3px 3px 6px 0 inset,rgba(255,255,255,.5) -3px -3px 6px 1px inset
-}
-#info{
-	width: fit-content;
-	text-align: left;
-	border-width: 0;
+#booking-form-margrete{
 	display: flex;
-	flex-wrap: wrap
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-wrap: wrap;
+	margin-bottom: auto
+}
+
+@media screen and (max-width: 600px) {
+  .box3 iframe {
+    width: auto;
+  }
 }

@@ -56,9 +56,9 @@
         </div>
         <hr>
         <div id='Renovation'>
-          <h3>Recent Renovations</h3><img src="../../media/renovated-cinema.jpg" alt="Renovated Cinema">
-          <p>We have currently undergone a huge renovation to all 3 of our screening rooms over the past 6 months and are welcoming everyone to come try out the latest cinematic experience. We have partnered up with the team at Dolby bringing you the latest sound, display and visual technologies to give you an even greater experience than before.</p>
-        </div>
+        <h3>Recent Renovations</h3>
+        <p>We have currently undergone a huge renovation to all 3 of our screening rooms over the past 6 months and are welcoming everyone to come try out the latest cinematic experience. We have partnered up with the team at Dolby bringing you the latest sound, display and visual technologies to give you an even greater experience than before.</p><br>
+        <img src="../../media/renovated-cinema.jpg" alt="Renovated Cinema"></div>
         <hr>
         <div id='Seats'>
           <h3>Upgraded Seating</h3>

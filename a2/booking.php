@@ -13,7 +13,7 @@
   <div id="navbar">
     <header>
       <div id='lunardoLogo'>
-        <a href="#"><img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a>
+        <a href="index.php"><img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a>
       </div>
     </header>
     <nav>
@@ -43,244 +43,240 @@
         <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p><br>
         <br>
         <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form">
-          <fieldset id="tickets">
-            <legend>Number of tickets</legend>
-            <form method="post">
-              <input type="hidden" id="movie-title" value="Avatar-The-Way" required=""> <select type="number" name="seats[STA]" id="seats" data-fullprice="21.50" data-discprice="16.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STA]">Standard Adult Seats</label><br>
-              <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">Standard Concession Seats</label><br>
-              <select name="seats[STP]" id="seats" data-fullprice="17.50" data-discprice="13.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STP]">Standard Child Seats</label><br>
-              <select name="seats[FCA]" id="seats" data-fullprice="31.00" data-discprice="25.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCA]">First Class Adult Seats</label><br>
-              <select name="seats[FCP]" id="seats" data-fullprice="28.00" data-discprice="23.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCP]">First Class Concession Seats</label><br>
-              <select name="seats[FCC]" id="seats" data-fullprice="25.00" data-discprice="22.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">First Class Child Seats</label><br>
-              <br>
-            </form>
-          </fieldset>
-          <fieldset id="times">
-            <legend>Session Time Selection</legend> <label for="Day">Monday</label> <input type="radio" id="AvMon" name="Day+Time" value="2100" required=""> <label for="AvMon">9:00pm</label><br>
-            <label for="Day">Tuesday</label> <input type="radio" id="AvTue" name="Day+Time" value="2100" required=""> <label for="AvTue">9:00pm</label><br>
-            <label for="Day">Friday</label> <input type="radio" id="AvWed" name="Day+Time" value="2100" required=""> <label for="AvWed">9:00pm</label><br>
-            <label for="Day">Thursday</label> <input type="radio" id="AvThu" name="Day+Time" value="2100" required=""> <label for="AvThu">9:00pm</label><br>
-            <label for="Day">Friday</label> <input type="radio" id="AvFri" name="Day+Time" value="2100" required=""> <label for="AvFri">9:00pm</label><br>
-            <label for="Day">Saturday</label> <input type="radio" id="AvSat" name="Day+Time" value="1800" required=""> <label for="AvSat">6:00pm</label><br>
-            <label for="Day">Sunday</label> <input type="radio" id="AvSun" name="Day+Time" value="1800" required=""> <label for="AvSun">6:00pm</label>
-          </fieldset><br>
-          <fieldset class="info">
-            <legend>Your Contact Information</legend>
+        <div id="booking-form-avatar">
+          <form method="post">
+            <h4>Number of tickets</h4><label>Standard Adult Seats[STA]</label> <input type="hidden" id="avatar-title" value="Avatar-The-Way"> <select name="avatar-seats[STA]" id="avatar-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
+              <option value="">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Concession Seats[STC]</label> <select name="avatar-seats[STC]" id="avatar-number[STC]" data-fullprice="19.00" data-discprice="14.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Child Seats</label> <select name="avatar-seats[STP]" id="avatar-number[STP]" data-fullprice="17.50" data-discprice="13.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Adult Seats</label> <select name="avatar-seats[FCA]" id="avatar-number[FCA]" data-fullprice="31.00" data-discprice="25.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Concession Seats</label> <select name="avatar-seats[FCP]" id="avatar-number[FCP]" data-fullprice="28.00" data-discprice="23.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Child Seats</label> <select name="avatar-seats[FCC]" id="avatar-number[FCC]" data-fullprice="25.00" data-discprice="22.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <br>
+            <h4>Session Time Selection</h4><label for="AvMon">Monday</label> <input type="radio" id="AvMon" name="Day+Time" value="2100" required=""> <label for="AvMon">9:00pm</label><br>
+            <label for="AvTue">Tuesday</label> <input type="radio" id="AvTue" name="Day+Time" value="2100" required=""> <label for="AvTue">9:00pm</label><br>
+            <label for="AvWed">Friday</label> <input type="radio" id="AvWed" name="Day+Time" value="2100" required=""> <label for="AvWed">9:00pm</label><br>
+            <label for="AvThu">Thursday</label> <input type="radio" id="AvThu" name="Day+Time" value="2100" required=""> <label for="AvThu">9:00pm</label><br>
+            <label for="AvFri">Friday</label> <input type="radio" id="AvFri" name="Day+Time" value="2100" required=""> <label for="AvFri">9:00pm</label><br>
+            <label for="AvSat">Saturday</label> <input type="radio" id="AvSat" name="Day+Time" value="1800" required=""> <label for="AvSat">6:00pm</label><br>
+            <label for="AvSun">Sunday</label> <input type="radio" id="AvSun" name="Day+Time" value="1800" required=""> <label for="AvSun">6:00pm</label><br>
+            <br>
+            <h4>Your Contact Information</h4>
             <div>
-              <label for="user[name]">Full name:</label> <input type="text" name="user[name]" required="">
+              Full name:<input type="text" name="name" required="">
             </div><br>
             <div>
-              <label for="user[email]">Email address:</label> <input type="email" name="user[email]" required="">
+              Email address: <input type="email" name="email" required="">
             </div><br>
             <div>
-              <label for="user[mobile]">Mobile number:</label> <input type="tel" name="user[mobile]">
-            </div>
-          </fieldset><button class="button-link position-neutral" type="submit" name="submit-booking" value="ACT">Proceed to checkout</button>
+              Mobile number: <input type="tel" name="Mobile">
+            </div><br>
+            <br>
+            <button class="button-link" type="submit" name="submit-booking" value="ACT">Proceed to checkout</button>
+          </form>
         </div>
       </div>
     </section>
@@ -293,242 +289,238 @@
         <p>Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.</p><br>
         <br>
         <iframe src="https://www.youtube.com/embed/Ols03gpTjW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
-        <div id="booking-form">
-          <fieldset id="tickets">
-            <legend>Number of tickets</legend>
-            <form method="post">
-              <input type="hidden" id="movie-title" value="Weird-Al" required=""> <select type="number" name="seats[STA]" id="seats" data-fullprice="21.50" data-discprice="16.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STA]">Standard Adult Seats</label><br>
-              <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">Standard Concession Seats</label><br>
-              <select name="seats[STP]" id="seats" data-fullprice="17.50" data-discprice="13.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STP]">Standard Child Seats</label><br>
-              <select name="seats[FCA]" id="seats" data-fullprice="31.00" data-discprice="25.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCA]">First Class Adult Seats</label><br>
-              <select name="seats[FCP]" id="seats" data-fullprice="28.00" data-discprice="23.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCP]">First Class Concession Seats</label><br>
-              <select name="seats[FCC]" id="seats" data-fullprice="25.00" data-discprice="22.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">First Class Child Seats</label><br>
-              <br>
-            </form>
-          </fieldset>
-          <fieldset id="times">
-            <legend>Session Time Selection</legend> <label for="Day">Wednesday</label> <input type="radio" id="WeWed" name="Day+Time" value="1200" required=""> <label for="WeWed">12:00pm</label><br>
-            <label for="Day">Thursday</label> <input type="radio" id="WeThu" name="Day+Time" value="1200" required=""> <label for="WeThu">12:00pm</label><br>
-            <label for="Day">Friday</label> <input type="radio" id="WeFri" name="Day+Time" value="1200" required=""> <label for="WeFri">12:00pm</label><br>
-            <label for="Day">Saturday</label> <input type="radio" id="WeSat" name="Day+Time" value="1500" required=""> <label for="WeSat">3:00pm</label><br>
-            <label for="Day">Sunday</label> <input type="radio" id="WeSun" name="Day+Time" value="1500" required=""> <label for="WeSun">3:00pm</label>
-          </fieldset><br>
-          <fieldset class="info">
-            <legend>Your Contact Information</legend>
+        <div id="booking-form-weird">
+          <form method="post">
+            <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="weird-title" value="Weird-Al"> <select name="weird-seats[STA]" id="weird-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
+              <option value="">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Concession Seats</label> <select name="weird-seats[STC]" id="weird-number[STC]" data-fullprice="19.00" data-discprice="14.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Child Seats</label> <select name="weird-seats[STP]" id="weird-number[STP]" data-fullprice="17.50" data-discprice="13.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Adult Seats</label> <select name="weird-seats[FCA]" id="weird-number[FCA]" data-fullprice="31.00" data-discprice="25.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Concession Seats</label> <select name="weird-seats[FCP]" id="weird-number[FCP]" data-fullprice="28.00" data-discprice="23.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Child Seats</label> <select name="weird-seats[FCC]" id="weird-number[FCC]" data-fullprice="25.00" data-discprice="22.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <br>
+            <h4>Session Time Selection</h4><label for="WeWed">Wednesday</label> <input type="radio" id="WeWed" name="Day+Time" value="1200" required=""> <label for="WeWed">12:00pm</label><br>
+            <label for="WeThu">Thursday</label> <input type="radio" id="WeThu" name="Day+Time" value="1200" required=""> <label for="WeThu">12:00pm</label><br>
+            <label for="WeFri">Friday</label> <input type="radio" id="WeFri" name="Day+Time" value="1200" required=""> <label for="WeFri">12:00pm</label><br>
+            <label for="WeSat">Saturday</label> <input type="radio" id="WeSat" name="Day+Time" value="1500" required=""> <label for="WeSat">3:00pm</label><br>
+            <label for="WeSun">Sunday</label> <input type="radio" id="WeSun" name="Day+Time" value="1500" required=""> <label for="WeSun">3:00pm</label><br>
+            <br>
+            <h4>Your Contact Information</h4>
             <div>
-              <label for="user[name]">Full name:</label> <input type="text" name="user[name]" required="">
+              Full Name: <input type="text" name="Name" required="">
             </div><br>
             <div>
-              <label for="user[email]">Email address:</label> <input type="email" name="user[email]" required="">
+              Email address: <input type="email" name="email" required="">
             </div><br>
             <div>
-              <label for="user[mobile]">Mobile number:</label> <input type="tel" name="user[mobile]">
-            </div>
-          </fieldset><button class="button-link position-neutral" type="submit" name="submit-booking" value="RMC">Proceed to checkout</button>
+              Mobile number: <input type="tel" name="Mobile">
+            </div><br>
+            <br>
+            <button class="button-link" type="submit" name="submit-booking" value="RMC">Proceed to checkout</button>
+          </form>
         </div>
       </div>
     </section>
@@ -541,244 +533,240 @@
         <p>Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</p><br>
         <br>
         <iframe src="https://www.youtube.com/embed/tHb7WlgyaUc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form">
-          <fieldset id="tickets">
-            <legend>Number of tickets</legend>
-            <form method="post">
-              <input type="hidden" id="movie-title" value="Puss-In-Boots" required=""> <select type="number" name="seats[STA]" id="seats" data-fullprice="21.50" data-discprice="16.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STA]">Standard Adult Seats</label><br>
-              <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">Standard Concession Seats</label><br>
-              <select name="seats[STP]" id="seats" data-fullprice="17.50" data-discprice="13.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STP]">Standard Child Seats</label><br>
-              <select name="seats[FCA]" id="seats" data-fullprice="31.00" data-discprice="25.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCA]">First Class Adult Seats</label><br>
-              <select name="seats[FCP]" id="seats" data-fullprice="28.00" data-discprice="23.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCP]">First Class Concession Seats</label><br>
-              <select name="seats[FCC]" id="seats" data-fullprice="25.00" data-discprice="22.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">First Class Child Seats</label><br>
-              <br>
-            </form>
-          </fieldset>
-          <fieldset id="times">
-            <legend>Session Time Selection</legend> <label for="Day">Monday</label> <input type="radio" id="PusMon" name="Day+Time" value="1200" required=""> <label for="PusMon">12:00pm</label><br>
-            <label for="Day">Tuesday</label> <input type="radio" id="PusTue" name="Day+Time" value="1200" required=""> <label for="PusTue">12:00pm</label><br>
-            <label for="Day">Wednesday</label> <input type="radio" id="PusWed" name="Day+Time" value="1800" required=""> <label for="PusWed">6:00pm</label><br>
-            <label for="Day">Thursday</label> <input type="radio" id="PusThu" name="Day+Time" value="1800" required=""> <label for="PusThu">6:00pm</label><br>
-            <label for="Day">Friday</label> <input type="radio" id="PusFri" name="Day+Time" value="1800" required=""> <label for="PusFri">6:00pm</label><br>
-            <label for="Day">Saturday</label> <input type="radio" id="PusSat" name="Day+Time" value="1200" required=""> <label for="PusSat">12:00pm</label><br>
-            <label for="Day">Sunday</label> <input type="radio" id="PusSun" name="Day+Time" value="1200" required=""> <label for="PusSun">12:00pm</label>
-          </fieldset><br>
-          <fieldset class="info">
-            <legend>Your Contact Information</legend>
+        <div id="booking-form-puss">
+          <form method="post">
+            <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="puss-title" value="Puss-In-Boots"> <select name="puss-seats[STA]" id="puss-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
+              <option value="">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Concession Seats</label> <select name="puss-seats[STC]" id="puss-number[STC]" data-fullprice="19.00" data-discprice="14.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Child Seats</label> <select name="puss-seats[STP]" id="puss-number[STP]" data-fullprice="17.50" data-discprice="13.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Adult Seats</label> <select name="puss-seats[FCA]" id="puss-number[FCA]" data-fullprice="31.00" data-discprice="25.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Concession Seats</label> <select name="puss-seats[FCP]" id="puss-number[FCP]" data-fullprice="28.00" data-discprice="23.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Child Seats</label> <select name="puss-seats[FCC]" id="puss-number[FCC]" data-fullprice="25.00" data-discprice="22.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <br>
+            <h4>Session Time Selection</h4><label for="PusMon">Monday</label> <input type="radio" id="PusMon" name="Day+Time" value="1200" required=""> <label for="PusMon">12:00pm</label><br>
+            <label for="PusTue">Tuesday</label> <input type="radio" id="PusTue" name="Day+Time" value="1200" required=""> <label for="PusTue">12:00pm</label><br>
+            <label for="PusWed">Wednesday</label> <input type="radio" id="PusWed" name="Day+Time" value="1800" required=""> <label for="PusWed">6:00pm</label><br>
+            <label for="PusThu">Thursday</label> <input type="radio" id="PusThu" name="Day+Time" value="1800" required=""> <label for="PusThu">6:00pm</label><br>
+            <label for="PusFri">Friday</label> <input type="radio" id="PusFri" name="Day+Time" value="1800" required=""> <label for="PusFri">6:00pm</label><br>
+            <label for="PusSat">Saturday</label> <input type="radio" id="PusSat" name="Day+Time" value="1200" required=""> <label for="PusSat">12:00pm</label><br>
+            <label for="PusSun">Sunday</label> <input type="radio" id="PusSun" name="Day+Time" value="1200" required=""> <label for="PusSun">12:00pm</label><br>
+            <br>
+            <h4>Your Contact Information</h4>
             <div>
-              <label for="user[name]">Full name:</label> <input type="text" name="user[name]" required="">
+              Full Name:<input type="text" name="Name" required="">
             </div><br>
             <div>
-              <label for="user[email]">Email address:</label> <input type="email" name="user[email]" required="">
+              Email address:<input type="email" name="email" required="">
             </div><br>
             <div>
-              <label for="user[mobile]">Mobile number:</label> <input type="tel" name="user[mobile]">
-            </div>
-          </fieldset><button class="button-link position-neutral" type="submit" name="submit-booking" value="FAM">Proceed to checkout</button>
+              Mobile number:<input type="tel" name="Mobile">
+            </div><br>
+            <br>
+            <button class="button-link" type="submit" name="submit-booking" value="FAM">Proceed to checkout</button>
+          </form>
         </div>
       </div>
     </section>
@@ -791,242 +779,237 @@
         <p>1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.</p><br>
         <br>
         <iframe src="https://www.youtube.com/embed/-7OCX98JgGk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form">
-          <fieldset id="tickets">
-            <legend>Number of tickets</legend>
-            <form method="post">
-              <input type="hidden" id="movie-title" value="Margrete-Queen" required=""> <select type="number" name="seats[STA]" id="seats" data-fullprice="21.50" data-discprice="16.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STA]">Standard Adult Seats</label><br>
-              <select name="seats[STC]" id="seats" data-fullprice="19.00" data-discprice="14.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">Standard Concession Seats</label><br>
-              <select name="seats[STP]" id="seats" data-fullprice="17.50" data-discprice="13.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STP]">Standard Child Seats</label><br>
-              <select name="seats[FCA]" id="seats" data-fullprice="31.00" data-discprice="25.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCA]">First Class Adult Seats</label><br>
-              <select name="seats[FCP]" id="seats" data-fullprice="28.00" data-discprice="23.50">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[FCP]">First Class Concession Seats</label><br>
-              <select name="seats[FCC]" id="seats" data-fullprice="25.00" data-discprice="22.00">
-                <option value="0">
-                  Please select
-                </option>
-                <option value="1">
-                  1
-                </option>
-                <option value="2">
-                  2
-                </option>
-                <option value="3">
-                  3
-                </option>
-                <option value="4">
-                  4
-                </option>
-                <option value="5">
-                  5
-                </option>
-                <option value="6">
-                  6
-                </option>
-                <option value="7">
-                  7
-                </option>
-                <option value="8">
-                  8
-                </option>
-                <option value="9">
-                  9
-                </option>
-                <option value="10">
-                  10
-                </option>
-              </select> <label for="seats[STC]">First Class Child Seats</label><br>
-              <br>
-              <p id="total">Total: $<a id="totalPrice">0.00</a></p>
-            </form>
-          </fieldset>
-          <fieldset id="times">
-            <legend>Session Time Selection</legend> <label for="Day">Monday</label> <input type="radio" id="MarMon" name="Day+Time" value="1800" required=""> <label for="MarMon">6:00pm</label><br>
-            <label for="Day">Tuesday</label> <input type="radio" id="MarTue" name="Day+Time" value="1800" required=""> <label for="MarTue">6:00pm</label><br>
-            <label for="Day">Saturday</label> <input type="radio" id="MarSat" name="Day+Time" value="2100" required=""> <label for="MarSat">9:00pm</label><br>
-            <label for="Day">Sunday</label> <input type="radio" id="MarSun" name="Day+Time" value="2100" required=""> <label for="MarSun">9:00pm</label>
-          </fieldset><br>
-          <fieldset id="info">
-            <legend>Your Contact Information</legend>
+        <div id="booking-form-margrete">
+          <form method="post">
+            <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="marg-title" value="Margrete-Queen"> <select name="marg-seats[STA]" id="marg-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
+              <option value="">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Concession Seats</label> <select name="marg-seats[STC]" id="marg-number[STC]" data-fullprice="19.00" data-discprice="14.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>Standard Child Seats</label> <select name="marg-seats[STP]" id="marg-number[STP]" data-fullprice="17.50" data-discprice="13.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Adult Seats</label> <select name="marg-seats[FCA]" id="marg-number[FCA]" data-fullprice="31.00" data-discprice="25.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Concession Seats</label> <select name="marg-seats[FCP]" id="marg-number[FCP]" data-fullprice="28.00" data-discprice="23.50">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <label>First Class Child Seats</label> <select name="marg-seats[FCC]" id="marg-number[FCC]" data-fullprice="25.00" data-discprice="22.00">
+              <option value="0">
+                Please select
+              </option>
+              <option value="1">
+                1
+              </option>
+              <option value="2">
+                2
+              </option>
+              <option value="3">
+                3
+              </option>
+              <option value="4">
+                4
+              </option>
+              <option value="5">
+                5
+              </option>
+              <option value="6">
+                6
+              </option>
+              <option value="7">
+                7
+              </option>
+              <option value="8">
+                8
+              </option>
+              <option value="9">
+                9
+              </option>
+              <option value="10">
+                10
+              </option>
+            </select><br>
+            <br>
+            <h4>Session Time Selection</h4><label for="MarMon">Monday</label> <input type="radio" id="MarMon" name="Day+Time" value="1800" required=""> <label for="MarMon">6:00pm</label><br>
+            <label for="MarTue">Tuesday</label> <input type="radio" id="MarTue" name="Day+Time" value="1800" required=""> <label for="MarTue">6:00pm</label><br>
+            <label for="MarSat">Saturday</label> <input type="radio" id="MarSat" name="Day+Time" value="2100" required=""> <label for="MarSat">9:00pm</label><br>
+            <label for="MarSun">Sunday</label> <input type="radio" id="MarSun" name="Day+Time" value="2100" required=""> <label for="MarSun">9:00pm</label><br>
+            <br>
+            <h4>Your Contact Information</h4>
             <div>
-              <label for="user[name]">Full name:</label> <input type="text" name="user[name]" required="">
+              Full Name:<input type="text" name="Name" required="">
             </div><br>
             <div>
-              <label for="user[email]">Email address:</label> <input type="email" name="user[email]" required="">
+              Email address:<input type="email" name="Email" required="">
             </div><br>
             <div>
-              <label for="user[mobile]">Mobile number:</label> <input type="tel" name="user[mobile]">
-            </div>
-          </fieldset><button class="button-link position-neutral" type="submit" name="submit-booking" value="AHF">Proceed to checkout</button>
+              Mobile number: <input type="tel" name="Mobile">
+            </div><br>
+            <br>
+            <button class="button-link" type="submit" name="submit-booking" value="AHF">Proceed to checkout</button>
+          </form>
         </div>
       </div>
     </section>
