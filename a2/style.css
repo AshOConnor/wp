@@ -168,15 +168,12 @@ nav a:hover{
 }
 #Renovation img{
   display: inline;
-	width: 600px;
-	vertical-align: middle;
+  width: 600px;
+  vertical-align: middle;
   margin-bottom: 20px;
 }
 #Renovation p{
-	display: inline-block;
-	width: 40vw;
-	vertical-align: middle;
-	text-align: left
+	text-align: center
 }
 /*SEATS CSS*/
 #Seats{
@@ -271,7 +268,7 @@ td{
 	width: 560px;
 	height: 650px;
 	display: inline-block;
-	margin: 30% auto
+	margin: 30% auto;
 }
 .flip-card-front,.times-booking{
 	position: absolute;
@@ -305,7 +302,7 @@ td{
 	background-color: transparent;
 	background-color: rgba(0,0,0,.5);
 	width: 600px;
-	height: 600px;
+	height: 700px;
 	backface-visibility: hidden
 }
 .movies img{
@@ -326,7 +323,7 @@ td{
 	font-size: 18px;
 	text-align: center
 }
-/*iNDEX IFRAME CSS*/
+/*INDEX IFRAME CSS*/
 iframe{
 	width: 556px;
 	height: 315px;
@@ -438,9 +435,113 @@ footer{
 	flex-wrap: wrap;
 	margin-bottom: auto
 }
-
 @media screen and (max-width: 600px) {
-  .box3 iframe {
-    width: auto;
+	.box3 iframe {
+		width: 556px;
+		height: 315px;
+	  }
+  .table,td,th,tr{
+	width: 600px
+  }
+  body{
+	max-width: 100%;
+  }
+  .navbar{
+	max-width: 600px;
+    flex-direction: column;
+  }
+  .nav{
+	width: 100%;
+  }
+  .movies, .flip-card-flow-container, .nav{
+	flex-direction: column;
+	height: 100%;
+	width: 90%;
+	margin-bottom: 20%;
+  }
+  nav ul{
+	text-align: center;
+	display: inline-flex;
+	width: 80%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	top: 40px
+  }
+  #Renovation img{
+	max-width: 580px;
   }
 }
+@media screen and (max-width: 992px) {
+  .box3 iframe {
+	width: 556px;
+	height: 315px;
+	  }
+  .table,td,th,tr{
+	width: 992px
+  }
+  body{
+	max-width: 100%;
+  }
+  .navbar{
+	max-width: 992px;
+    flex-direction: column;
+  }
+  .nav{
+	width: 100%;
+  }
+  .movies, .flip-card-flow-container, .nav{
+	flex-direction: column;
+	height: 100%;
+	width: 90%;
+	margin-bottom: 20%;
+  }
+  nav ul{
+	text-align: center;
+	display: inline-flex;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	top: 40px
+  }
+  .box3{
+	padding-top: 15%;
+  }
+  #Renovation img{
+	max-width: 992px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .box3 iframe {
+	width: 556px;
+	height: 315px;
+		}
+  .table,td,th,tr{
+	  width: 1200px
+	}
+	body{
+	  max-width: 100%;
+	}
+	.navbar{
+	  max-width: 1200px;
+	  flex-direction: column;
+	}
+	.nav{
+	  width: 100%;
+	}
+	.movies, .flip-card-flow-container, .nav{
+	  flex-direction: column;
+	  height: 100%;
+	  width: 90%;
+	  margin-bottom: 20%;
+	}
+	nav ul{
+		text-align: right;
+		width: 95%;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		top: 40px;
+	}
+	#Renovation img{
+	  max-width: 1200px;
+	}
+  }

@@ -57,7 +57,8 @@
         <hr>
         <div id='Renovation'>
         <h3>Recent Renovations</h3>
-        <p>We have currently undergone a huge renovation to all 3 of our screening rooms over the past 6 months and are welcoming everyone to come try out the latest cinematic experience. We have partnered up with the team at Dolby bringing you the latest sound, display and visual technologies to give you an even greater experience than before.</p><br>
+        <p>We have currently undergone a huge renovation to all 3 of our screening rooms over the past 6 months and are welcoming everyone to come try out the latest cinematic experience.<br>
+        We have partnered up with the team at Dolby bringing you the latest sound, display and visual technologies to give you an even greater experience than before.</p><br>
         <img src="../../media/renovated-cinema.jpg" alt="Renovated Cinema"></div>
         <hr>
         <div id='Seats'>
@@ -151,9 +152,9 @@
               <div class="flip-card">
                 <div class="flip-card-front">
                   <div class='movies'>
-                    <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
                     <h4>Avatar: The Way of Water</h4>
                     <h4>PG-13</h4>
+                    <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
                   </div>
                   <div class="times-booking">
                     <h4>Show Times</h4>
@@ -181,9 +182,9 @@
               <div class="flip-card">
                 <div class="flip-card-front">
                   <div class='movies'>
-                    <img src='../../media/WeirdTheAlYankovicStory-poster.jpg' alt='WeirdAl-poster'>
                     <h4>Weird: The Al Yankovic Story</h4>
                     <h4>TV-14</h4>
+                    <img src='../../media/WeirdTheAlYankovicStory-poster.jpg' alt='WeirdAl-poster'>
                   </div>
                   <div class="times-booking">
                     <h4>Show Times</h4>
@@ -211,9 +212,9 @@
               <div class="flip-card">
                 <div class="flip-card-front">
                   <div class='movies'>
-                    <img src='../../media/PussinBootsTheLastWish-poster.jpg' alt='PussInBoots-poster'>
                     <h4>Puss in Boots: The Last Wish</h4>
                     <h4>PG-13</h4>
+                    <img src='../../media/PussinBootsTheLastWish-poster.jpg' alt='PussInBoots-poster'>
                   </div>
                   <div class="times-booking">
                     <h4>Show Times</h4>
@@ -243,9 +244,9 @@
               <div class="flip-card">
                 <div class="flip-card-front">
                   <div class='movies'>
-                    <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
                     <h4>Margrete: Queen of the North</h4>
                     <h4>MA-15+</h4>
+                    <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
                   </div>
                   <div class="times-booking">
                     <h4>Show Times</h4>
