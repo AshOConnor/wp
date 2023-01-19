@@ -167,8 +167,7 @@
                     </ul><br>
                     <h4>Synopsis</h4>
                     <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
-                    <p><br>
-                    <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                    <br>
                     <form method="get" action="booking.php#Avatar">
                       <input type="hidden" name="Avatar-The-Way" value="ACT"> <input type="submit" class="button-link" value="Book Now">
                     </form>
@@ -197,8 +196,7 @@
                     </ul><br>
                     <h4>Synopsis</h4>
                     <p>Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.</p>
-                    <p><br>
-                    <iframe src="https://www.youtube.com/embed/Ols03gpTjW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                    <br>
                     <form method="get" action="booking.php#Weird">
                       <input type="hidden" name="Weird-Al" value="RMC"> <input type="submit" class="button-link" value="Book Now">
                     </form>
@@ -229,8 +227,7 @@
                     </ul><br>
                     <h4>Synopsis</h4>
                     <p>Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</p>
-                    <p><br>
-                    <iframe src="https://www.youtube.com/embed/tHb7WlgyaUc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                    <br>
                     <form method="get" action="booking.php#Puss">
                       <input type="hidden" name="Puss-In-Boots" value="FAM"> <input type="submit" class="button-link" value="Book Now">
                     </form>
@@ -258,8 +255,7 @@
                     </ul><br>
                     <h4>Synopsis</h4>
                     <p>1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.</p>
-                    <p><br>
-                    <iframe src="https://www.youtube.com/embed/-7OCX98JgGk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br></p>
+                    <br>
                     <form method="get" action="booking.php#Margrete">
                       <input type="hidden" name="Margrete-Queen" value="AHF"> <input type="submit" class="button-link" value="Book Now">
                     </form>
