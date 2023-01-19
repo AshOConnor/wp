@@ -36,8 +36,8 @@
   <main>
     <section id="AvatarBook">
       <div class="box3">
-        <a id="Avatar"></a>
         <h2>Avatar: The Way of Water</h2>
+        <a id="Avatar"></a>
         <h2>PG-13</h2>
         <h3>Synopsis<br></h3>
         <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p><br>
