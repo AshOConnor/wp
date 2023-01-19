@@ -268,7 +268,8 @@ td{
 	width: 560px;
 	height: 650px;
 	display: inline-block;
-	margin: 30% auto;
+	padding-top: 20px;
+	padding-bottom: 50px
 }
 .flip-card-front,.times-booking{
 	position: absolute;
