@@ -240,7 +240,7 @@ td{
 	background-color: rgba(0,0,0,.6)
 }
 #labels{
-	background-color: #45c0e6;
+	background-color: #004a61;
 	height: 100%
 }
 /*NOW SHOWING CSS*/
@@ -322,13 +322,6 @@ td{
 .times-booking p{
 	font-size: 18px;
 	text-align: center
-}
-/*INDEX IFRAME CSS*/
-iframe{
-	width: 556px;
-	height: 315px;
-	border-style: solid;
-	border-color: rgba(0,0,0,.7)
 }
 /*BUTTON CSS*/
 .button-link{
