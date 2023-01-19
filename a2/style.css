@@ -266,10 +266,10 @@ td{
 }
 .flip-card{
 	width: 560px;
-	height: 650px;
+	height: 700px;
 	display: inline-block;
 	padding-top: 20px;
-	padding-bottom: 50px
+	padding-bottom: 100px
 }
 .flip-card-front,.times-booking{
 	position: absolute;
