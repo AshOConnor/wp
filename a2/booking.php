@@ -281,8 +281,8 @@
       </div>
     </section>
     <section id="WeirdBook">
+    <a id="Weird"></a>
       <div class="box3">
-        <a id="Weird"></a>
         <h2>Weird: The Al Yankovic Story</h2>
         <h2>TV-14</h2>
         <h3>Synopsis<br></h3>
