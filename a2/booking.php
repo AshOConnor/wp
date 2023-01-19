@@ -525,8 +525,8 @@
       </div>
     </section>
     <section id="PussBook">
+    <a id="Puss"></a>
       <div class="box3">
-        <a id="Puss"></a>
         <h2>Puss in Boots: The Last Wish</h2>
         <h2>PG-13</h2>
         <h3>Synopsis<br></h3>
@@ -771,8 +771,8 @@
       </div>
     </section>
     <section id="MargreteBook">
+    <a id="Margrete"></a>
       <div class="box3">
-        <a id="Margrete"></a>
         <h2>Margrete: Queen of the North</h2>
         <h2>MA-15+</h2>
         <h3>Synopsis<br></h3>
