@@ -86,8 +86,11 @@
         <hr>
         <div id='Dolby'>
           <h3>3D Dolby Vision and Dolby Atmos</h3><img src="../../media/dolby-logo.png" alt="Dolby Atmos">
-          <p>Dolby Atmos is a unique audio system designed for the theatre, featuring sound that travels around you in a realistic atmosphere.<br>
-          Sound can be precisely positioned everywhere in the theatre, including overhead, with Dolby Atmos, producing an engaging environment that sounds more like reality.</p>
+          <p>We are excited to announce that we have upgraded our projection and sound systems with 3D Dolby Vision projection and Dolby Atmos sound. This means that you can now experience movies in a whole new way. 
+            With 3D Dolby Vision, you will see more accurate and vibrant colors, deeper blacks, and a wider color gamut, making the picture appear more lifelike and creating a more immersive visual experience.<br><br>
+            Additionally, Dolby Atmos sound uses object-based audio to create a more realistic and lifelike sound stage. This allows for sound to be placed and moved around the room, making the audio more immersive and engaging. 
+            This combination of cutting-edge visual and audio technology will give you a truly unparalleled movie-watching experience.
+            We invite you to come and experience it for yourself, and see the difference it makes in your movie-going experience.</p>
         </div>
       </div>
     </section>
