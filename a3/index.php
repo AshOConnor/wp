@@ -1,5 +1,7 @@
 <?php
-include 'tools.php';?>
+session_start();
+require 'tools.php';
+?>
 
 <!DOCTYPE html>
 <html lang='en'>
