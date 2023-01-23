@@ -68,10 +68,6 @@ section{
 	padding-top: 70px;
 	padding-bottom: 20px
 }
-nav a.active {
-	border-bottom: 3px solid #45c0e6;
-	transition: border-bottom 0.3s;
-}
 /*NAV CSS*/
 #navbar{
 	position: fixed;

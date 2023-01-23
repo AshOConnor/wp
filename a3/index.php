@@ -1,3 +1,6 @@
+<?php
+include 'tools.php';?>
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -20,16 +23,13 @@
     <nav>
       <ul>
         <li id="aboutUsLink">
-          <a href="#aboutUs"><img src='../../media/aboutus-icon.png' alt='ABOUT US'>ABOUT US</a>
+          <a href="#aboutUs-A"><img src='../../media/aboutus-icon.png' alt='ABOUT US'>ABOUT US</a>
         </li>
         <li id="pricesLink">
-          <a href="#prices"><img src='../../media/prices-icon.png' alt='PRICES'>PRICES</a>
+          <a href="#prices-A"><img src='../../media/prices-icon.png' alt='PRICES'>PRICES</a>
         </li>
         <li id="nowShowingLink">
-          <a href="#nowShowing"><img src='../../media/nowshowing-icon.png' alt='NOW SHOWING'>NOW SHOWING</a>
-        </li>
-        <li id="bookingLink">
-          <a href="booking.php"><img src='../../media/booking-icon.png' alt='BOOKING'>BOOKING</a>
+          <a href="#nowShowing-A"><img src='../../media/nowshowing-icon.png' alt='NOW SHOWING'>NOW SHOWING</a>
         </li>
       </ul>
     </nav>
@@ -48,6 +48,7 @@
     <section id='aboutUs'>
       <div class="box2">
         <a id="aboutUs-A"></a>
+        <article id="aboutUs-A"></article>
         <h2>ABOUT US</h2>
         <hr>
         <div id='History'>
@@ -96,7 +97,7 @@
       </div>
     </section>
     <section id='prices'>
-      <a id="prices-A"></a>
+      <article id="prices-A"></article>
       <div class='box2'>
         <h2>PRICES</h2>
         <p>The Cinema offers discounted pricing weekday afternoons (ie 12pm weekday matinée sessions) and all day on Mondays.</p>
@@ -147,7 +148,7 @@
       </div>
     </section>
     <section id='nowShowing'>
-      <a id="nowShowing-A"></a>
+      <article id="nowShowing-A"></article>
       <div class='box2'>
         <h2>NOW SHOWING</h2>
         <div class="now-showing-container">
@@ -299,5 +300,17 @@
       <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
     </div>
   </footer>
+  <aside id="debug">
+    <hr>
+    <h3>Debug Area</h3>
+    <pre>
+GET Contains:
+<?php print_r($_GET) ?>
+POST Contains:
+<?php print_r($_POST) ?>
+SESSION Contains:
+<?php print_r($_SESSION) ?>
+      </pre>
+  </aside>
 </body>
 </html>

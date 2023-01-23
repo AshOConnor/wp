@@ -1,3 +1,6 @@
+<?php
+include 'tools.php';?>
+
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -28,9 +31,6 @@
         <li id="nowShowingLink">
           <a href="index.php#nowShowing"><img src='../../media/nowshowing-icon.png' alt='NOW SHOWING'>NOW SHOWING</a>
         </li>
-        <li id="bookingLink">
-          <a href="booking.php"><img src='../../media/booking-icon.png' alt='BOOKING'>BOOKING</a>
-        </li>
       </ul>
     </nav>
   </div>
@@ -45,6 +45,38 @@
         <br>
         <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div id="booking-form-avatar">
+        <form>
+          <h3>Number of tickets</h3>
+          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" placeholder="Please Select" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
+          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
+          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
+          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
+          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
+          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
+          <br>
+          <h3>Session Time Selection</h3>
+          <label>Monday 9:00pm <input type="radio" name="session" value="Monday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Tuesday 9:00pm <input type="radio" name="session" value="Tuesday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Wednesday 9:00pm <input type="radio" name="session" value="Wednesday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Thursday 9:00pm <input type="radio" name="session" value="Thursday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Friday 9:00pm <input type="radio" name="session" value="Friday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Saturday 6:00pm <input type="radio" name="session" value="Saturday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Sunday 6:00pm <input type="radio" name="session" value="Sunday 6:00pm" onchange="calculateTotal()"></label><br>
+          <br>
+          <h3>Your Contact Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z,.'-]+$" required="">
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <br><br>
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
+          <br><br>
+          <label>Total: $<span id="total">0.00</span></label><br>
+          <br>
+          <input type="submit" value="Checkout">
+        </form>
           <form method="post">
             <h4>Number of tickets</h4><label>Standard Adult Seats[STA]</label> <input type="hidden" id="avatar-title" value="Avatar-The-Way"> <select name="avatar-seats[STA]" id="avatar-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
               <option value="">
@@ -291,6 +323,36 @@
         <br>
         <iframe src="https://www.youtube.com/embed/Ols03gpTjW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
         <div id="booking-form-weird">
+        <form>
+          <h3>Number of tickets</h3>
+          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
+          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
+          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
+          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
+          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
+          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
+          <br>
+          <h3>Session Time Selection</h3>
+          <label>Wednesday 12:00pm <input type="radio" name="session" value="Wednesday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Thursday 12:00pm <input type="radio" name="session" value="Thursday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Friday 12:00pm <input type="radio" name="session" value="Friday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Saturday 3:00pm <input type="radio" name="session" value="Saturday 3:00pm" onchange="calculateTotal()"></label><br>
+          <label>Sunday 3:00pm <input type="radio" name="session" value="Sunday 3:00pm" onchange="calculateTotal()"></label><br>
+          <br>
+          <h3>Your Contact Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z,.'-]+$" required="">
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <br><br>
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
+          <br><br>
+          <label>Total: $<span id="total">0.00</span></label><br>
+          <br>
+          <input type="submit" value="Checkout">
+        </form>
           <form method="post">
             <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="weird-title" value="Weird-Al"> <select name="weird-seats[STA]" id="weird-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
               <option value="">
@@ -535,6 +597,38 @@
         <br>
         <iframe src="https://www.youtube.com/embed/tHb7WlgyaUc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div id="booking-form-puss">
+        <form>
+          <h3>Number of tickets</h3>
+          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
+          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
+          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
+          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
+          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
+          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
+          <br>
+          <h3>Session Time Selection</h3>
+          <label>Monday 12:00pm <input type="radio" name="session" value="Monday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Tuesday 12:00pm <input type="radio" name="session" value="Tuesday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Wednesday 6:00pm <input type="radio" name="session" value="Wednesday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Thursday 6:00pm <input type="radio" name="session" value="Thursday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Friday 6:00pm <input type="radio" name="session" value="Friday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Saturday 12:00pm <input type="radio" name="session" value="Saturday 12:00pm" onchange="calculateTotal()"></label><br>
+          <label>Sunday 12:00pm <input type="radio" name="session" value="Sunday 12:00pm" onchange="calculateTotal()"></label><br>
+          <br>
+          <h3>Your Contact Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z,.'-]+$" required="">
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <br><br>
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
+          <br><br>
+          <label>Total: $<span id="total">0.00</span></label><br>
+          <br>
+          <input type="submit" value="Checkout">
+        </form>
           <form method="post">
             <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="puss-title" value="Puss-In-Boots"> <select name="puss-seats[STA]" id="puss-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
               <option value="">
@@ -781,6 +875,35 @@
         <br>
         <iframe src="https://www.youtube.com/embed/-7OCX98JgGk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div id="booking-form-margrete">
+        <form>
+          <h3>Number of tickets</h3>
+          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
+          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
+          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
+          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
+          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
+          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
+          <br>
+          <h3>Session Time Selection</h3>
+          <label>Monday 6:00pm <input type="radio" name="session" value="Monday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Tuesday 6:00pm <input type="radio" name="session" value="Tuesday 6:00pm" onchange="calculateTotal()"></label><br>
+          <label>Saturday 9:00pm <input type="radio" name="session" value="Saturday 9:00pm" onchange="calculateTotal()"></label><br>
+          <label>Sunday 9:00pm <input type="radio" name="session" value="Sunday 9:00pm" onchange="calculateTotal()"></label><br>
+          <br>
+          <h3>Your Contact Information</h3>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" pattern="^[a-zA-Z,.'-]+$" required="">
+          <br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <br><br>
+          <label for="mobile">Mobile:</label>
+          <input type="text" id="mobile" name="mobile" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
+          <br><br>
+          <label>Total: $<span id="total">0.00</span></label><br>
+          <br>
+          <input type="submit" value="Checkout">
+        </form>
           <form method="post">
             <h4>Number of tickets</h4><label>Standard Adult Seats</label> <input type="hidden" id="marg-title" value="Margrete-Queen"> <select name="marg-seats[STA]" id="marg-number[STA]" data-fullprice="21.50" data-discprice="16.00" required="">
               <option value="">
