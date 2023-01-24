@@ -68,6 +68,12 @@ section{
 	padding-top: 70px;
 	padding-bottom: 20px
 }
+.debug {
+	background-color: 004a61;
+	color: #fff;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+}
 /*NAV CSS*/
 #navbar{
 	position: fixed;
@@ -538,10 +544,4 @@ footer{
 	#Renovation img{
 	  max-width: 1200px;
 	}
-  }
-  .debug {
-	background-color: black;
-	color: #45c0e6;
-	font-family: 'Open Sans',sans-serif;
-	font-size: 12px;
   }

@@ -300,9 +300,9 @@ require 'tools.php';
       <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
     </div>
   </footer>
-  <div id="debug">
+  <div class="debug">
     <hr>
-    <h3>Debug Area</h3>
+    <h4>Debug Area</h4>
     <?= debugModule() ?>
     <?= PrintMyCode() ?>
   </div>
