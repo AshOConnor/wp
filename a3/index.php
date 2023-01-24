@@ -173,8 +173,8 @@ require 'tools.php';
                     <h4>Synopsis</h4>
                     <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
                     <br>
-                    <form method="get" action="booking.php#Avatar">
-                      <input type="hidden" name="Avatar-The-Way" value="ACT"> <input type="submit" class="button-link" value="Book Now">
+                    <form method="get" action="booking.php">
+                      <input type="submit" class="button-link" value="Book Now">
                     </form>
                   </div>
                 </div>
@@ -202,8 +202,8 @@ require 'tools.php';
                     <h4>Synopsis</h4>
                     <p>Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.</p>
                     <br>
-                    <form method="get" action="booking.php#Weird">
-                      <input type="hidden" name="Weird-Al" value="RMC"> <input type="submit" class="button-link" value="Book Now">
+                    <form method="get" action="booking.php">
+                      <input type="submit" class="button-link" value="Book Now">
                     </form>
                   </div>
                 </div>
@@ -233,8 +233,8 @@ require 'tools.php';
                     <h4>Synopsis</h4>
                     <p>Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</p>
                     <br>
-                    <form method="get" action="booking.php#Puss">
-                      <input type="hidden" name="Puss-In-Boots" value="FAM"> <input type="submit" class="button-link" value="Book Now">
+                    <form method="get" action="booking.php">
+                      <input type="submit" class="button-link" value="Book Now">
                     </form>
                   </div>
                 </div>
@@ -261,8 +261,8 @@ require 'tools.php';
                     <h4>Synopsis</h4>
                     <p>1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.</p>
                     <br>
-                    <form method="get" action="booking.php#Margrete">
-                      <input type="hidden" name="Margrete-Queen" value="AHF"> <input type="submit" class="button-link" value="Book Now">
+                    <form method="get" action="booking.php">
+                      <input type="submit" class="button-link" value="Book Now">
                     </form>
                   </div>
                 </div>
