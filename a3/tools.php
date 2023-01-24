@@ -6,9 +6,16 @@
    keep a look out for them!
 */
 function debugModule() {    
-  echo "<pre id='debug'>";     
+  echo "<pre id='debug'>";    
+  POST Contains: 
   print_r($_POST);    
-  echo "</pre>";    
+  echo "</pre>";
+  GET Contains:
+  print_r($_GET);    
+  echo "</pre>";
+  SESSION Contains:
+  print_r($_SESSION);    
+  echo "</pre>"; 
  }
 
 function printMyCode() {
