@@ -1,5 +1,4 @@
 <?php
-session_start();
 require 'tools.php';
 ?>
 
@@ -50,7 +49,6 @@ require 'tools.php';
     <section id='aboutUs'>
       <div class="box2">
         <a id="aboutUs-A"></a>
-        <article id="aboutUs-A"></article>
         <h2>ABOUT US</h2>
         <hr>
         <div id='History'>
@@ -99,7 +97,7 @@ require 'tools.php';
       </div>
     </section>
     <section id='prices'>
-      <article id="prices-A"></article>
+      <a id="prices-A"></a>
       <div class='box2'>
         <h2>PRICES</h2>
         <p>The Cinema offers discounted pricing weekday afternoons (ie 12pm weekday matinée sessions) and all day on Mondays.</p>
@@ -150,7 +148,7 @@ require 'tools.php';
       </div>
     </section>
     <section id='nowShowing'>
-      <article id="nowShowing-A"></article>
+      <a id="nowShowing-A"></a>
       <div class='box2'>
         <h2>NOW SHOWING</h2>
         <div class="now-showing-container">
