@@ -539,3 +539,9 @@ footer{
 	  max-width: 1200px;
 	}
   }
+  .debug {
+	background-color: black;
+	color: #45c0e6;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 12px;
+  }
