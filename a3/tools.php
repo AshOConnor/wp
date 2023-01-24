@@ -7,13 +7,13 @@
 */
 function debugModule() {    
   echo "<pre id='debug'>";    
-  POST Contains: 
+  print "POST Contains:"; 
   print_r($_POST);    
   echo "</pre>";
-  GET Contains:
+  print "GET Contains:";
   print_r($_GET);    
   echo "</pre>";
-  SESSION Contains:
+  print "SESSION Contains:";
   print_r($_SESSION);    
   echo "</pre>"; 
  }
