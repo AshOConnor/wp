@@ -242,7 +242,7 @@ require 'tools.php';
     <hr>
     <h3>Debug Area</h3>
     <?= debugModule() ?>
-    <?= myCode() ?>
+    <?= PrintMyCode() ?>
   </aside>
 </body>
 </html>
