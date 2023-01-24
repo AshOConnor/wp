@@ -1,7 +1,6 @@
 <?php
-require 'tools.php';
+include 'tools.php';
 ?>
-
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -36,178 +35,154 @@ require 'tools.php';
     </nav>
   </div>
   <main>
-    <section id="AvatarBook">
-    <a id="Avatar"></a>
-      <div class="box3">
-        <h2>Avatar: The Way of Water</h2>
-        <h2>PG-13</h2>
-        <h3>Synopsis<br></h3>
-        <p>Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p><br>
-        <br>
-        <iframe src="https://www.youtube.com/embed/d9MyW72ELq0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form-avatar">
-        <form>
-          <h3>Number of tickets</h3>
-          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" placeholder="Please Select" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
-          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
-          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
-          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
-          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
-          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
-          <br>
-          <h3>Session Time Selection</h3>
-          <label>Monday 9:00pm <input type="radio" name="session" value="Monday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Tuesday 9:00pm <input type="radio" name="session" value="Tuesday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Wednesday 9:00pm <input type="radio" name="session" value="Wednesday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Thursday 9:00pm <input type="radio" name="session" value="Thursday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Friday 9:00pm <input type="radio" name="session" value="Friday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Saturday 6:00pm <input type="radio" name="session" value="Saturday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Sunday 6:00pm <input type="radio" name="session" value="Sunday 6:00pm" onchange="calculateTotal()"></label><br>
-          <br>
-          <h3>Your Contact Information</h3>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" pattern="^[a-zA-Z,.'-]+$" required="">
-          <br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="JaneDoe@outlook.com" required="">
-          <br><br>
-          <label for="mobile">Mobile:</label>
-          <input type="text" id="mobile" name="mobile" placeholder="0400 000 000" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
-          <br><br>
-          <label>Total: $<span id="totalPrice">0.00</span></label><br>
-          <br>
-          <input type="submit" value="Checkout">
-        </form>
+    <section id='booking'>
+      <div class='box3'>
+        <div class='boxText'>
+          <h2>BOOKINGS</h2>
+          <div class='sessionTimes' onclick="changeSynopsis('ACT')">
+            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
+            <div class='movieInfo'>
+              <h3>Avatar: The Way of Water</h3>
+              <h4>PG</h4>
+              <ul>
+                <li>Wed - 2100</li>
+                <li>Thu - 2100</li>
+                <li>Fri - 2100</li>
+                <li>Sat - 1800</li>
+                <li>Sun - 1800</li>
+              </ul>
+            </div>
+          </div>
+          <div class='sessionTimes' onclick="changeSynopsis('RMC')">
+            <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
+            <div class='movieInfo'>
+              <h3>Weird: The Al Yankovic Story</h3>
+              <h4>TV</h4>
+              <ul>
+                <li>Wed - 1200</li>
+                <li>Thu - 1200</li>
+                <li>Fri - 1200</li>
+                <li>Sat - 1500</li>
+                <li>Sun - 1500</li>
+              </ul>
+            </div>
+          </div>
+          <div class='sessionTimes' onclick="changeSynopsis('ANM')">
+            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
+            <div class='movieInfo'>
+              <h3>Puss in Boots: The Last Wish</h3>
+              <h4>PG</h4>
+              <ul>
+                <li>Mon - 1200</li>
+                <li>Tue - 1200</li>
+                <li>Wed - 1800</li>
+                <li>Thu - 1800</li>
+                <li>Fri - 1800</li>
+                <li>Sat - 1200</li>
+                <li>Sun - 1200</li>
+              </ul>
+            </div>
+          </div>
+          <div class='sessionTimes' onclick="changeSynopsis('AHF')">
+            <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
+            <div class='movieInfo'>
+              <h3>Margrete: Queen of the North</h3>
+              <h4>MA</h4>
+              <ul>
+                <li>Mon - 1800</li>
+                <li>Tue - 1800</li>
+                <li>Sat - 2100</li>
+                <li>Sun - 2100</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="WeirdBook">
-    <a id="Weird"></a>
-      <div class="box3">
-        <h2>Weird: The Al Yankovic Story</h2>
-        <h2>TV-14</h2>
-        <h3>Synopsis<br></h3>
-        <p>Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.</p><br>
-        <br>
-        <iframe src="https://www.youtube.com/embed/Ols03gpTjW4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
-        <div id="booking-form-weird">
-        <form>
-          <h3>Number of tickets</h3>
-          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
-          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
-          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
-          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
-          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
-          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
-          <br>
-          <h3>Session Time Selection</h3>
-          <label>Wednesday 12:00pm <input type="radio" name="session" value="Wednesday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Thursday 12:00pm <input type="radio" name="session" value="Thursday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Friday 12:00pm <input type="radio" name="session" value="Friday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Saturday 3:00pm <input type="radio" name="session" value="Saturday 3:00pm" onchange="calculateTotal()"></label><br>
-          <label>Sunday 3:00pm <input type="radio" name="session" value="Sunday 3:00pm" onchange="calculateTotal()"></label><br>
-          <br>
-          <h3>Your Contact Information</h3>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" pattern="^[a-zA-Z,.'-]+$" required="">
-          <br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="JaneDoe@outlook.com" required="">
-          <br><br>
-          <label for="mobile">Mobile:</label>
-          <input type="text" id="mobile" name="mobile" placeholder="0400 000 000" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
-          <br><br>
-          <label>Total: $<span id="totalPrice">0.00</span></label><br>
-          <br>
-          <input type="submit" value="Checkout">
-        </form>
+    <section id="synopsis">
+      <div class="synopsis">
+        <div class='box3'>
+          <div class='boxText'>
+            <h3 id="title">Avatar: The Way of Water</h3>
+            <div class='synopsis-info'>
+              <h4 id="rating">PG</h4>
+              <h4>Plot Description</h4>
+              <p id="plot">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
+            </div><iframe id="trailer" src="https://www.imdb.com/videoembed/vi3565864217" allowfullscreen width="854" height="400" name="trailer"></iframe><br>
+            <br>
+            <h4 id='movieSelectTitle'>Movie Selection:</h4>
+            <ul id='movieSelectList'>
+              <li><input type="image" src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster' onclick="changeSynopsis('ACT')"></li>
+              <li><input type="image" src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster' onclick="changeSynopsis('RMC')"></li>
+              <li><input type="image" src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster' onclick="changeSynopsis('ANM')"></li>
+              <li><input type="image" src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster' onclick="changeSynopsis('AHF')"></li>
+            </ul>
+            <h4 id='bookingTitle'>Make a Booking</h4>
+            <ul id="bookingTimeList">
+              <li><input class="bookingTime" type="button" value="Wed - 2100" onclick='selectMovie("Wed - 2100")'></li>
+              <li><input class="bookingTime" type="button" value="Thu - 2100" onclick='selectMovie("Thu - 2100")'></li>
+              <li><input class="bookingTime" type="button" value="Fri - 2100" onclick='selectMovie("Fri - 2100")'></li>
+              <li><input class="bookingTime" type="button" value="Sat - 1800" onclick='selectMovie("Sat - 1800")'></li>
+              <li><input class="bookingTime" type="button" value="Sun - 1800" onclick='selectMovie("Sun - 1800")'></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <section id="PussBook">
-    <a id="Puss"></a>
+    <section id="booking2">
       <div class="box3">
-        <h2>Puss in Boots: The Last Wish</h2>
-        <h2>PG-13</h2>
-        <h3>Synopsis<br></h3>
-        <p>Puss in Boots discovers that his passion for adventure has taken its toll: he has burned through eight of his nine lives. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.</p><br>
-        <br>
-        <iframe src="https://www.youtube.com/embed/tHb7WlgyaUc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form-puss">
-        <form>
-          <h3>Number of tickets</h3>
-          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
-          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
-          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
-          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
-          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
-          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
-          <br>
-          <h3>Session Time Selection</h3>
-          <label>Monday 12:00pm <input type="radio" name="session" value="Monday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Tuesday 12:00pm <input type="radio" name="session" value="Tuesday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Wednesday 6:00pm <input type="radio" name="session" value="Wednesday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Thursday 6:00pm <input type="radio" name="session" value="Thursday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Friday 6:00pm <input type="radio" name="session" value="Friday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Saturday 12:00pm <input type="radio" name="session" value="Saturday 12:00pm" onchange="calculateTotal()"></label><br>
-          <label>Sunday 12:00pm <input type="radio" name="session" value="Sunday 12:00pm" onchange="calculateTotal()"></label><br>
-          <br>
-          <h3>Your Contact Information</h3>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" pattern="^[a-zA-Z,.'-]+$" required="">
-          <br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="JaneDoe@outlook.com" required="">
-          <br><br>
-          <label for="mobile">Mobile:</label>
-          <input type="text" id="mobile" name="mobile" placeholder="0400 000 000" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
-          <br><br>
-          <label>Total: $<span id="totalPrice">0.00</span></label><br>
-          <br>
-          <input type="submit" value="Checkout">
-        </form>
-        </div>
-      </div>
-    </section>
-    <section id="MargreteBook">
-    <a id="Margrete"></a>
-      <div class="box3">
-        <h2>Margrete: Queen of the North</h2>
-        <h2>MA-15+</h2>
-        <h3>Synopsis<br></h3>
-        <p>1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.</p><br>
-        <br>
-        <iframe src="https://www.youtube.com/embed/-7OCX98JgGk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <div id="booking-form-margrete">
-        <form>
-          <h3>Number of tickets</h3>
-          <label>Standard Adult Seats: <input type="number" name="sta" min="0" max="10" onchange="calculateTotal()" data-fullprice="21.50" data-disprice="16.00"></label><br>
-          <label>Standard Concession Seats: <input type="number" name="stp" min="0" max="10" onchange="calculateTotal()" data-fullprice="19.00" data-disprice="14.50"></label><br>
-          <label>Standard Child Seats: <input type="number" name="stc" min="0" max="10" onchange="calculateTotal()" data-fullprice="17.50" data-disprice="13.00"></label><br>
-          <label>First Class Adult Seats: <input type="number" name="fca" min="0" max="10" onchange="calculateTotal()" data-fullprice="31.00" data-disprice="25.00"></label><br>
-          <label>First Class Concession Seats: <input type="number" name="fcp" min="0" max="10" onchange="calculateTotal()" data-fullprice="28.00" data-disprice="23.50"></label><br>
-          <label>First Class Child Seats: <input type="number" name="fcc" min="0" max="10" onchange="calculateTotal()" data-fullprice="25.00" data-disprice="22.00"></label><br>
-          <br>
-          <h3>Session Time Selection</h3>
-          <label>Monday 6:00pm <input type="radio" name="session" value="Monday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Tuesday 6:00pm <input type="radio" name="session" value="Tuesday 6:00pm" onchange="calculateTotal()"></label><br>
-          <label>Saturday 9:00pm <input type="radio" name="session" value="Saturday 9:00pm" onchange="calculateTotal()"></label><br>
-          <label>Sunday 9:00pm <input type="radio" name="session" value="Sunday 9:00pm" onchange="calculateTotal()"></label><br>
-          <br>
-          <h3>Your Contact Information</h3>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Jane Doe" pattern="^[a-zA-Z,.'-]+$" required="">
-          <br><br>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="JaneDoe@outlook.com" required="">
-          <br><br>
-          <label for="mobile">Mobile:</label>
-          <input type="text" id="mobile" name="mobile" placeholder="0400 000 000" pattern="^04[0-9]{8}|[0-9]{4}[\s]?[0-9]{4}$" required="">
-          <br><br>
-          <label>Total: $<span id="totalPrice">0.00</span></label><br>
-          <br>
-          <input type="submit" value="Checkout">
-        </form>
+        <div class="booking">
+          <h3>Booking Form</h3>
+          <form name="bookingForm" action="#booking" method="post" id="bookingForm">
+            <input type="hidden" id="movie-id" name="movie[id]" value="ACT"> <input type="hidden" id="movie-day" name="movie[day]" value=""> <input type="hidden" id="movie-hour" name="movie[hour]" value="">
+            <p id="formMessage">Please select the movie and showtime above.</p>
+            <div id="seatForm">
+              <fieldset>
+                <legend>Standard Seats</legend> <label>Adults:</label> <select name="seats[STA]" id="seats-STA" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select><br>
+                <label>Concession:</label> <select name="seats[STP]" id="seats-STP" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select><br>
+                <label>Children:</label> <select name="seats[STC]" id="seats-STC" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>First Class Seats</legend> <label>Adults:</label> <select name="seats[FCA]" id="seats-FCA" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select><br>
+                <label>Concession:</label> <select name="seats[FCP]" id="seats-FCP" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select><br>
+                <label>Children:</label> <select name="seats[FCC]" id="seats-FCC" disabled required="">
+                  <script>
+                  document.write(generateTickNo());
+                  </script>
+                </select>
+              </fieldset>
+              <p id="total">Total: $<a id="totalPrice">0.00</a></p>
+            </div>
+            <div id="personalInfoForm">
+              <label>Name:</label> <input type="text" name="cust[name]" id="cust-name" placeholder="e.g. Jane Doe" disabled required=""><br>
+              <p class="warningMsg"><?php error_reporting(0); echo($errorMsgArray["name"]);?></p><label>Email:</label> <input type="email" name="cust[email]" id="cust-email" placeholder="e.g. example@email.com" disabled required=""><br>
+              <p class="warningMsg"><?php echo($errorMsgArray["email"])?></p><label>Mobile:</label> <input type="tel" name="cust[mobile]" id="cust-mobile" placeholder="e.g. 0412 345 678" disabled required=""><br>
+              <p class="warningMsg"><?php echo($errorMsgArray["mobile"])?></p><label>Credit Card:</label> <input type="text" name="cust[card]" id="cust-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
+              <p class="warningMsg"><?php echo($errorMsgArray["card"])?></p><label>Expiry:</label> <input type="month" name="cust[expiry]" id="cust-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
+              <p class="warningMsg"><?php echo ($errorMsgArray["expiry"]);?></p>
+            </div><br>
+            <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src='../../media/prices-icon.png' alt="price-icon">Book Tickets</button>
+          </form>
         </div>
       </div>
     </section>
@@ -224,7 +199,6 @@ require 'tools.php';
         </li>
       </ul>
     </div>
-
     <div>
       <script>
         document.write(new Date().getFullYear());
@@ -240,8 +214,7 @@ require 'tools.php';
   </footer>
   <div class="debug">
     <hr>
-    <h4>Debug Area</h4>
-    <?= debugModule() ?>
+    <h4>Debug Area</h4><?= debugModule() ?>
     <?= PrintMyCode() ?>
   </div>
 </body>
