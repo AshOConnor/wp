@@ -10,9 +10,11 @@ function debugModule() {
   print "POST Contains:"; 
   print_r($_POST);    
   echo "</pre>";
+  echo "<pre id='debug'>";
   print "GET Contains:";
   print_r($_GET);    
   echo "</pre>";
+  echo "<pre id='debug'>";
   print "SESSION Contains:";
   print_r($_SESSION);    
   echo "</pre>"; 
