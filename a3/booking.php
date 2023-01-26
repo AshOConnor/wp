@@ -35,11 +35,12 @@ include 'tools.php';
     </nav>
   </div>
   <main>
-    <section id='info'>
+    <section id='sessions'>
       <div class='box3'>
         <div class='boxText'>
           <h2>BOOKINGS</h2>
           <div class='sessionTimes' onclick="changeMovie('ACT')">
+            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
             <div class='movieInfo'>
               <h3>Avatar: The Way of Water</h3>
               <h4>PG</h4>
@@ -51,10 +52,8 @@ include 'tools.php';
                 <li>Sun - 1800</li>
               </ul>
             </div>
-            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
           </div>
           <div class='sessionTimes' onclick="changeMovie('RMC')">
-          <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
             <div class='movieInfo'>
               <h3>Weird: The Al Yankovic Story</h3>
               <h4>TV</h4>
@@ -66,8 +65,10 @@ include 'tools.php';
                 <li>Sun - 1500</li>
               </ul>
             </div>
+            <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
           </div>
           <div class='sessionTimes' onclick="changeMovie('ANM')">
+            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
             <div class='movieInfo'>
               <h3>Puss in Boots: The Last Wish</h3>
               <h4>PG</h4>
@@ -81,10 +82,8 @@ include 'tools.php';
                 <li>Sun - 1200</li>
               </ul>
             </div>
-            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
           </div>
           <div class='sessionTimes' onclick="changeMovie('AHF')">
-          <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
             <div class='movieInfo'>
               <h3>Margrete: Queen of the North</h3>
               <h4>MA</h4>
@@ -95,11 +94,12 @@ include 'tools.php';
                 <li>Sun - 2100</li>
               </ul>
             </div>
+            <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
           </div>
         </div>
       </div>
     </section>
-    <section id="plot">
+    <section id="synopsis">
       <div class="synopsis">
         <div class='box3'>
           <div class='boxText'>
@@ -107,7 +107,7 @@ include 'tools.php';
             <div class='synopsis-info'>
               <h4 id="rating">PG</h4>
               <h4>Plot Description</h4>
-              <p id="movieInfo">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
+              <p id="plot">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
             </div><iframe id="trailer" src="https://www.imdb.com/videoembed/vi3565864217" allowfullscreen width="854" height="400" name="trailer"></iframe><br>
             <br>
             <h3 id='movieSelectTitle'>Movie Selection:</h3>

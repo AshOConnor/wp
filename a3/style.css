@@ -375,11 +375,11 @@ footer{
 	width: 80%;
 	margin: 20px auto
 }
-#info{
+#sessions{
 	background-image: url(../../media/avatar-background.png);
 	text-align: center
 }
-#plot{
+#synopsis{
 	background-image: url(../../media/puss-background.jpg);
 	text-align: center
 }
@@ -389,10 +389,13 @@ footer{
 }
 .sessionTimes{
 	display: flex;
+	width: 100%;
+	flex-direction: row;
 	justify-content: space-evenly;
+	align-content: center;
 	flex-wrap: wrap
 }
-.sessionTimes li{
+.sessionTimes li {
 	font-size: 24px;
 }
 .sessionTimes:hover{
@@ -403,11 +406,15 @@ footer{
 .sessionTimes img{
 	width: 300px;
 	height: 500px;
-	margin: 30px;
+	margin: 20px;
+	vertical-align: middle
 }
 .movieInfo{
 	padding: 30px;
 	vertical-align: top
+}
+.sessionTimes h3{
+	margin: 0
 }
 .summary{
 	background-color: rgba(0,0,0,.5);
@@ -431,7 +438,7 @@ footer{
 	width: 640px;
 	display: inline;
 	vertical-align: middle;
-	border: 5px solid #004a61 
+	border: solid #45c0e6
 }
 #bookingTitle,#movieSelectTitle{
 	width: 90%;
@@ -439,11 +446,16 @@ footer{
 	margin: 0 auto;
 	text-align: center
 }
+.synopsis ul{
+	margin: 1.5em 10px;
+	padding: 0
+}
 .synopsis ul li{
 	list-style: none;
 	display: inline-block;
 	width: auto;
 	border: 2px solid #004a61;
+	margin: 0 2px
 }
 .synopsis ul li:hover{
 	background-color: #45c0e6;
@@ -460,10 +472,12 @@ footer{
 #movieSelectList img{
 	width: 300px;
 	height: 500px;
+	margin: 0 5px
 }
 #movieSelectList input{
 	width: 300px;
 	height: 500px;
+	margin: 0
 }
 #movieSelectList li{
 	padding: 0;
@@ -488,13 +502,11 @@ footer{
 	font-size: 16px;
 	color: #fff;
 	border: none;
-	border: 2px solid #004a61;
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	border-bottom: 2px solid #004a61;
 	appearance: none;
 	background: url(../../media/down-arrow.png) 96%/15% no-repeat;
 	width: 125px;
-	background-color: black;
+	background-color: #000;
 }
 #total{
 	margin: auto;
