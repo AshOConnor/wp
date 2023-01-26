@@ -61,7 +61,7 @@ function bookingTime(time) {
 
 function generateTickNo() {
   var seatOptions = "<option value=''>Please Select</option>";
-  for (var i = 1; i <= 10; i++) {
+  for (var i = 0; i <= 10; i++) {
     seatOptions += `<option value='${i}' onClick='calculatePrice()'>${i}</option>`;
   }
   console.log("generateTickNo");
