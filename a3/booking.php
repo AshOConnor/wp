@@ -39,7 +39,7 @@ include 'tools.php';
       <div class='box3'>
         <div class='boxText'>
           <h2>BOOKINGS</h2>
-          <div class='sessionTimes' onclick="changeSynopsis('ACT')">
+          <div class='sessionTimes' onclick="changeMovie('ACT')">
             <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
             <div class='movieInfo'>
               <h3>Avatar: The Way of Water</h3>
@@ -53,7 +53,7 @@ include 'tools.php';
               </ul>
             </div>
           </div>
-          <div class='sessionTimes' onclick="changeSynopsis('RMC')">
+          <div class='sessionTimes' onclick="changeMovie('RMC')">
             <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
             <div class='movieInfo'>
               <h3>Weird: The Al Yankovic Story</h3>
@@ -67,7 +67,7 @@ include 'tools.php';
               </ul>
             </div>
           </div>
-          <div class='sessionTimes' onclick="changeSynopsis('ANM')">
+          <div class='sessionTimes' onclick="changeMovie('ANM')">
             <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
             <div class='movieInfo'>
               <h3>Puss in Boots: The Last Wish</h3>
@@ -83,7 +83,7 @@ include 'tools.php';
               </ul>
             </div>
           </div>
-          <div class='sessionTimes' onclick="changeSynopsis('AHF')">
+          <div class='sessionTimes' onclick="changeMovie('AHF')">
             <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
             <div class='movieInfo'>
               <h3>Margrete: Queen of the North</h3>
@@ -112,10 +112,10 @@ include 'tools.php';
             <br>
             <h4 id='movieSelectTitle'>Movie Selection:</h4>
             <ul id='movieSelectList'>
-              <li><input type="image" src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster' onclick="changeSynopsis('ACT')"></li>
-              <li><input type="image" src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster' onclick="changeSynopsis('RMC')"></li>
-              <li><input type="image" src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster' onclick="changeSynopsis('ANM')"></li>
-              <li><input type="image" src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster' onclick="changeSynopsis('AHF')"></li>
+              <li><input type="image" src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster' onclick="changeMovie('ACT')"></li>
+              <li><input type="image" src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster' onclick="changeMovie('RMC')"></li>
+              <li><input type="image" src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster' onclick="changeMovie('ANM')"></li>
+              <li><input type="image" src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster' onclick="changeMovie('AHF')"></li>
             </ul>
             <h4 id='bookingTitle'>Make a Booking</h4>
             <ul id="bookingTimeList">
