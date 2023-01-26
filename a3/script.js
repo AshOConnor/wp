@@ -5,7 +5,7 @@ const movies = [
     id: 'ACT',
     title: "Avatar: The Way of Water",
     rating: "PG",
-    plot: "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+    plot: "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
     trailer: "https://www.imdb.com/videoembed/vi3565864217",
     bookingTimeList: ["Wed - 2100","Thu - 2100","Fri - 2100","Sat - 1800","Sun - 1800"]
   },
