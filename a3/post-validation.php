@@ -10,16 +10,27 @@ function validateBooking() {
   if ( $username == '') {
     $errors['user']['name'] = "Name can't be blank";
   } else {
-    // more advanced name checks here with better error message
   }
   $email = trim($_POST['user']['email']);
   if ($email == '') {
     $errors['user']['email'] = "Email can't be blank";
   } else {
-    // more advanced email checks here with better error message
   }
-  // ... repeat for all other form field checks
-
+  $email = trim($_POST['user']['mobile']);
+  if ($email == '') {
+    $errors['user']['mobile'] = "Mobile can't be blank";
+  } else {
+  }
+  $email = trim($_POST['user']['card']);
+  if ($email == '') {
+    $errors['user']['card'] = "Card can't be blank";
+  } else {
+  }
+    $email = trim($_POST['user']['expiry']);
+    if ($email == '') {
+      $errors['user']['expiry'] = "Expiry can't be blank";
+    } else {
+    }
   return $errors; // empty array -> no errors; populated array -> errors.
 }
 
