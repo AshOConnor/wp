@@ -30,8 +30,8 @@ const movies = [
     title: "Margrete: Queen of the North",
     rating: "MA",
     plot: "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.",
-    trailer: "https://https://www.imdb.com/videoembed/vi968475417",
-    bookingTimeList: ["Won - 1200","Tue - 1200","Sat - 2100","Sat - 2100"]
+    trailer: "https://www.imdb.com/videoembed/vi2146091801",
+    bookingTimeList: ["Mon - 1200","Tue - 1200","Sat - 2100","Sat - 2100"]
   },
 ];
 

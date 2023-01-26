@@ -412,14 +412,13 @@ footer{
 .sessionTimes h3{
 	margin: 0
 }
-.synopsis{
+.summary{
 	background-color: rgba(0,0,0,.5);
 	display: inline;
 	text-align: left
 }
-.booking h3,.synopsis h3{
+.booking h3,.summary h3{
 	width: 90%;
-	background-color: #004a61;
 	padding: 1em 5%;
 	margin: 0 auto;
 	text-align: center;
@@ -440,7 +439,6 @@ footer{
 }
 #bookingTitle,#movieSelectTitle{
 	width: 90%;
-	background-color: #004a61;
 	padding: 1em 5%;
 	margin: 0 auto;
 	text-align: center
