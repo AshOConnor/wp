@@ -562,6 +562,11 @@ fieldset{
 button:disabled,input:disabled,select:disabled{
 	opacity: .10
 }
+
+#receipt{
+	text-align: left;
+	padding: 100px;
+}
 @media screen and (max-width: 600px){
 	.box3 iframe{
 		width: 556px;
