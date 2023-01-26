@@ -110,14 +110,14 @@ include 'tools.php';
               <p id="plot">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
             </div><iframe id="trailer" src="https://www.imdb.com/videoembed/vi3565864217" allowfullscreen width="854" height="400" name="trailer"></iframe><br>
             <br>
-            <h4 id='movieSelectTitle'>Movie Selection:</h4>
+            <h3 id='movieSelectTitle'>Movie Selection:</h3>
             <ul id='movieSelectList'>
               <li><input type="image" src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster' onclick="changeMovie('ACT')"></li>
               <li><input type="image" src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster' onclick="changeMovie('RMC')"></li>
               <li><input type="image" src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster' onclick="changeMovie('ANM')"></li>
               <li><input type="image" src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster' onclick="changeMovie('AHF')"></li>
             </ul>
-            <h4 id='bookingTitle'>Make a Booking</h4>
+            <h3 id='bookingTitle'>Day & Time Selection</h3>
             <ul id="bookingTimeList">
               <li><input class="bookingTime" type="button" value="Wed - 2100" onclick='selectMovie("Wed - 2100")'></li>
               <li><input class="bookingTime" type="button" value="Thu - 2100" onclick='selectMovie("Thu - 2100")'></li>
@@ -135,7 +135,7 @@ include 'tools.php';
           <h3>Booking Form</h3>
           <form name="bookingForm" action="#booking" method="post" id="bookingForm">
             <input type="hidden" id="movie-id" name="movie[id]" value="ACT"> <input type="hidden" id="movie-day" name="movie[day]" value=""> <input type="hidden" id="movie-hour" name="movie[hour]" value="">
-            <p id="formMessage">Please select the movie and showtime above.</p>
+            <p id="formMessage">Please select the movie, day and time above.</p>
             <div id="seatForm">
               <fieldset>
                 <legend>Standard Seats</legend> <label>Adults:</label> <select name="seats[STA]" id="seats-STA" disabled required="">

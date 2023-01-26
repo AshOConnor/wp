@@ -502,8 +502,7 @@ footer{
 	-moz-appearance: none;
 	appearance: none;
 	background: url(../../media/down-arrow.png) 96%/15% no-repeat;
-	width: 125px;
-	background-color: #000
+	width: 125px
 }
 #total{
 	margin: 10px;
