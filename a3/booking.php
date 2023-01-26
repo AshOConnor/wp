@@ -35,12 +35,11 @@ include 'tools.php';
     </nav>
   </div>
   <main>
-    <section id='booking'>
+    <section id='info'>
       <div class='box3'>
         <div class='boxText'>
           <h2>BOOKINGS</h2>
           <div class='sessionTimes' onclick="changeMovie('ACT')">
-            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
             <div class='movieInfo'>
               <h3>Avatar: The Way of Water</h3>
               <h4>PG</h4>
@@ -52,9 +51,10 @@ include 'tools.php';
                 <li>Sun - 1800</li>
               </ul>
             </div>
+            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
           </div>
           <div class='sessionTimes' onclick="changeMovie('RMC')">
-            <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
+          <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
             <div class='movieInfo'>
               <h3>Weird: The Al Yankovic Story</h3>
               <h4>TV</h4>
@@ -68,7 +68,6 @@ include 'tools.php';
             </div>
           </div>
           <div class='sessionTimes' onclick="changeMovie('ANM')">
-            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
             <div class='movieInfo'>
               <h3>Puss in Boots: The Last Wish</h3>
               <h4>PG</h4>
@@ -82,9 +81,10 @@ include 'tools.php';
                 <li>Sun - 1200</li>
               </ul>
             </div>
+            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
           </div>
           <div class='sessionTimes' onclick="changeMovie('AHF')">
-            <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
+          <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
             <div class='movieInfo'>
               <h3>Margrete: Queen of the North</h3>
               <h4>MA</h4>
@@ -99,7 +99,7 @@ include 'tools.php';
         </div>
       </div>
     </section>
-    <section id="synopsis">
+    <section id="plot">
       <div class="synopsis">
         <div class='box3'>
           <div class='boxText'>
@@ -107,7 +107,7 @@ include 'tools.php';
             <div class='synopsis-info'>
               <h4 id="rating">PG</h4>
               <h4>Plot Description</h4>
-              <p id="plot">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
+              <p id="movieInfo">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
             </div><iframe id="trailer" src="https://www.imdb.com/videoembed/vi3565864217" allowfullscreen width="854" height="400" name="trailer"></iframe><br>
             <br>
             <h3 id='movieSelectTitle'>Movie Selection:</h3>
@@ -129,7 +129,7 @@ include 'tools.php';
         </div>
       </div>
     </section>
-    <section id="booking2">
+    <section id="booking">
       <div class="box3">
         <div class="booking">
           <h3>Booking Form</h3>
@@ -171,7 +171,6 @@ include 'tools.php';
                   </script>
                 </select>
               </fieldset>
-              <p id="total">Total: $<a id="totalPrice">0.00</a></p>
             </div>
             <div id="personalInfoForm">
               <label>Name:</label> <input type="text" name="user[name]" id="user-name" placeholder="e.g. Jane Doe" disabled required=""><br>
@@ -180,6 +179,7 @@ include 'tools.php';
               <p></p><label>Credit Card:</label> <input type="text" name="user[card]" id="user-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
               <p></p><label>Expiry:</label> <input type="month" name="user[expiry]" id="user-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
             </div><br>
+            <p id="total">Total: $<a id="totalPrice">0.00</a></p>
             <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src='../../media/prices-icon.png' alt="price-icon">Book Tickets</button>
           </form>
         </div>
