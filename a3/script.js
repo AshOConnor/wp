@@ -32,7 +32,7 @@ const movies = [
     plot: "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.",
     trailer: "https://www.imdb.com/videoembed/vi2146091801",
     bookingTimeList: ["Mon - 1200","Tue - 1200","Sat - 2100","Sat - 2100"]
-  },
+  }
 ];
 
 function updateMovieInfo(movie) {
@@ -111,7 +111,7 @@ function calculatePrice() {
 
   var day = document.getElementById("movie-day").value;
   var hour = document.getElementById("movie-hour").value;
-  var priceKey = (day == "SAT" || day == "SUN") ? "weekends" : "weekdays";
+  var priceKey = (day == "SAT" || day == "SUN" || hour < "12") ? "weekends" : "weekdays";
 
   var totalPriceValue = prices[priceKey].STA * document.getElementById("seats-STA").value
   + prices[priceKey].STP * document.getElementById("seats-STP").value
