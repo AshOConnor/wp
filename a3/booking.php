@@ -175,11 +175,10 @@ include 'tools.php';
             </div>
             <div id="personalInfoForm">
               <label>Name:</label> <input type="text" name="user[name]" id="user-name" placeholder="e.g. Jane Doe" disabled required=""><br>
-              <p><?php echo($errors["name"]);?></p><label>Email:</label> <input type="email" name="user[email]" id="user-email" placeholder="e.g. example@email.com" disabled required=""><br>
-              <p><?php echo($errors["email"])?></p><label>Mobile:</label> <input type="tel" name="user[mobile]" id="user-mobile" placeholder="e.g. 0412 345 678" disabled required=""><br>
-              <p><?php echo($errors["mobile"])?></p><label>Credit Card:</label> <input type="text" name="user[card]" id="user-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
-              <p><?php echo($errors["card"])?></p><label>Expiry:</label> <input type="month" name="user[expiry]" id="user-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
-              <p><?php echo ($errors["expiry"]);?></p>
+              <p></p><label>Email:</label> <input type="email" name="user[email]" id="user-email" placeholder="e.g. example@email.com" disabled required=""><br>
+              <p></p><label>Mobile:</label> <input type="tel" name="user[mobile]" id="user-mobile" placeholder="e.g. 0412 345 678" disabled required=""><br>
+              <p></p><label>Credit Card:</label> <input type="text" name="user[card]" id="user-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
+              <p></p><label>Expiry:</label> <input type="month" name="user[expiry]" id="user-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
             </div><br>
             <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src='../../media/prices-icon.png' alt="price-icon">Book Tickets</button>
           </form>
