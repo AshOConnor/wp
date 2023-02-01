@@ -29,4 +29,14 @@ function printMyCode() {
   echo "</ol></pre>";
 }
 
+function php2js( $arr, $arrName ) {
+  $arrJSON = json_encode($arr, JSON_PRETTY_PRINT);
+  echo <<<"CDATA"
+  <script>
+    /* Variable generated with Trev's handy php2js() function */
+    var $arrName = $arrJSON;
+  </script>
+CDATA;
+}
+
 ?>
