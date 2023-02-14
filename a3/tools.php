@@ -179,7 +179,7 @@ function getMovies() {
           'alt' => "WeirdAl-poster",
           'plot' => "Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.",
           'trailer' => "https://www.imdb.com/videoembed/vi1080541721",
-          'bookingTimeList' => array("Wed - 1200","Thu - 1200","Fri - 1200","Sat - 1500","Sat - 1500")
+          'bookingTimeList' => array("Wed - 1200","Thu - 1200","Fri - 1200","Sat - 1500","Sun - 1500")
       ),
       array(
           'id' => 'ANM',
@@ -189,7 +189,7 @@ function getMovies() {
           'alt' => "PussInBoots-poster",
           'plot' => "When Puss in Boots discovers that his passion for adventure has taken its toll and he has burned through eight of his nine lives, he launches an epic journey to restore them by finding the mythical Last Wish.",
           'trailer' => "https://www.imdb.com/videoembed/vi3470049817",
-          'bookingTimeList' => array("Mon - 1200","Tue - 1200","Wed - 1800","Thu - 1800","Fri - 1800","Sat - 1200","Sat - 1200")
+          'bookingTimeList' => array("Mon - 1200","Tue - 1200","Wed - 1800","Thu - 1800","Fri - 1800","Sat - 1200","Sun - 1200")
       ),
       array(
           'id' => 'AHF',
@@ -199,7 +199,7 @@ function getMovies() {
           'alt' => "QueenoftheNorth-poster",
           'plot' => "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.",
           'trailer' => "https://www.imdb.com/videoembed/vi2146091801",
-          'bookingTimeList' => array("Mon - 1200","Tue - 1200","Sat - 2100","Sat - 2100")
+          'bookingTimeList' => array("Mon - 1200","Tue - 1200","Sat - 2100","Sun - 2100")
       )
   );
   return $movies;
@@ -209,36 +209,138 @@ function moviePanel($movieID) {
   $movies = getMovies();
   foreach ($movies as $movie) {
     if ($movie['id'] == $movieID) {
-      echo "<div class='flip-card-flow-container'>";
-      echo "<div class='flip-card-container'>";
-      echo "<div class='flip-card'>";
-      echo "<div class='flip-card-front'>";
-      echo "<div class='movies'>";
-      echo '<h4>' . $movie['title'] . '</h4>';
-      echo '<h4>Rating: ' . $movie['rating'] . '</h4>';
-      echo '<img src="' . $movie['image'] . '" alt="' . $movie['alt'] . '">';
-      echo '</div>';
-      echo "<div class='times-booking'>";
-      echo '<h4>Session Times</h4>';
-      echo '<ul>';
+      echo '<div class="flip-card-flow-container">
+      <div class="flip-card-container">
+      <div class="flip-card">
+      <div class="flip-card-front">
+      <div class="movies">
+      <h4>' . $movie['title'] . '</h4>
+      <h4>Rating: ' . $movie['rating'] . '</h4>
+      <img src="' . $movie['image'] . '" alt="' . $movie['alt'] . '">
+      </div>
+      <div class="times-booking">
+      <h4>Session Times</h4>
+      <ul>';
       foreach ($movie['bookingTimeList'] as $time) {
         echo '<li>' . $time . '</li>';
       }
-      echo '</ul>';
-      echo '<h4>Synopsis</h4>';
-      echo '<p>' . $movie['plot'] . '</p>';
-      echo '<br>';
-      echo '<form method="get" action="booking.php">';
-      echo "<input='hidden' name='movie' value=$movieID>";
-      echo "<input type='submit' class='button-link' value='Book Now'>";
-      echo '</form>';
-      echo '</div>';
-      echo'</div>';
-      echo'</div>';
-      echo'</div>';
-      echo'</div>';
+      echo '</ul>
+      <h4>Synopsis</h4>
+      <p>' . $movie['plot'] . '</p>
+      <br>
+      <form method="get" action="booking.php">
+      <input type="hidden" name="movieID" value="' . $movieID . '">
+      <input type="submit" class="button-link" value="Book Now">
+      </form>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>';
     }
   }
+}
+
+function validateMovieCode(){
+  $validIDs = ["ACT", "RMC", "FAM", "AHF"];
+if( !(in_array($_GET["movie"], $validIDs))) {
+  header("Location: index.php");
+} else {
+  // POST data processing and message printing code goes here
+}
+}
+
+function bookingPanel($movieID) {
+  $movieID = $_GET['movieID'];
+  $movies = getMovies();
+  foreach ($movies as $movie) {
+    if ($movie['id'] == $movieID) {
+      echo '<div class="boxText">
+      <h2>' . $movie['title'] . '</h2>
+      <br>
+      <h3>' . $movie['rating'] . '</h3>
+      <div class="sessionTimes">
+      <div class="movieInfo">
+      <img src="' . $movie['image'] . '" alt="' . $movie['alt'] . '">
+      <div class="synopsis">
+      <div class="synopsis-info">
+      <p>' . $movie['plot'] . '</p>
+      <iframe width="560" height="315" src="' . $movie['trailer'] . '" title="' . $movie['title'] . ' Trailer"></iframe>
+      <div class="bookingTitle">
+      <h3>Available booking times:</h3>
+      <ul id="bookingTimeList">';
+      foreach ($movie['bookingTimeList'] as $time) {
+        echo '<li><input class="bookingTime" type="button" value="' . $time . '" onclick=\'selectMovie("' . $time . '")\'></li>';
+      }
+      echo '</ul>
+      </div>
+      </div>
+      </div>
+      </div>'
+      ;
+      break; // stop looping once the movie is found
+    }
+  }
+}
+
+
+function bookingForm(){
+  echo '<section id="booking">
+          <div class="box3">
+            <div class="booking">
+              <h3>Booking Form</h3>
+              <form name="bookingForm" action="#booking" method="post" id="bookingForm">
+                <input type="hidden" id="movie-id" name="movie[id]" value="' . $movieID . '"> <input type="hidden" id="movie-day" name="movie[day]" value=""> <input type="hidden" id="movie-hour" name="movie[hour]" value="">
+                <p id="formMessage">Please select the time and day above.</p>
+                <div id="seatForm">
+                  <fieldset>
+                    <legend>Standard Seats</legend> <label>Adults:</label> <select name="seats[STA]" id="seats-STA" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select><br>
+                    <label>Concession:</label> <select name="seats[STP]" id="seats-STP" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select><br>
+                    <label>Children:</label> <select name="seats[STC]" id="seats-STC" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select>
+                  </fieldset>
+                  <fieldset>
+                    <legend>First Class Seats</legend> <label>Adults:</label> <select name="seats[FCA]" id="seats-FCA" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select><br>
+                    <label>Concession:</label> <select name="seats[FCP]" id="seats-FCP" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select><br>
+                    <label>Children:</label> <select name="seats[FCC]" id="seats-FCC" disabled required="">
+                      <script>
+                      document.write(generateTickNo());
+                      </script>
+                    </select>
+                  </fieldset>
+                </div>
+                <div id="personalInfoForm">
+      <label>Name:</label> <input type="text" name="user[name]" id="user-name" placeholder="e.g. Jane Doe" disabled required=""><br>
+      <p></p><label>Email:</label> <input type="email" name="user[email]" id="user-email" placeholder="e.g. example@email.com" disabled required=""><br>
+      <p></p><label>Mobile:</label> <input type="tel" name="user[mobile]" id="user-mobile" placeholder="e.g. 0412 345 678" disabled required=""><br>
+      <p></p><label>Credit Card:</label> <input type="text" name="user[card]" id="user-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
+      <p></p><label>Expiry:</label> <input type="month" name="user[expiry]" id="user-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
+    </div><br>
+    <p id="total">Total: $<a id="totalPrice">0.00</a></p>
+    <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src=\'../../media/prices-icon.png\' alt="price-icon">Book Tickets</button>
+    </form>
+  </div>
+</div>
+</section>';
 }
 
 function footer()

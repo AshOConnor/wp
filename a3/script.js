@@ -24,6 +24,11 @@ function selectMovie(time) {
   console.log(hour);
 }
 
+function bookingTime(time) {   
+  console.log(time);
+  return `<li><input class='bookingTime' type='button' value='${time}' onclick='selectMovie("${time}")'></li>`;
+}
+
 function enableForm() {
   var inputs = document.querySelectorAll("input, select");
   inputs.forEach(input => input.disabled = false);

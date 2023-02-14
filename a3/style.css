@@ -438,9 +438,9 @@ footer{
 	width: 640px;
 	display: inline;
 	vertical-align: middle;
-	border: solid #45c0e6
+	border: solid #45c0e6;
 }
-#bookingTitle,#movieSelectTitle{
+#bookingTitle{
 	width: 90%;
 	padding: 1em 5%;
 	margin: 0 auto;

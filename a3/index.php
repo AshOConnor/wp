@@ -50,6 +50,7 @@ require 'tools.php';
           <?= moviePanel("AHF")?>
         </div>
       </a>
+</section>
     </main>
     <?= footer()?>
     <div class="debug">
