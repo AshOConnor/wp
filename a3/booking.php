@@ -35,100 +35,7 @@ include 'tools.php';
     </nav>
   </div>
   <main>
-    <section id='sessions'>
-      <div class='box3'>
-        <div class='boxText'>
-          <h2>BOOKINGS</h2>
-          <div class='sessionTimes' onclick="changeMovie('ACT')">
-            <img src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster'>
-            <div class='movieInfo'>
-              <h3>Avatar: The Way of Water</h3>
-              <h4>PG</h4>
-              <ul>
-                <li>Wed - 2100</li>
-                <li>Thu - 2100</li>
-                <li>Fri - 2100</li>
-                <li>Sat - 1800</li>
-                <li>Sun - 1800</li>
-              </ul>
-            </div>
-          </div>
-          <div class='sessionTimes' onclick="changeMovie('RMC')">
-            <div class='movieInfo'>
-              <h3>Weird: The Al Yankovic Story</h3>
-              <h4>TV</h4>
-              <ul>
-                <li>Wed - 1200</li>
-                <li>Thu - 1200</li>
-                <li>Fri - 1200</li>
-                <li>Sat - 1500</li>
-                <li>Sun - 1500</li>
-              </ul>
-            </div>
-            <img src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster'>
-          </div>
-          <div class='sessionTimes' onclick="changeMovie('ANM')">
-            <img src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster'>
-            <div class='movieInfo'>
-              <h3>Puss in Boots: The Last Wish</h3>
-              <h4>PG</h4>
-              <ul>
-                <li>Mon - 1200</li>
-                <li>Tue - 1200</li>
-                <li>Wed - 1800</li>
-                <li>Thu - 1800</li>
-                <li>Fri - 1800</li>
-                <li>Sat - 1200</li>
-                <li>Sun - 1200</li>
-              </ul>
-            </div>
-          </div>
-          <div class='sessionTimes' onclick="changeMovie('AHF')">
-            <div class='movieInfo'>
-              <h3>Margrete: Queen of the North</h3>
-              <h4>MA</h4>
-              <ul>
-                <li>Mon - 1800</li>
-                <li>Tue - 1800</li>
-                <li>Sat - 2100</li>
-                <li>Sun - 2100</li>
-              </ul>
-            </div>
-            <img src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster'>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="synopsis">
-      <div class="synopsis">
-        <div class='box3'>
-          <div class='boxText'>
-            <h3 id="title">Avatar: The Way of Water</h3>
-            <div class='synopsis-info'>
-              <h4 id="rating">PG</h4>
-              <h4>Plot Description</h4>
-              <p id="plot">Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.</p>
-            </div><iframe id="trailer" src="https://www.imdb.com/videoembed/vi3565864217" allowfullscreen width="854" height="400" name="trailer"></iframe><br>
-            <br>
-            <h3 id='movieSelectTitle'>Movie Selection:</h3>
-            <ul id='movieSelectList'>
-              <li><input type="image" src='../../media/AvatarTheWayofWater-poster.jpg' alt='Avatar-poster' onclick="changeMovie('ACT')"></li>
-              <li><input type="image" src='../../media/WeirdAl-poster.jpg' alt='WeirdAl-poster' onclick="changeMovie('RMC')"></li>
-              <li><input type="image" src='../../media/PussInBoots-poster.jpg' alt='PussInBoots-poster' onclick="changeMovie('ANM')"></li>
-              <li><input type="image" src='../../media/MargreteQueenoftheNorth-poster.jpg' alt='QueenoftheNorth-poster' onclick="changeMovie('AHF')"></li>
-            </ul>
-            <h3 id='bookingTitle'>Day & Time Selection</h3>
-            <ul id="bookingTimeList">
-              <li><input class="bookingTime" type="button" value="Wed - 2100" onclick='selectMovie("Wed - 2100")'></li>
-              <li><input class="bookingTime" type="button" value="Thu - 2100" onclick='selectMovie("Thu - 2100")'></li>
-              <li><input class="bookingTime" type="button" value="Fri - 2100" onclick='selectMovie("Fri - 2100")'></li>
-              <li><input class="bookingTime" type="button" value="Sat - 1800" onclick='selectMovie("Sat - 1800")'></li>
-              <li><input class="bookingTime" type="button" value="Sun - 1800" onclick='selectMovie("Sun - 1800")'></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section id="booking">
       <div class="box3">
         <div class="booking">
@@ -186,35 +93,11 @@ include 'tools.php';
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer">
-      <p>Contact us:</p>
-      <ul>
-        <li>Email: <a href="mailto:enquiries@lunardo.com" target="_top">enquiries@lunardo.com</a>
-        </li>
-        <li>Phone: <a href="callto:+61351526455">(+61)03 5152 6455</a>
-        </li>
-        <li>Address: <a href="https://goo.gl/maps/f5tidqmvh3hUM7CJA">112 Macleod St, Bairnsdale VIC 3875</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <script>
-        document.write(new Date().getFullYear());
-      </script> Ash O'Connor s3915744 <a href="https://github.com/AshOConnor/wp" target="_blank"><img src="https://img.shields.io/badge/GitHub_Repo-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Repo"></a> Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>
-       .
-    </div>
-    <div>
-      Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.
-    </div>
-    <div>
-      <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
-    </div>
-  </footer>
+  <?= footer()?>
   <div class="debug">
     <hr>
-    <h4>Debug Area</h4><?= debugModule() ?>
-    <?= PrintMyCode() ?>
+    <h4>Debug Area</h4>
+    <?= debugModule() ?>
   </div>
 </body>
 </html>
