@@ -6,7 +6,7 @@ include 'tools.php';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lunardo Booking Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <title>Lunardo Receipt Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
   <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
   <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
   <script src='../wireframe.js'></script>
@@ -17,45 +17,81 @@ include 'tools.php';
   <div id="navbar">
     <header>
       <div id='lunardoLogo'>
-        <a href="index.php"><img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a>
+        <img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a>
       </div>
-</div>
-    </header>
     <main>
-        <div class="receipt">
-            <h1> RECEIPT </h1>
-<table class="tableReceipt">
-    <tr>
-        <th> Movie Details</th>
-        <tr>
+    <div class="receipt">
+        <h1>RECEIPT</h1>
+        <p class="warning">IMPORTANT: Please print this page to keep this receipt for future reference. Your data will be saved, but will not be able to access this page again.</p>
+        <table class="receiptTable">
+          <tr>
+            <th colspan="2">MOVIE INFORMATION</th>
+          </tr>
+          <tr>
             <td>ID</td>
-</table>
-</div>
+            <td><?php echo $_SESSION["cart"]["movie"]["id"]?></td>
+          </tr>
+          <tr>
+            <td>Day</td>
+            <td><?php echo $_SESSION["cart"]["movie"]["day"]?></td>
+          </tr>
+          <tr>
+            <td>Hour</td>
+            <td><?php echo $_SESSION["cart"]["movie"]["hour"]?></td>
+          </tr>
+        </table>
+        <table class="receiptTable">
+          <tr>
+            <th colspan="2">SEATS BOOKED</th>
+          </tr>
+          <tr>
+            <td>Standard Adult</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["STA"]?></td>
+          </tr>
+          <tr>
+            <td>Standard Concession</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["STP"]?></td>
+          </tr>
+          <tr>
+            <td>Standard Child</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["STC"]?></td>
+          </tr>
+          <tr>
+            <td>First Class Adult</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["FCA"]?></td>
+          </tr>
+          <tr>
+            <td>First Class Concession</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["FCP"]?></td>
+          </tr>
+          <tr>
+            <td>First Class Child</td>
+            <td><?php echo $_SESSION["cart"]["seats"]["FCC"]?></td>
+          </tr>
+        </table>
+        <table class="receiptTable">
+          <tr>
+            <th colspan="2">CUSTOMER DETAILS</th>
+          </tr>
+          <tr>
+            <td>Name</td>
+            <td><?php echo $_SESSION["cart"]["cust"]["name"]?></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><?php echo $_SESSION["cart"]["cust"]["email"]?></td>
+          </tr>
+          <tr>
+            <td>Mobile</td>
+            <td><?php echo $_SESSION["cart"]["cust"]["mobile"]?></td>
+          </tr>
+        </table>
+        <p id="total"><strong>Total: $<?php echo number_format($_SESSION["cart"]["total"], 2, '.', '')?></strong> (including GST: $<?php echo number_format($_SESSION["cart"]["GST"], 2, '.', '')?>)</p>
+        <p>ABN: 00 123 456 789 </p>
+        <p>Thank you for booking with Lunardo Cinema. We hope you enjoy our hospitality and the movie.</p>
+        <input class="receiptButton" type="button" value="Print This Page" onClick="window.print()" />
+        <input class="receiptButton" type="button" value="Back to Home page" onClick="location.href='index.php'" />
+      </div>
   </main>
-  <footer>
-    <div class="footer">
-      <p>Contact us:</p>
-      <ul>
-        <li>Email: <a href="mailto:enquiries@lunardo.com" target="_top">enquiries@lunardo.com</a>
-        </li>
-        <li>Phone: <a href="callto:+61351526455">(+61)03 5152 6455</a>
-        </li>
-        <li>Address: <a href="https://goo.gl/maps/f5tidqmvh3hUM7CJA">112 Macleod St, Bairnsdale VIC 3875</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <script>
-        document.write(new Date().getFullYear());
-      </script> Ash O'Connor s3915744 <a href="https://github.com/AshOConnor/wp" target="_blank"><img src="https://img.shields.io/badge/GitHub_Repo-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub Repo"></a> Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>
-       .
-    </div>
-    <div>
-      Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.
-    </div>
-    <div>
-      <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
-    </div>
-  </footer>
 </body>
 </html>

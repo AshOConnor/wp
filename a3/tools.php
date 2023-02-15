@@ -39,7 +39,61 @@ function php2js( $arr, $arrName ) {
 CDATA;
 }
 
-function banner(){
+function printIndexHeader() {
+  echo '<!DOCTYPE html>
+    <html lang=\'en\'>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Lunardo Cinema Bairnsdale</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
+      <link id=\'wireframecss\' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+      <link id=\'stylecss\' type="text/css" rel="stylesheet" href="style.css">
+      <script src=\'../wireframe.js\'></script>
+      <script src=\'script.js\'></script><!--webfonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    </head>';
+}
+
+function printBookingHeader() {
+  echo '<!DOCTYPE html>
+    <html lang=\'en\'>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Lunardo Booking Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
+      <link id=\'wireframecss\' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+      <link id=\'stylecss\' type="text/css" rel="stylesheet" href="style.css">
+      <script src=\'../wireframe.js\'></script>
+      <script src=\'script.js\'></script><!--webfonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
+    </head>';
+}
+
+function printNavbar() {
+  echo '<div id="navbar">
+    <header>
+      <div id=\'lunardoLogo\'>
+        <a href="index.php"><img src=\'../../media/cinema-logo.png\' alt=\'Lunardo-logo\'>LUNARDO CINEMA</a>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li id="aboutUsLink">
+          <a href="index.php#aboutUs"><img src=\'../../media/aboutus-icon.png\' alt=\'ABOUT US\'>ABOUT US</a>
+        </li>
+        <li id="pricesLink">
+          <a href="index.php#prices"><img src=\'../../media/prices-icon.png\' alt=\'PRICES\'>PRICES</a>
+        </li>
+        <li id="nowShowingLink">
+          <a href="index.php#nowShowing"><img src=\'../../media/nowshowing-icon.png\' alt=\'NOW SHOWING\'>NOW SHOWING</a>
+        </li>
+      </ul>
+    </nav>
+  </div>';
+}
+
+
+function printBanner(){
   echo<<<CDATA
   <section id='Banner'>
   <div class="box1">
@@ -54,7 +108,7 @@ function banner(){
 CDATA;
 }
 
-function aboutUs(){
+function printAboutUs(){
   echo<<<CDATA
   <section id='aboutUs'>
   <div class="box2">
@@ -110,7 +164,7 @@ CDATA;
 }
 
 
-function pricing(){
+function printPricing(){
     echo<<<CDATA
     <section id='prices'>
     <a id="prices-A"></a>
@@ -255,11 +309,13 @@ function bookingPanel($movieID) {
   $movies = getMovies();
   foreach ($movies as $movie) {
     if ($movie['id'] == $movieID) {
-      echo '<div class="boxText">
+      echo '<section id="info">
+      <div class="box3">
+      <div class="boxText">
       <h2>' . $movie['title'] . '</h2>
       <br>
       <h3>' . $movie['rating'] . '</h3>
-      <div class="sessionTimes">
+      <section class="sessionTimes">
       <div class="movieInfo">
       <img src="' . $movie['image'] . '" alt="' . $movie['alt'] . '">
       <div class="synopsis">
@@ -276,74 +332,13 @@ function bookingPanel($movieID) {
       </div>
       </div>
       </div>
-      </div>'
-      ;
-      break; // stop looping once the movie is found
+      </div>
+      </section>';
     }
   }
 }
 
-
-function bookingForm(){
-  echo '<section id="booking">
-          <div class="box3">
-            <div class="booking">
-              <h3>Booking Form</h3>
-              <form name="bookingForm" action="#booking" method="post" id="bookingForm">
-                <input type="hidden" id="movie-id" name="movie[id]" value="' . $movieID . '"> <input type="hidden" id="movie-day" name="movie[day]" value=""> <input type="hidden" id="movie-hour" name="movie[hour]" value="">
-                <p id="formMessage">Please select the time and day above.</p>
-                <div id="seatForm">
-                  <fieldset>
-                    <legend>Standard Seats</legend> <label>Adults:</label> <select name="seats[STA]" id="seats-STA" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select><br>
-                    <label>Concession:</label> <select name="seats[STP]" id="seats-STP" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select><br>
-                    <label>Children:</label> <select name="seats[STC]" id="seats-STC" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select>
-                  </fieldset>
-                  <fieldset>
-                    <legend>First Class Seats</legend> <label>Adults:</label> <select name="seats[FCA]" id="seats-FCA" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select><br>
-                    <label>Concession:</label> <select name="seats[FCP]" id="seats-FCP" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select><br>
-                    <label>Children:</label> <select name="seats[FCC]" id="seats-FCC" disabled required="">
-                      <script>
-                      document.write(generateTickNo());
-                      </script>
-                    </select>
-                  </fieldset>
-                </div>
-                <div id="personalInfoForm">
-      <label>Name:</label> <input type="text" name="user[name]" id="user-name" placeholder="e.g. Jane Doe" disabled required=""><br>
-      <p></p><label>Email:</label> <input type="email" name="user[email]" id="user-email" placeholder="e.g. example@email.com" disabled required=""><br>
-      <p></p><label>Mobile:</label> <input type="tel" name="user[mobile]" id="user-mobile" placeholder="e.g. 0412 345 678" disabled required=""><br>
-      <p></p><label>Credit Card:</label> <input type="text" name="user[card]" id="user-card" placeholder="e.g. 1234 5678 1234 5678" disabled required=""><br>
-      <p></p><label>Expiry:</label> <input type="month" name="user[expiry]" id="user-expiry" placeholder="e.g. 2025-01" disabled required=""><br>
-    </div><br>
-    <p id="total">Total: $<a id="totalPrice">0.00</a></p>
-    <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src=\'../../media/prices-icon.png\' alt="price-icon">Book Tickets</button>
-    </form>
-  </div>
-</div>
-</section>';
-}
-
-function footer()
+function printFooter()
 {
     $lastModified = date("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME']));
     echo<<<CDATA
@@ -375,6 +370,63 @@ function footer()
 </div>
 </footer>
 CDATA;
+}
+
+function bookMovie() {
+
+  $fp = fopen('bookings.txt', 'a');
+  $data = array();
+  $data[] = date("Y-m-d");
+  $data[] = $_SESSION["cart"]["cust"]["name"];
+  $data[] = $_SESSION["cart"]["cust"]["email"];
+  $data[] = $_SESSION["cart"]["cust"]["mobile"];
+
+  foreach($_SESSION["cart"]["movie"] as $movieData) {
+    $data[] = $movieData;
+  }
+  foreach($_SESSION["cart"]["seats"] as $seatsData) {
+    $data[] = $seatsData;
+  }
+
+  $prices = array(
+    "weekdays" => array(
+      "STA" => 16.00,
+      "STP" => 14.50,
+      "STC" => 13.00,
+      "FCA" => 25.00,
+      "FCP" => 23.50,
+      "FCC" => 22.00
+    ),
+    "weekends" => array(
+      "STA" => 21.50,
+      "STP" => 19.00,
+      "STC" => 17.50,
+      "FCA" => 31.00,
+      "FCP" => 28.00,
+      "FCC" => 25.00
+    )
+  );
+  
+  $day = $_POST["movie-day"];
+  $hour = $_POST["movie-hour"];
+  $priceKey = ($day == "SAT" || $day == "SUN" || $hour < "12") ? "weekends" : "weekdays";
+  
+  $total = $STA * $_SESSION["cart"]["seats"]["STA"] + $STP * $_SESSION["cart"]["seats"]["STP"] + $STC * $_SESSION["cart"]["seats"]["STC"] + $FCA * $_SESSION["cart"]["seats"]
+  ["FCA"] + $FCP *$_SESSION["cart"]["seats"]["FCP"] + $FCC * $_SESSION["cart"]["seats"]["FCC"];
+
+  $total = round($total, 2);
+
+  $data[] = $total;
+  $_SESSION["cart"] += array("total"=>$total);
+  $_SESSION["cart"] += array("GST"=>calculateGST($total));
+
+  fputcsv($fp, $data, "\t");
+
+  fclose($fp);
+}
+
+function calculateGST($totalPrice) {
+  return round(($totalPrice / 11),2);
 }
 
 ?>
