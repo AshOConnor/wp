@@ -32,9 +32,9 @@ function validateFormPHP() {
    }
    
    if(empty($cust["expiry"])) {
-     $errorMsgs["expiry"] = "Please enter a valid expiry year and month (e.g. 2020-01)";
+     $errorMsgs["expiry"] = "Please enter a valid expiry year and month (e.g. 2025-01)";
    } else if (!preg_match('/^\d{4}-\d{2}$/', $cust["expiry"])) {
-     $errorMsgs["expiry"] = "Please enter the expiry date in YYYY-MM format! (e.g. 2020-01)";
+     $errorMsgs["expiry"] = "Please enter the expiry date in YYYY-MM format! (e.g. 2025-01)";
    } else {
      $monthyear = date("Y-m");
      if ($cust["expiry"] <= $monthyear) {

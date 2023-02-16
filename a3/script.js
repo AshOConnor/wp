@@ -1,43 +1,22 @@
 /* Insert your javascript here */
-const movies = [
-  {
-    id: 'ACT',
-    title: "Avatar: The Way of Water",
-    rating: "PG",
-    plot: "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
-    trailer: "https://www.imdb.com/videoembed/vi3565864217",
-    bookingTimeList: ["Wed - 2100","Thu - 2100","Fri - 2100","Sat - 1800","Sun - 1800"]
-  },
-  {
-    id: 'RMC',
-    title: "Weird: The Al Yankovic Story",
-    rating: "TV",
-    plot: "Explores every facet of Yankovic's life, from his meteoric rise to fame with early hits like 'Eat It' and 'Like a Surgeon' to his torrid celebrity love affairs and famously depraved lifestyle.",
-    trailer: "https://www.imdb.com/videoembed/vi1080541721",
-    bookingTimeList: ["Wed - 1200","Thu - 1200","Fri - 1200","Sat - 1500","Sat - 1500"]
-  },
-  {
-    id: 'ANM',
-    title: "Puss in Boots: The Last Wish",
-    rating: "PG",
-    plot: "When Puss in Boots discovers that his passion for adventure has taken its toll and he has burned through eight of his nine lives, he launches an epic journey to restore them by finding the mythical Last Wish.",
-    trailer: "https://www.imdb.com/videoembed/vi3470049817",
-    bookingTimeList: ["Mon - 1200","Tue - 1200","Wed - 1800","Thu - 1800","Fri - 1800","Sat - 1200","Sat - 1200"]
-  },
-  {
-    id: 'AHF',
-    title: "Margrete: Queen of the North",
-    rating: "MA",
-    plot: "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.",
-    trailer: "https://https://www.imdb.com/videoembed/vi968475417",
-    bookingTimeList: ["Won - 1200","Tue - 1200","Sat - 2100","Sat - 2100"]
-  },
-];
+const movies = [{
+  id: 'ACT',
+  bookingTimeList: ["Wed - 2100", "Thu - 2100", "Fri - 2100", "Sat - 1800", "Sun - 1800"]
+}, {
+  id: 'RMC',
+  bookingTimeList: ["Wed - 1200", "Thu - 1200", "Fri - 1200", "Sat - 1500", "Sat - 1500"]
+}, {
+  id: 'ANM',
+  bookingTimeList: ["Mon - 1200", "Tue - 1200", "Wed - 1800", "Thu - 1800", "Fri - 1800", "Sat - 1200", "Sat - 1200"]
+}, {
+  id: 'AHF',
+  bookingTimeList: ["Won - 1200", "Tue - 1200", "Sat - 2100", "Sat - 2100"]
+}, ];
 
 function generateTickNo() {
   var seatOptions = "<option value=''>Please Select</option>";
   for (var i = 0; i <= 10; i++) {
-    seatOptions += `<option value='${i}' onClick='calculatePrice()'>${i}</option>`;
+      seatOptions += `<option value='${i}' onClick='calculatePrice()'>${i}</option>`;
   }
   console.log("generateTickNo");
   return seatOptions;
@@ -48,8 +27,8 @@ function selectSession(time) {
   enableForm();
   var formMessage = document.getElementById("formMessage");
   formMessage.innerHTML = `${document.getElementById("title").innerHTML} (${time})`;
-  var day = time.slice(0,3).toUpperCase();
-  var hour = 'T' + time.slice(6,8);
+  var day = time.slice(0, 3).toUpperCase();
+  var hour = 'T' + time.slice(6, 8);
   document.getElementById("movie-day").value = day;
   document.getElementById("movie-hour").value = hour;
   calculatePrice();
@@ -58,7 +37,7 @@ function selectSession(time) {
   console.log(hour);
 }
 
-function bookingTime(time) {   
+function bookingTime(time) {
   console.log(time);
   return `<li><input class='bookingTime' type='button' value='${time}' onclick='selectSession("${time}")'></li>`;
 }
@@ -71,34 +50,85 @@ function enableForm() {
 
 function calculatePrice() {
   var prices = {
-    weekdays: {
-      STA: 16.00,
-      STP: 14.50,
-      STC: 13.00,
-      FCA: 25.00,
-      FCP: 23.50,
-      FCC: 22.00
-    },
-    weekends: {
-      STA: 21.50,
-      STP: 19.00,
-      STC: 17.50,
-      FCA: 31.00,
-      FCP: 28.00,
-      FCC: 25.00
-    }
+      weekdays: {
+          STA: 16.00,
+          STP: 14.50,
+          STC: 13.00,
+          FCA: 25.00,
+          FCP: 23.50,
+          FCC: 22.00
+      },
+      weekends: {
+          STA: 21.50,
+          STP: 19.00,
+          STC: 17.50,
+          FCA: 31.00,
+          FCP: 28.00,
+          FCC: 25.00
+      }
   };
 
   var day = document.getElementById("movie-day").value;
   var hour = document.getElementById("movie-hour").value;
   var priceKey = (day == "SAT" || day == "SUN" || hour < "12") ? "weekends" : "weekdays";
 
-  var totalPriceValue = prices[priceKey].STA * document.getElementById("seats-STA").value
-  + prices[priceKey].STP * document.getElementById("seats-STP").value
-  + prices[priceKey].STC * document.getElementById("seats-STC").value
-  + prices[priceKey].FCA * document.getElementById("seats-FCA").value
-  + prices[priceKey].FCP * document.getElementById("seats-FCP").value
-  + prices[priceKey].FCC * document.getElementById("seats-FCC").value ;
+  var totalPriceValue = prices[priceKey].STA * document.getElementById("seats-STA").value +
+      prices[priceKey].STP * document.getElementById("seats-STP").value +
+      prices[priceKey].STC * document.getElementById("seats-STC").value +
+      prices[priceKey].FCA * document.getElementById("seats-FCA").value +
+      prices[priceKey].FCP * document.getElementById("seats-FCP").value +
+      prices[priceKey].FCC * document.getElementById("seats-FCC").value;
 
   document.getElementById("totalPrice").innerHTML = totalPriceValue.toFixed(2);
+}
+
+// Validate user input for name, phone number, credit card number, and expiry date
+function validateForm() {
+  const nameRegex = /^[a-z ,.'-]+$/i;
+  const phoneRegex = /^(\(04\)|04|\+614)[ ]?\d{1,4}?[ ]?\(?\d{1,3}?\)?[ ]?\d{1,4}[ ]?\d{1,4}[ ]?\d{1,9}$/g;
+  const cardRegex = /^(\d{4}[-. ]?){4}|\d{4}[-. ]?\d{6}[-. ]?\d{5}$/gm;
+
+  const name = document.forms["bookingForm"]["cust[name]"].value;
+  const phone = document.forms["bookingForm"]["cust[mobile]"].value;
+  const card = document.forms["bookingForm"]["cust[card]"].value;
+  const expiry = document.forms["bookingForm"]["cust[expiry]"].value;
+
+  let message = "";
+  let valid = true;
+
+  // Validate name
+  if (!nameRegex.test(name)) {
+    message += "Please enter a proper name (e.g. John Smith)\n";
+    valid = false;
+  }
+
+  // Validate phone number
+  if (!phoneRegex.test(phone)) {
+    message += "Please enter a valid mobile number (e.g. 0412345678)\n";
+    valid = false;
+  }
+
+  // Validate credit card number
+  if (!cardRegex.test(card)) {
+    message += "Please use and enter a 12-digit credit card number (e.g. 1234 1234 1234 1234)\n";
+    valid = false;
+  }
+
+  // Validate expiry date
+  const exMonth = expiry.slice(5,7);
+  const exYear = expiry.slice(0,4);
+  const today = new Date();
+  const someday = new Date(exYear, exMonth - 1, 1);
+
+  if (someday < today) {
+    message += "The expiry date is before today's date. Please select a valid expiry date";
+    valid = false;
+  }
+
+  // Alert user if input is not valid
+  if (!valid) {
+    alert(message);
+  }
+
+  return valid;
 }
