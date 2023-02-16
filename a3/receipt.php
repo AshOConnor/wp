@@ -9,28 +9,16 @@ else {
   bookMovie();
 }
 ?>
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lunardo Receipt Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
-  <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-  <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
-  <script src='../wireframe.js'></script>
-  <script src='script.js'></script><!--webfonts-->
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&amp;display=swap" rel="stylesheet">
-</head>
+<?=printBookingHeader() ?>
 <body>
-  <div id="navbar">
-    <header>
-      <div id='lunardoLogo'>
-        <img src='../../media/cinema-logo.png' alt='Lunardo-logo'>LUNARDO CINEMA</a>
-      </div>
+<?= printNavBarReceipt()?>
     <main>
+<section id="Receipt">
+  <div class="ReceiptBox">
     <div class="receipt">
-        <h1>RECEIPT</h1>
-        <p class="warning">IMPORTANT: Please print this page to keep this receipt for future reference. Your data will be saved, but will not be able to access this page again.</p>
+        <h4 class="receiptH1">RECEIPT</h4>
+        <p class="warning">IMPORTANT: Retain this receipt for future use, it is important to print this page. 
+        <br>Although your data will be preserved, you will not be able to revisit this page.</p>
         <table class="receiptTable">
           <tr>
             <th colspan="2">MOVIE INFORMATION</th>
@@ -96,11 +84,12 @@ else {
         </table>
         <p id="total"><strong>Total: $<?php echo number_format($_SESSION["cart"]["total"], 2, '.', '') ?></strong> (including GST: $<?php echo number_format($_SESSION["cart"]["GST"], 2, '.', '') ?>)</p>
         <p>ABN: 00 123 456 789 </p>
-        <p>Thank you for booking with Lunardo Cinema. We hope you enjoy our hospitality and the movie.</p>
+        <p>Thank you for booking with Lunardo Cinema.</p>
         <input class="receiptButton" type="button" value="Print This Page" onClick="window.print()" />
-        <input class="receiptButton" type="button" value="Back to Home page" onClick="location.href='index.php'" />
       </div>
+</div>
+      </section>
   </main>
-  <?=printFooter() ?>
+  <?= printReceiptFooter() ?>
 </body>
 </html>

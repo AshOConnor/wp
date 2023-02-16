@@ -219,10 +219,9 @@ nav a:hover{
 }
 table,td,th,tr{
 	text-align: center;
-	padding: 15%
 }
 table{
-	width: 100%;
+	width: 80%;
 	margin: 30px auto
 }
 td,th{
@@ -672,3 +671,84 @@ button:disabled,input:disabled,select:disabled{
 		max-width: 1200px
 }
 }
+.warningMsg {
+  font-family: 'Open Sans', sans-serif;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.receipt {
+  padding: 60px 40px 20px 40px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  font-size: 12px;
+}
+
+.warning {
+  background-color: #004a61;
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.receiptH1{
+	text-align: left;
+	margin-top: 40px;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+.receiptTable{
+  width: 613px;
+  text-align: left;
+  margin: 5px 0;
+}
+
+.receiptTable th {
+  background-color: #004a61;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.receiptTable td {
+  width: 300px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  border-bottom: 1px solid #004a61;
+  padding: 3px;
+  font-size: 12px;
+}
+.receiptTable td {
+	width: 300px;
+	background-color: white;
+	color: black;
+	text-align: left;
+	border-bottom: 1px solid #004a61;
+	padding: 3px;
+  }
+
+.receipt #total {
+  font-size: 12px;
+  width: 600px;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #004a61;
+  background-color: white;
+  color: black;
+}
+.receiptButton {
+  border: #000;
+  border-style: solid;
+  background-color: white;
+  color: black;
+}
+.receiptButton {
+  cursor: pointer;
+}
+@media print {
+	.receipt {page-break-after: always;}
+  }
