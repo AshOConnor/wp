@@ -25,11 +25,11 @@ else {
           </tr>
           <tr>
             <td>ID</td>
-            <td><?php echo $_SESSION["cart"]["movie"]["id"] ?></td>
+            <td><?php echo $_SESSION["cart"]["movie"] ?></td>
           </tr>
           <tr>
             <td>Day</td>
-            <td><?php echo $_SESSION["cart"]["movie"]["day"] ?></td>
+            <td><?php echo $_SESSION["cart"]["day"] ?></td>
           </tr>
           <tr>
             <td>Hour</td>
@@ -91,5 +91,10 @@ else {
       </section>
   </main>
   <?= printReceiptFooter() ?>
+  <div class="debug">
+      <hr>
+      <h4>Debug Area</h4>
+      <?= debugModule() ?>
+    </div>
 </body>
 </html>
