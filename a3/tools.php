@@ -417,63 +417,69 @@ function bookingPanel($movieID)
     }
 }
 
-function bookMovie()
-{
+function bookMovie() {
+  $fp = fopen('bookings.txt', 'a');
+  $data = array();
+  $data[] = date("Y-m-d");
+  $data[] = $_SESSION["cart"]["cust"]["name"];
+  $data[] = $_SESSION["cart"]["cust"]["email"];
+  $data[] = $_SESSION["cart"]["cust"]["mobile"];
 
-    $fp = fopen('bookings.txt', 'a');
-    $data = array();
-    $data[] = date("Y-m-d");
-    $data[] = $_SESSION["cart"]["cust"]["name"];
-    $data[] = $_SESSION["cart"]["cust"]["email"];
-    $data[] = $_SESSION["cart"]["cust"]["mobile"];
+  foreach ($_SESSION["cart"]["movie"] as $movieData) {
+      $data[] = $movieData;
+  }
+  foreach ($_SESSION["cart"]["seats"] as $seatsData) {
+      $data[] = $seatsData;
+  }
 
-    foreach ($_SESSION["cart"]["movie"] as $movieData)
-    {
-        $data[] = $movieData;
-    }
-    foreach ($_SESSION["cart"]["seats"] as $seatsData)
-    {
-        $data[] = $seatsData;
-    }
+  $prices = array(
+      "weekdays" => array(
+          "STA" => 16.00,
+          "STP" => 14.50,
+          "STC" => 13.00,
+          "FCA" => 25.00,
+          "FCP" => 23.50,
+          "FCC" => 22.00
+      ),
+      "weekends" => array(
+          "STA" => 21.50,
+          "STP" => 19.00,
+          "STC" => 17.50,
+          "FCA" => 31.00,
+          "FCP" => 28.00,
+          "FCC" => 25.00
+      )
+  );
 
-    $prices = array(
-        "weekdays" => array(
-            "STA" => 16.00,
-            "STP" => 14.50,
-            "STC" => 13.00,
-            "FCA" => 25.00,
-            "FCP" => 23.50,
-            "FCC" => 22.00
-        ) ,
-        "weekends" => array(
-            "STA" => 21.50,
-            "STP" => 19.00,
-            "STC" => 17.50,
-            "FCA" => 31.00,
-            "FCP" => 28.00,
-            "FCC" => 25.00
-        )
-    );
+  $day = $_SESSION["cart"]["movie"]["day"];
+  $hour = $_SESSION["cart"]["movie"]["hour"];
 
-    $day = $_POST["movie-day"];
-    $hour = $_POST["movie-hour"];
-    $priceKey = ($day == "SAT" || $day == "SUN" || $hour < "12") ? "weekends" : "weekdays";
+  $priceKey = ($day == "SAT" || $day == "SUN" || $hour < "12") ? "weekends" : "weekdays";
 
-    $total = $STA * $_SESSION["cart"]["seats"]["STA"] + $STP * $_SESSION["cart"]["seats"]["STP"] + $STC * $_SESSION["cart"]["seats"]["STC"] + $FCA * $_SESSION["cart"]["seats"]["FCA"] + $FCP * $_SESSION["cart"]["seats"]["FCP"] + $FCC * $_SESSION["cart"]["seats"]["FCC"];
+  $totalPrice = $prices[$priceKey]['STA'] * $_SESSION["cart"]["seats"]["STA"] +
+      $prices[$priceKey]['STP'] * $_SESSION["cart"]["seats"]["STP"] +
+      $prices[$priceKey]['STC'] * $_SESSION["cart"]["seats"]["STC"] +
+      $prices[$priceKey]['FCA'] * $_SESSION["cart"]["seats"]["FCA"] +
+      $prices[$priceKey]['FCP'] * $_SESSION["cart"]["seats"]["FCP"] +
+      $prices[$priceKey]['FCC'] * $_SESSION["cart"]["seats"]["FCC"];
 
-    $total = round($total, 2);
+  $totalPrice = round($totalPrice, 2);
+  $data[] = $totalPrice;
 
-    $data[] = $total;
-    $_SESSION["cart"] += array(
-        "total" => $total
-    );
-    $_SESSION["cart"] += array(
-        "GST" => calculateGST($total)
-    );
+  $_SESSION["cart"] += array(
+      "total" => $totalPrice
+  );
 
-    fputcsv($fp, $data, "\t");
+  $gstAmount = calculateGST($totalPrice);
+  $_SESSION["cart"] += array(
+      "GST" => $gstAmount
+  );
 
-    fclose($fp);
+  $data[] = $gstAmount;
+
+  fputcsv($fp, $data, "\t");
+
+  fclose($fp);
 }
 
 function calculateGST($totalPrice)
