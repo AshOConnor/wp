@@ -10,7 +10,7 @@ const movies = [{
   bookingTimeList: ["Mon - 1200", "Tue - 1200", "Wed - 1800", "Thu - 1800", "Fri - 1800", "Sat - 1200", "Sat - 1200"]
 }, {
   id: 'AHF',
-  bookingTimeList: ["Won - 1200", "Tue - 1200", "Sat - 2100", "Sat - 2100"]
+  bookingTimeList: ["Mon - 1200", "Tue - 1200", "Sat - 2100", "Sat - 2100"]
 }, ];
 
 function generateTickNo() {
