@@ -10,7 +10,7 @@ require 'tools.php';
     <?= printAboutUs()?>
     <?= printPricing()?>
     <section id='nowShowing'>
-      <a id="nowShowing-A">
+      <a id="nowShowing-A"></a>
       <div class='box2'>
         <h2>Now Showing</h2>
         <div class="now-showing-container">
@@ -19,7 +19,6 @@ require 'tools.php';
           <?= moviePanel("ANM")?>
           <?= moviePanel("AHF")?>
         </div>
-      </a>
 </section>
     </main>
     <?= printFooter()?>

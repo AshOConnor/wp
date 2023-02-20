@@ -13,6 +13,30 @@ const movies = [{
   bookingTimeList: ["Mon - 1800", "Tue - 1800", "Sat - 2100", "Sat - 2100"]
 }, ];
 
+//Navigation programming - updates navbar based on scroll
+window.onscroll = function() {
+  console.clear();
+  console.log("Win Y: "+window.scrollY);
+  var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
+  // console.log(navlinks);
+  var sections = document.getElementsByTagName('main')[0].getElementsByTagName('section');
+  console.log(sections);
+  //console.log(sections[0].offsetTop+' '+(sections[0].offsetTop+sections[0].offsetHeight));
+  //console.log(sections[1].offsetTop+' '+(sections[1].offsetTop+sections[1].offsetHeight));
+  for (var s=0; s<sections.length; s++){
+    var secTop=sections[s].offsetTop+10;
+    var secBot=sections[s].offsetTop+sections[s].offsetHeight+2;
+    //console.log(secTop+' '+secBot);
+    if (window.scrollY >= secTop && window.scrollY < secBot){
+      console.log(sections[s].id+': active');
+      navlinks[s].classList.add('active');
+    } else {
+      console.log(sections[s].id+':');
+      navlinks[s].classList.remove('active');
+    }
+  }
+}
+
 function generateTickNo() {
   var seatOptions = "<option value=''>Please Select</option>";
   for (var i = 0; i <= 10; i++) {
