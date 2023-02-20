@@ -25,11 +25,11 @@ else {
           </tr>
           <tr>
             <td>ID</td>
-            <td><?php echo $_SESSION["cart"]["movie"] ?></td>
+            <td><?php echo $_SESSION["cart"]["movie"]["id"] ?></td>
           </tr>
           <tr>
             <td>Day</td>
-            <td><?php echo $_SESSION["cart"]["day"] ?></td>
+            <td><?php echo $_SESSION["cart"]["movie"]["day"] ?></td>
           </tr>
           <tr>
             <td>Hour</td>

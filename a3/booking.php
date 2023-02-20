@@ -31,7 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <h3>Booking Form</h3>
           <!-- <form name="bookingForm" action="index.php" method="post" id="bookingForm" onsubmit="validateForm()"> -->
           <form name="bookingForm" action="#booking" method="post">
-          <input type=hidden name=movie value='<?=$_GET['movie'] ?>'> <input type="hidden" id="movie-id" name="movie[id]" value=""> <input type="hidden" id="movie-day" name="movie[day]" value=""> <input type="hidden" id="movie-hour" name="movie[hour]" value="">
+          <input type=hidden name=movie[id] value='<?=$_GET['movieID'] ?>'> <!-- <input type="hidden" id="movie-id" name="movie[id]" value=""> --> 
+          <input type="hidden" id="movie-day" name="movie[day]" value=""> 
+          <input type="hidden" id="movie-hour" name="movie[hour]" value="">
             <p id="formMessage">Please select the movie, day and time above.</p>
             <div id="seatForm">
               <fieldset>
@@ -77,10 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p class="warningMsg"><?php echo ($errorMsgArray["email"]) ?></p>
                 <label>Mobile: </label><input type="tel" name="cust[mobile]" id="cust-mobile" placeholder="e.g. 0412 345 678" disabled required> <br>
                 <p class="warningMsg"><?php echo ($errorMsgArray["mobile"]) ?></p>
-                <label>Credit Card: </label><input type="text" name="cust[card]" id="cust-card" placeholder="e.g. 1234 5678 1234 5678" disabled required> <br>
-                <p class="warningMsg"><?php echo ($errorMsgArray["card"]) ?></p>
-                <label>Expiry: </label><input type="month" name="cust[expiry]" id="cust-expiry" placeholder="e.g. 2025-01" disabled required> <br>
-                <p class="warningMsg"><?php echo ($errorMsgArray["expiry"]); ?></p>
               </div><br>
             <p id="total">Total: $<a id="totalPrice">0.00</a></p>
             <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src='../../media/prices-icon.png' alt="price-icon">Book Tickets</button>

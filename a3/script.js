@@ -7,7 +7,7 @@ const movies = [{
   bookingTimeList: ["Wed - 1200", "Thu - 1200", "Fri - 1200", "Sat - 1500", "Sat - 1500"]
 }, {
   id: 'ANM',
-  bookingTimeList: ["Mon - 1200", "Tue - 1200", "Wed - 1800", "Thu - 1800", "Fri - 1800", "Sat - 1200", "Sat - 1200"]
+  bookingTimeList: ["Mon - 1200", "Tue - 1200", "Wed - 1800", "Thu - 1800", "Fri - 1800", "Sat - 1200", "Sun - 1200"]
 }, {
   id: 'AHF',
   bookingTimeList: ["Mon - 1200", "Tue - 1200", "Sat - 2100", "Sat - 2100"]
@@ -26,9 +26,13 @@ function selectSession(time) {
   console.log("selectSession() function called");
   enableForm();
   var formMessage = document.getElementById("formMessage");
-  formMessage.innerHTML = `${document.getElementById("title").innerHTML} (${time})`;
+  console.log(formMessage);
+  console.log(formMessage.innerHTML);
+  console.log(document.getElementById("title"));
+  formMessage.innerHTML = document.getElementById("title").innerHTML + " " + time;
   var day = time.slice(0, 3).toUpperCase();
   var hour = 'T' + time.slice(6, 8);
+  console.log(document.getElementById("movie-day"));
   document.getElementById("movie-day").value = day;
   document.getElementById("movie-hour").value = hour;
   calculatePrice();
@@ -46,6 +50,7 @@ function enableForm() {
   var inputs = document.querySelectorAll("input, select");
   inputs.forEach(input => input.disabled = false);
   document.getElementById("submitButton").disabled = false;
+  console.log("Leaving Enable Form");
 }
 
 function calculatePrice() {

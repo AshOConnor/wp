@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+error_reporting(-1);
 /* Put your PHP functions and modules here.
    Many will be provided in the teaching materials,
    keep a look out for them!
@@ -390,7 +390,7 @@ function bookingPanel($movieID)
             echo '<section id="info">
       <div class="box3">
       <div class="boxText">
-      <h2>' . $movie['title'] . '</h2>
+      <h2 id="title">' . $movie['title'] . '</h2>
       <br>
       <h3>' . $movie['rating'] . '</h3>
       <section class="sessionTimes">
@@ -450,10 +450,8 @@ function bookMovie() {
           "FCC" => 25.00
       )
   );
-
   $day = $_SESSION["cart"]["movie"]["day"];
   $hour = $_SESSION["cart"]["movie"]["hour"];
-
   $priceKey = ($day == "SAT" || $day == "SUN" || $hour < "12") ? "weekends" : "weekdays";
 
   $totalPrice = $prices[$priceKey]['STA'] * $_SESSION["cart"]["seats"]["STA"] +
