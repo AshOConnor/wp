@@ -1,7 +1,7 @@
 /* Insert your javascript here */
 const movies = [{
   id: 'ACT',
-  bookingTimeList: ["Wed - 2100", "Thu - 2100", "Fri - 2100", "Sat - 1800", "Sun - 1800"]
+  bookingTimeList: ["Mon - 2100", "Tue - 2100", "Wed - 2100", "Thu - 2100", "Fri - 2100", "Sat - 1800", "Sun - 1800"]
 }, {
   id: 'RMC',
   bookingTimeList: ["Wed - 1200", "Thu - 1200", "Fri - 1200", "Sat - 1500", "Sat - 1500"]
@@ -10,7 +10,7 @@ const movies = [{
   bookingTimeList: ["Mon - 1200", "Tue - 1200", "Wed - 1800", "Thu - 1800", "Fri - 1800", "Sat - 1200", "Sun - 1200"]
 }, {
   id: 'AHF',
-  bookingTimeList: ["Mon - 1200", "Tue - 1200", "Sat - 2100", "Sat - 2100"]
+  bookingTimeList: ["Mon - 1800", "Tue - 1800", "Sat - 2100", "Sat - 2100"]
 }, ];
 
 function generateTickNo() {

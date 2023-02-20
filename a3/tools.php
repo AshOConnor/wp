@@ -265,6 +265,8 @@ function getMovies()
             'plot' => "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
             'trailer' => "https://www.imdb.com/videoembed/vi3565864217",
             'bookingTimeList' => array(
+                "Mon - 2100",
+                "Tue - 2100",
                 "Wed - 2100",
                 "Thu - 2100",
                 "Fri - 2100",
@@ -315,8 +317,8 @@ function getMovies()
             'plot' => "1402. Queen Margrete is ruling Sweden, Norway and Denmark through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: the Kalmar Union.",
             'trailer' => "https://www.imdb.com/videoembed/vi2146091801",
             'bookingTimeList' => array(
-                "Mon - 1200",
-                "Tue - 1200",
+                "Mon - 1800",
+                "Tue - 1800",
                 "Sat - 2100",
                 "Sun - 2100"
             )
