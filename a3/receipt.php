@@ -9,7 +9,7 @@ else {
   bookMovie();
 }
 ?>
-<?=printBookingHeader() ?>
+<?=printReceiptHeader() ?>
 <body>
 <?= printNavBarReceipt()?>
     <main>

@@ -696,13 +696,15 @@ button:disabled,input:disabled,select:disabled{
 }
 
 .receipt {
-  padding: 10px;
-  background-color: white;
-  color: black;
-  text-align: left;
-  font-size: 12px;
+	padding: 10px;
+	background-color: white;
+	color: black;
+	text-align: left;
+	font-size: 12px;
+	width: 50%;
+	display: inline-block;
+	margin-top: 8px;
 }
-
 .warning {
   background-color: #004a61;
   color: white;
