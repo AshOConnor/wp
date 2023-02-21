@@ -81,7 +81,7 @@ function printReceiptHeader()
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Lunardo Booking Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
+      <title>Lunardo Receipt Page</title><!-- Keep wireframe.css for debugging, add your css to style.css -->
       <link id=\'wireframecss\' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
       <link id=\'stylecss\' type="text/css" rel="stylesheet" href="style.css">
       <script src=\'../wireframe.js\'></script>
@@ -430,9 +430,11 @@ function bookMovie() {
   foreach ($_SESSION["cart"]["movie"] as $movieData) {
       $data[] = $movieData;
   }
-  foreach ($_SESSION["cart"]["seats"] as $seatsData) {
-      $data[] = $seatsData;
-  }
+  foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount) {
+    $seatPrice = $prices[$priceKey][$seatType];
+    $data[] = $seatCount;
+    $data[] = number_format($seatPrice, 2);
+}
 
   $prices = array(
       "weekdays" => array(
@@ -466,6 +468,11 @@ function bookMovie() {
   $totalPrice = round($totalPrice, 2);
   $data[] = $totalPrice;
 
+  $subTotal = calculateSubTotal($totalPrice);
+  $_SESSION["cart"] += array(
+    "subtotal" => $subTotal
+  );
+
   $_SESSION["cart"] += array(
       "total" => $totalPrice
   );
@@ -480,6 +487,11 @@ function bookMovie() {
   fputcsv($fp, $data, "\t");
 
   fclose($fp);
+}
+
+function calculateSubTotal($totalPrice)
+{
+    return round(($totalPrice / 1.1) , 2);
 }
 
 function calculateGST($totalPrice)

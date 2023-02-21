@@ -13,6 +13,25 @@ const movies = [{
   bookingTimeList: ["Mon - 1800", "Tue - 1800", "Sat - 2100", "Sat - 2100"]
 }, ];
 
+var prices = {
+  weekdays: {
+      STA: 16.00,
+      STP: 14.50,
+      STC: 13.00,
+      FCA: 25.00,
+      FCP: 23.50,
+      FCC: 22.00
+  },
+  weekends: {
+      STA: 21.50,
+      STP: 19.00,
+      STC: 17.50,
+      FCA: 31.00,
+      FCP: 28.00,
+      FCC: 25.00
+  }
+};
+
 //Navigation programming - updates navbar based on scroll
 window.onscroll = function() {
   console.clear();
@@ -78,24 +97,6 @@ function enableForm() {
 }
 
 function calculatePrice() {
-  var prices = {
-      weekdays: {
-          STA: 16.00,
-          STP: 14.50,
-          STC: 13.00,
-          FCA: 25.00,
-          FCP: 23.50,
-          FCC: 22.00
-      },
-      weekends: {
-          STA: 21.50,
-          STP: 19.00,
-          STC: 17.50,
-          FCA: 31.00,
-          FCP: 28.00,
-          FCC: 25.00
-      }
-  };
 
   var day = document.getElementById("movie-day").value;
   var hour = document.getElementById("movie-hour").value;

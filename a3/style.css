@@ -135,7 +135,7 @@ nav a:hover{
 }
 nav a.active {
 	border-bottom: 5px outset #45c0e6;
-	transition: border-bottom 0.3s;
+	transition: border-bottom 0.5s;
 	width: 10%;
   }
 #Banner{
