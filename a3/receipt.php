@@ -83,12 +83,17 @@ else {
           </tr>
         </table>
         <p id="total">Sub Total: $<?php echo number_format($_SESSION["cart"]["subtotal"], 2, '.', '')?><br><strong>Total: $<?php echo number_format($_SESSION["cart"]["total"], 2, '.', '') ?></strong> (including GST: $<?php echo number_format($_SESSION["cart"]["GST"], 2, '.', '') ?>)</p>
-        <p>ABN: 00 123 456 789 </p>
         <p>Thank you for booking with Lunardo Cinema.</p>
         <input class="receiptButton" type="button" value="Print This Page" onClick="window.print()" />
       </div>
 </div>
       </section>
+      <section id="ticket">
+      <div class="tickets">
+  <div class="ticket__content">
+    <p class="ticket__text">TEST</p>
+  </div>
+</section>
   </main>
   <?= printReceiptFooter() ?>
   <div class="debug">

@@ -441,16 +441,6 @@ function bookMovie() {
   foreach ($_SESSION["cart"]["movie"] as $movieData) {
       $data[] = $movieData;
   }
-  //The below for loop is unable to get the prices for each seatCount. Creates a null error on receipt page added the next forloop to not get error.
-  //foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount) {
-   // $seatPrice = $prices[$priceKey][$seatType];
-   // $data[] = $seatCount;
-   // $data[] = number_format($seatPrice, 2);
-//}
-
-foreach ($_SESSION["cart"]["seats"] as $seatsData) {
-  $data[] = $seatsData;
-}
 
   $prices = array(
       "weekdays" => array(
@@ -481,6 +471,14 @@ foreach ($_SESSION["cart"]["seats"] as $seatsData) {
       $prices[$priceKey]['FCP'] * $_SESSION["cart"]["seats"]["FCP"] +
       $prices[$priceKey]['FCC'] * $_SESSION["cart"]["seats"]["FCC"];
 
+      foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount) {
+        $seatCount = isset($seatCount) ? $seatCount : 0; // set seat count to 0 if not set
+        $seatPrice = $prices[$priceKey][$seatType];
+        $data[] = $seatCount;
+        $data[] = number_format($seatCount * $seatPrice, 2);
+    }
+
+ 
   $totalPrice = round($totalPrice, 2);
   $data[] = $totalPrice;
 

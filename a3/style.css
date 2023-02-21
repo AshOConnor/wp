@@ -694,16 +694,18 @@ button:disabled,input:disabled,select:disabled{
   margin: 0;
   padding: 0;
 }
-
+#Receipt{
+	text-align: center;
+}
 .receipt {
 	padding: 10px;
 	background-color: white;
 	color: black;
-	text-align: left;
 	font-size: 12px;
 	width: 50%;
 	display: inline-block;
-	margin-top: 8px;
+	margin-top: 50px;
+	text-align: center;
 }
 .warning {
   background-color: #004a61;
@@ -711,19 +713,15 @@ button:disabled,input:disabled,select:disabled{
   padding: 5px;
   font-size: 12px;
 }
-
 .receiptH1{
-	text-align: left;
+	text-align: center;
 	margin-top: 40px;
 	margin-left: 0;
 	margin-bottom: 0;
 }
 .receiptTable{
-  width: 613px;
   text-align: left;
-  margin: 5px 0;
 }
-
 .receiptTable th {
   background-color: #004a61;
   color: white;
@@ -731,7 +729,6 @@ button:disabled,input:disabled,select:disabled{
   padding: 5px;
   font-size: 12px;
 }
-
 .receiptTable td {
   width: 300px;
   background-color: white;
@@ -748,16 +745,14 @@ button:disabled,input:disabled,select:disabled{
 	text-align: left;
 	border-bottom: 1px solid #004a61;
 	padding: 3px;
-  }
-
+}
 .receipt #total {
-  font-size: 12px;
-  width: 600px;
-  margin: 0;
-  padding: 5px;
-  border: 1px solid #004a61;
-  background-color: white;
-  color: black;
+	font-size: 12px;
+	padding: 5px;
+	border: 1px solid #004a61;
+	background-color: white;
+	color: black;
+	width: auto;
 }
 .receiptButton {
   border: #000;
@@ -769,5 +764,45 @@ button:disabled,input:disabled,select:disabled{
   cursor: pointer;
 }
 @media print {
-	.footer {page-break-after: always;}
-  }
+	.receipt {page-break-after: always;}
+}
+.tickets {
+	position: relative;
+	box-sizing: border-box;
+	width: 300px;
+	height: 450px;
+	margin: 150px auto 0;
+	padding: 20px;
+	border-radius: 10px;
+	background: #fbfbfb;
+	margin-bottom: 30px;
+}
+.tickets:before, .tickets:after {
+	content: '';
+	position: absolute;
+	left: 5px;
+	height: 6px;
+	width: 290px;
+}
+.tickets:before {
+	top: -5px;
+	background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -8px / 16px 16px repeat-x;
+}
+.tickets:after {
+	bottom: -5px;
+	background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px / 16px 16px repeat-x;
+}
+.ticket__content {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	border: 6px solid #d8d8d8;
+}
+.ticket__text {
+	width: 400px;
+	font-family: 'Cinzel Decorative',cursive;
+	font-size: 3rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #c6dede;
+}
