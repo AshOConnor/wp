@@ -676,6 +676,18 @@ button:disabled,input:disabled,select:disabled{
 		max-width: 1200px
 }
 }
+#navbarR{
+	width: 100%;
+	background-color: #004a61;
+	color: #fff;
+	margin: -8px;
+	padding: 8px 8px 0 8px;
+	z-index: 2;
+	display: inline-block;
+	min-width: 680px;
+	box-shadow: 0 1px 4px #45c0e6;
+	border-bottom: 2px #45c0e6
+}
 .warningMsg {
   font-family: 'Open Sans', sans-serif;
   color: red;
@@ -684,7 +696,7 @@ button:disabled,input:disabled,select:disabled{
 }
 
 .receipt {
-  padding: 60px 40px 20px 40px;
+  padding: 10px;
   background-color: white;
   color: black;
   text-align: left;
@@ -755,5 +767,5 @@ button:disabled,input:disabled,select:disabled{
   cursor: pointer;
 }
 @media print {
-	.receipt {page-break-after: always;}
+	.footer {page-break-after: always;}
   }

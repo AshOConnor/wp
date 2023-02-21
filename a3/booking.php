@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?=printBookingHeader() ?>
 <body>
-<?=printNavbar() ?>
+<?=printNavbarBooking() ?>
 </div>
   <main>
   <?=bookingPanel($movieID) ?>
