@@ -1,12 +1,12 @@
 html{
 	scroll-behavior: smooth;
-	height: 100%
+	height: 100% 
 }
 body{
 	background-color: #004a61;
 	color: #fff;
 	font-family: 'Open Sans',sans-serif;
-	font-size: 18px
+	font-size: 18px 
 }
 h1{
 	font-size: 42px;
@@ -14,7 +14,7 @@ h1{
 	text-align: center;
 	margin: 48px;
 	padding-bottom: 20px;
-	font-family: 'Cinzel Decorative',cursive
+	font-family: 'Cinzel Decorative',cursive 
 }
 h2{
 	font-size: 48px;
@@ -22,7 +22,7 @@ h2{
 	text-align: center;
 	margin: 48px;
 	padding-bottom: 20px;
-	font-family: 'Cinzel Decorative',cursive
+	font-family: 'Cinzel Decorative',cursive 
 }
 h3{
 	font-size: 36px;
@@ -30,7 +30,7 @@ h3{
 	text-align: center;
 	margin: 48px;
 	padding-bottom: 20px;
-	font-family: 'Cinzel Decorative',cursive
+	font-family: 'Cinzel Decorative',cursive 
 }
 h4{
 	font-size: 30px;
@@ -38,11 +38,11 @@ h4{
 	text-align: center;
 	margin: 48px;
 	padding-bottom: 20px;
-	font-family: 'Cinzel Decorative',cursive
+	font-family: 'Cinzel Decorative',cursive 
 }
 hr{
 	color: #45c0e6;
-	width: 60%
+	width: 60% 
 }
 section{
 	background-attachment: fixed;
@@ -50,26 +50,26 @@ section{
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-left: -8px;
-	margin-right: -8px
+	margin-right: -8px 
 }
 .box1{
 	background-color: rgba(0,0,0,.7);
 	width: 100%;
 	padding-top: 400px;
-	padding-bottom: 500px
+	padding-bottom: 500px 
 }
 .box2{
 	background-color: rgba(0,0,0,.7);
 	width: 100%;
 	align-items: center;
 	padding-top: 70px;
-	padding-bottom: 20px
+	padding-bottom: 20px 
 }
 .debug{
 	background-color: #004a61;
 	color: #fff;
 	font-family: 'Open Sans',sans-serif;
-	font-size: 12px
+	font-size: 12px 
 }
 #navbar{
 	position: fixed;
@@ -82,24 +82,24 @@ section{
 	display: inline-block;
 	min-width: 680px;
 	box-shadow: 0 1px 4px #45c0e6;
-	border-bottom: 2px #45c0e6
+	border-bottom: 2px #45c0e6 
 }
 #lunardoLogo{
 	font-family: 'Cinzel Decorative',cursive;
 	font-weight: 900;
 	font-size: 30px;
 	float: left;
-	margin-left: 20px
+	margin-left: 20px 
 }
 #lunardoLogo img{
 	width: 70px;
 	height: 70px;
 	margin: 10px;
-	vertical-align: middle
+	vertical-align: middle 
 }
 #lunardoLogo a{
 	text-decoration: none;
-	color: #fff
+	color: #fff 
 }
 nav img{
 	height: 40px;
@@ -110,40 +110,40 @@ nav img{
 	padding: 5px;
 	width: 20px;
 	height: 20px;
-	display: inline
+	display: inline 
 }
 nav ul{
 	text-align: right;
 	width: 97%;
 	margin-top: 25px;
 	margin-bottom: 25px;
-	top: 40px
+	top: 40px 
 }
 nav ul li{
 	display: inline;
 	margin-left: -2px;
-	margin-right: 16px
+	margin-right: 16px 
 }
 ul li a{
 	text-decoration: none;
 	color: #fff;
-	font-family: 'Cinzel Decorative',cursive
+	font-family: 'Cinzel Decorative',cursive 
 }
 nav a:hover{
 	color: #000;
-	transition: color .3s
+	transition: color .3s 
 }
 nav a.active {
 	border-bottom: 5px outset #45c0e6;
 	transition: border-bottom 0.5s;
 	width: 10%;
-  }
+}
 #Banner{
-	background-image: url(../../media/cinema.jpg)
+	background-image: url(../../media/cinema.jpg) 
 }
 #bannerContent{
 	position: relative;
-	margin: -8px
+	margin: -8px 
 }
 .bannertext{
 	color: #fff;
@@ -152,99 +152,99 @@ nav a.active {
 	left: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
-	text-shadow: 4px 4px #000
+	text-shadow: 4px 4px #000 
 }
 .bannertext h1{
-	font-size: 36px
+	font-size: 36px 
 }
 .bannertext p{
-	font-size: 24px
+	font-size: 24px 
 }
 #aboutUs{
-	background-image: url(../../media/avatar-background.png)
+	background-image: url(../../media/avatar-background.png) 
 }
 #History p{
-	text-align: center
+	text-align: center 
 }
 #Renovation{
-	text-align: center
+	text-align: center 
 }
 #Renovation img{
 	display: inline;
 	width: 600px;
 	vertical-align: middle;
-	margin-bottom: 20px
+	margin-bottom: 20px 
 }
 #Renovation p{
-	text-align: center
+	text-align: center 
 }
 #Seats{
-	text-align: center
+	text-align: center 
 }
 #Seats p{
 	text-align: center;
-	display: inline-block
+	display: inline-block 
 }
 .seatInfo{
 	width: 600px;
 	display: inline;
-	padding: 15px
+	padding: 15px 
 }
 .seatInfo img{
 	display: inline;
 	width: 300px;
 	vertical-align: middle;
-	margin-right: 30px
+	margin-right: 30px 
 }
 .seatInfo ul{
 	display: inline-block;
 	text-align: inherit;
-	width: 200px
+	width: 200px 
 }
 .seatInfo ul li{
-	margin-top: 5px
+	margin-top: 5px 
 }
 #Dolby{
-	text-align: center
+	text-align: center 
 }
 #Dolby img{
 	display: inline;
 	vertical-align: middle;
 	width: 180px;
-	padding: 0 5% 5% 5%
+	padding: 0 5% 5% 5% 
 }
 #Dolby p{
 	display: inline-block;
 	width: 50vw;
-	text-align: left
+	text-align: left 
 }
 #prices{
 	background-image: url(../../media/puss-background.jpg);
-	text-align: center
+	text-align: center 
 }
 table,td,th,tr{
 	text-align: center;
 }
 table{
 	width: 80%;
-	margin: 30px auto
+	margin: 30px auto 
 }
 td,th{
-	padding: 15px
+	padding: 15px 
 }
 th{
-	font-weight: 400
+	font-weight: 400 
 }
 td{
-	background-color: rgba(0,0,0,.6)
+	background-color: rgba(0,0,0,.6) 
 }
 #labels{
 	background-color: #004a61;
-	height: 100%
+	height: 100% 
 }
 #nowShowing{
 	background-image: url(../../media/weird-background.png);
-	text-align: center
+	text-align: center 
 }
 .now-showing-container{
 	display: flex;
@@ -253,21 +253,21 @@ td{
 	justify-content: space-evenly;
 	align-content: center;
 	flex-wrap: wrap;
-	margin-bottom: auto
+	margin-bottom: auto 
 }
 .flip-card-flow-container{
-	width: 50%
+	width: 50% 
 }
 .flip-card-container{
 	height: auto;
-	width: 100%
+	width: 100% 
 }
 .flip-card{
 	width: 560px;
 	height: 700px;
 	display: inline-block;
 	padding-top: 20px;
-	padding-bottom: 100px
+	padding-bottom: 100px 
 }
 .flip-card-front,.times-booking{
 	position: absolute;
@@ -275,7 +275,7 @@ td{
 	height: 100%;
 	backface-visibility: hidden;
 	justify-content: center;
-	align-items: center
+	align-items: center 
 }
 .flip-card-front{
 	position: relative;
@@ -284,10 +284,10 @@ td{
 	text-align: center;
 	transition: transform 3s;
 	transform-style: preserve-3d;
-	backface-visibility: hidden
+	backface-visibility: hidden 
 }
 .flip-card:active .flip-card-front,.flip-card:focus .flip-card-front,.flip-card:hover .flip-card-front{
-	transform: rotateY(180deg)
+	transform: rotateY(180deg) 
 }
 .movies,.times-booking{
 	position: absolute;
@@ -295,32 +295,32 @@ td{
 	height: 100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	float: left
+	float: left 
 }
 .movies{
 	background-color: transparent;
 	background-color: rgba(0,0,0,.5);
 	width: 600px;
 	height: 700px;
-	backface-visibility: hidden
+	backface-visibility: hidden 
 }
 .movies img{
 	width: 300px;
-	height: 300px
+	height: 300px 
 }
 .times-booking{
 	background-color: rgba(0,0,0,.7);
 	color: #fff;
 	transform: rotateY(180deg);
 	text-align: center;
-	backface-visibility: hidden
+	backface-visibility: hidden 
 }
 .times-booking h4{
-	font-size: 25px
+	font-size: 25px 
 }
 .times-booking p{
 	font-size: 18px;
-	text-align: center
+	text-align: center 
 }
 .button-link{
 	background-color: #fff;
@@ -334,31 +334,31 @@ td{
 	box-shadow: inherit;
 	align-self: center;
 	transition-duration: .2s;
-	align-items: center
+	align-items: center 
 }
 .button-link:active,.button-link:focus,.button-link:hover{
 	box-shadow: rgba(0,0,0,.25) 0 .0625em .0625em,rgba(0,0,0,.25) 0 .125em .5em,rgba(255,255,255,.1) 0 0 0 1px inset;
-	transition-duration: .2s
+	transition-duration: .2s 
 }
 .button-link:active,.button-link:focus,.button-link:hover{
 	box-shadow: rgba(0,0,0,.25) 0 .0625em .0625em,rgba(0,0,0,.25) 0 .125em .5em,rgba(255,255,255,.1) 0 0 0 1px inset;
-	transition-duration: .2s
+	transition-duration: .2s 
 }
 footer{
 	border-top: 1px solid #45c0e6;
 	font-size: 10px;
 	background-color: #004a61;
 	margin-left: -8px;
-	margin-right: -8px
+	margin-right: -8px 
 }
 .footer{
 	padding: 5px 15px;
 	font-size: 12px;
-	background-color: #004a61
+	background-color: #004a61 
 }
 .footer a{
 	text-decoration: underline;
-	font-family: 'Open Sans',sans-serif
+	font-family: 'Open Sans',sans-serif 
 }
 .box3{
 	background-color: rgba(0,0,0,.7);
@@ -366,30 +366,30 @@ footer{
 	align-items: center;
 	padding-top: 150px;
 	padding-bottom: 20px;
-	text-align: center
+	text-align: center 
 }
 .box3 p{
-	text-align: center
+	text-align: center 
 }
 .boxText{
 	width: 75%;
-	margin: 20px auto
+	margin: 20px auto 
 }
 .boxText img{
 	width: 80%;
-	margin: 20px auto
+	margin: 20px auto 
 }
 #info{
 	background-image: url(../../media/avatar-background.png);
-	text-align: center
+	text-align: center 
 }
 #synopsis{
 	background-image: url(../../media/puss-background.jpg);
-	text-align: center
+	text-align: center 
 }
 #booking{
 	background-image: url(../../media/weird-background.png);
-	text-align: center
+	text-align: center 
 }
 .sessionTimes{
 	display: flex;
@@ -397,38 +397,38 @@ footer{
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-content: center;
-	flex-wrap: wrap
+	flex-wrap: wrap 
 }
 .sessionTimes li {
 	font-size: 24px;
 }
 .sessionTimes img{
 	width: 300px;
-	vertical-align: middle
+	vertical-align: middle 
 }
 .movieInfo{
 	padding: 30px;
-	vertical-align: top
+	vertical-align: top 
 }
 .sessionTimes h3{
-	margin: 0
+	margin: 0 
 }
 .summary{
 	background-color: rgba(0,0,0,.5);
 	display: inline;
-	text-align: left
+	text-align: left 
 }
 .booking h3,.summary h3{
 	width: 90%;
 	padding: 1em 5%;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 32px
+	font-size: 32px 
 }
 .synopsis-info{
 	width: 500px;
 	margin: 0 20px;
-	display: inline
+	display: inline 
 }
 .synopsis iframe{
 	height: 360px;
@@ -437,28 +437,28 @@ footer{
 	vertical-align: middle;
 	border: solid #45c0e6;
 	margin-top: 20px;
-	margin-bottom: 20px
+	margin-bottom: 20px 
 }
 #bookingTitle{
 	width: 90%;
 	padding: 1em 5%;
 	margin: 0 auto;
-	text-align: center
+	text-align: center 
 }
 .synopsis ul{
 	margin: 1.5em 10px;
-	padding: 0
+	padding: 0 
 }
 .synopsis ul li{
 	list-style: none;
 	display: inline-block;
 	width: auto;
 	border: 2px solid #004a61;
-	margin: 0 2px
+	margin: 0 2px 
 }
 .synopsis ul li:hover{
 	background-color: #45c0e6;
-	transition: background-color .3s
+	transition: background-color .3s 
 }
 .bookingTime{
 	background-color: rgba(0,0,0,0);
@@ -466,35 +466,35 @@ footer{
 	font-size: 16px;
 	padding: 1em 15px;
 	border: none;
-	cursor: pointer
+	cursor: pointer 
 }
 #movieSelectList img{
 	width: 300px;
 	height: 500px;
-	margin: 0 5px
+	margin: 0 5px 
 }
 #movieSelectList input{
 	width: 300px;
 	height: 500px;
-	margin: 0
+	margin: 0 
 }
 #movieSelectList li{
 	padding: 0;
 	text-align: center;
 	width: auto;
 	font-size: 10px;
-	border: 0
+	border: 0 
 }
 .booking{
 	background-color: rgba(0,0,0,.5);
-	display: inline-block
+	display: inline-block 
 }
 #formMessage{
-	text-align: center
+	text-align: center 
 }
 #seatForm{
 	width: 570px;
-	margin: 1em 10px
+	margin: 1em 10px 
 }
 #seatForm select{
 	margin: 10px 250px 10px 10px;
@@ -514,18 +514,18 @@ footer{
 	width: 510px;
 	align-items: center;
 	background-color: #004a61;
-	color: #fff
+	color: #fff 
 }
 fieldset{
 	margin: 20px 10px;
 	border: 2px solid #004a61;
-	text-align: right
+	text-align: right 
 }
 #personalInfoForm{
 	width: 570px;
 	margin: 1em 10px;
 	vertical-align: top;
-	padding: 20px 10px
+	padding: 20px 10px 
 }
 #personalInfoForm input{
 	margin: 10px;
@@ -534,7 +534,7 @@ fieldset{
 	color: #fff;
 	border: none;
 	border-bottom: 2px solid #004a61;
-	width: 350px
+	width: 350px 
 }
 #submitButton{
 	display: block;
@@ -546,22 +546,21 @@ fieldset{
 	background-color: #004a61;
 	border: none;
 	border-bottom: 2px solid #004a61;
-	color: #fff
+	color: #fff 
 }
 #submitButton img{
 	width: 30px;
 	float: left;
 	display: inline;
-	margin: 0 10px
+	margin: 0 10px 
 }
 #submitButton:hover{
 	border-bottom: 2px solid #45c0e6;
-	transition: border-bottom .3s
+	transition: border-bottom .3s 
 }
 button:disabled,input:disabled,select:disabled{
-	opacity: .10
+	opacity: .10 
 }
-
 #receipt{
 	text-align: left;
 	padding: 100px;
@@ -569,112 +568,112 @@ button:disabled,input:disabled,select:disabled{
 @media screen and (max-width: 600px){
 	.box3 iframe{
 		width: 556px;
-		height: 315px
-}
+		height: 315px 
+   }
 	.table,td,th,tr{
-		width: 600px
-}
+		width: 600px 
+   }
 	body{
-		max-width: 100%
-}
+		max-width: 100% 
+   }
 	.navbar{
 		max-width: 600px;
-		flex-direction: column
-}
+		flex-direction: column 
+   }
 	.nav{
-		width: 100%
-}
+		width: 100% 
+   }
 	.flip-card-flow-container,.movies,.nav{
 		flex-direction: column;
 		height: 100%;
 		width: 90%;
-		margin-bottom: 20%
-}
+		margin-bottom: 20% 
+   }
 	nav ul{
 		text-align: center;
 		display: inline-flex;
 		width: 80%;
 		margin-top: 25px;
 		margin-bottom: 25px;
-		top: 40px
-}
+		top: 40px 
+   }
 	#Renovation img{
-		max-width: 580px
-}
+		max-width: 580px 
+   }
 }
 @media screen and (max-width: 992px){
 	.box3 iframe{
 		width: 556px;
-		height: 315px
-}
+		height: 315px 
+   }
 	.table,td,th,tr{
-		width: 992px
-}
+		width: 992px 
+   }
 	body{
-		max-width: 100%
-}
+		max-width: 100% 
+   }
 	.navbar{
 		max-width: 992px;
-		flex-direction: column
-}
+		flex-direction: column 
+   }
 	.nav{
-		width: 100%
-}
+		width: 100% 
+   }
 	.flip-card-flow-container,.movies,.nav{
 		flex-direction: column;
 		height: 100%;
 		width: 90%;
-		margin-bottom: 20%
-}
+		margin-bottom: 20% 
+   }
 	nav ul{
 		text-align: center;
 		display: inline-flex;
 		width: 100%;
 		margin-top: 25px;
 		margin-bottom: 25px;
-		top: 40px
-}
+		top: 40px 
+   }
 	.box3{
-		padding-top: 15%
-}
+		padding-top: 15% 
+   }
 	#Renovation img{
-		max-width: 992px
-}
+		max-width: 992px 
+   }
 }
 @media screen and (max-width: 1200px){
 	.box3 iframe{
 		width: 556px;
-		height: 315px
-}
+		height: 315px 
+   }
 	.table,td,th,tr{
-		width: 1200px
-}
+		width: 1200px 
+   }
 	body{
-		max-width: 100%
-}
+		max-width: 100% 
+   }
 	.navbar{
 		max-width: 1200px;
-		flex-direction: column
-}
+		flex-direction: column 
+   }
 	.nav{
-		width: 100%
-}
+		width: 100% 
+   }
 	.flip-card-flow-container,.movies,.nav{
 		flex-direction: column;
 		height: 100%;
 		width: 90%;
-		margin-bottom: 20%
-}
+		margin-bottom: 20% 
+   }
 	nav ul{
 		text-align: right;
 		width: 95%;
 		margin-top: 25px;
 		margin-bottom: 25px;
-		top: 40px
-}
+		top: 40px 
+   }
 	#Renovation img{
-		max-width: 1200px
-}
+		max-width: 1200px 
+   }
 }
 #navbarR{
 	width: 100%;
@@ -686,13 +685,13 @@ button:disabled,input:disabled,select:disabled{
 	display: inline-block;
 	min-width: 680px;
 	box-shadow: 0 1px 4px #45c0e6;
-	border-bottom: 2px #45c0e6
+	border-bottom: 2px #45c0e6 
 }
 .warningMsg {
-  font-family: 'Open Sans', sans-serif;
-  color: red;
-  margin: 0;
-  padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: red;
+	margin: 0;
+	padding: 0;
 }
 #Receipt{
 	text-align: center;
@@ -709,10 +708,10 @@ button:disabled,input:disabled,select:disabled{
 	text-align: center;
 }
 .warning {
-  background-color: #004a61;
-  color: white;
-  padding: 5px;
-  font-size: 12px;
+	background-color: #004a61;
+	color: white;
+	padding: 5px;
+	font-size: 12px;
 }
 .receiptH1{
 	text-align: center;
@@ -720,23 +719,23 @@ button:disabled,input:disabled,select:disabled{
 	margin-bottom: 0;
 }
 .receiptTable{
-  text-align: left;
+	text-align: left;
 }
 .receiptTable th {
-  background-color: #004a61;
-  color: white;
-  text-align: left;
-  padding: 5px;
-  font-size: 12px;
+	background-color: #004a61;
+	color: white;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
 }
 .receiptTable td {
-  width: 300px;
-  background-color: white;
-  color: black;
-  text-align: left;
-  border-bottom: 1px solid #004a61;
-  padding: 3px;
-  font-size: 12px;
+	width: 300px;
+	background-color: white;
+	color: black;
+	text-align: left;
+	border-bottom: 1px solid #004a61;
+	padding: 3px;
+	font-size: 12px;
 }
 .receiptTable td {
 	width: 300px;
@@ -755,37 +754,39 @@ button:disabled,input:disabled,select:disabled{
 	width: auto;
 }
 .receiptButton {
-  border: #000;
-  border-style: solid;
-  background-color: white;
-  color: black;
+	border: #000;
+	border-style: solid;
+	background-color: white;
+	color: black;
 }
 .receiptButton {
-  cursor: pointer;
+	cursor: pointer;
 }
 @media print {
-	.receipt {page-break-after: always;}
+	.receipt {
+	   page-break-after: always;
+   }
 }
 @media print {
-	.tickets {page-break-after: always;}
+	.tickets {
+	   page-break-after: always;
+   }
 }
 @media print {
 	.ticket {
-	  page-break-inside: avoid;
-	}
-  }
-  #ticket {
+		page-break-inside: avoid;
+   }
+}
+#ticket {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: #004a61;
 }
-
 .movieTicket {
 	margin: 20px;
 }
-
 .tickets {
 	display: flex;
 	flex-direction: row;
@@ -793,7 +794,6 @@ button:disabled,input:disabled,select:disabled{
 	justify-content: center;
 	color: #000;
 }
-
 .ticket {
 	background-color: #fff;
 	border: 2px solid #000;
@@ -805,18 +805,15 @@ button:disabled,input:disabled,select:disabled{
 	text-align: center;
 	font-weight: bold;
 }
-
 .ticket img {
 	width: 50px;
 	margin-bottom: 10px;
 }
 @media print {
-    .debug, .receiptFooter, #navbarR,
-    #non-printable {
-        display: none !important;
-    }
-	body, #Receipt, #ticket,
-	#non-printable {
+	.debug, .receiptFooter, #navbarR, #non-printable {
+		display: none !important;
+   }
+	body, #Receipt, #ticket, #non-printable {
 		background-color: white;
-	}
+   }
 }

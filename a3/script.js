@@ -35,24 +35,24 @@ var prices = {
 //Navigation programming - updates navbar based on scroll
 window.onscroll = function() {
   console.clear();
-  console.log("Win Y: "+window.scrollY);
+  console.log("Win Y: " + window.scrollY);
   var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
   // console.log(navlinks);
   var sections = document.getElementsByTagName('main')[0].getElementsByTagName('section');
   console.log(sections);
   //console.log(sections[0].offsetTop+' '+(sections[0].offsetTop+sections[0].offsetHeight));
   //console.log(sections[1].offsetTop+' '+(sections[1].offsetTop+sections[1].offsetHeight));
-  for (var s=0; s<sections.length; s++){
-    var secTop=sections[s].offsetTop+10;
-    var secBot=sections[s].offsetTop+sections[s].offsetHeight+2;
-    //console.log(secTop+' '+secBot);
-    if (window.scrollY >= secTop && window.scrollY < secBot){
-      console.log(sections[s].id+': active');
-      navlinks[s].classList.add('active');
-    } else {
-      console.log(sections[s].id+':');
-      navlinks[s].classList.remove('active');
-    }
+  for (var s = 0; s < sections.length; s++) {
+      var secTop = sections[s].offsetTop + 10;
+      var secBot = sections[s].offsetTop + sections[s].offsetHeight + 2;
+      //console.log(secTop+' '+secBot);
+      if (window.scrollY >= secTop && window.scrollY < secBot) {
+          console.log(sections[s].id + ': active');
+          navlinks[s].classList.add('active');
+      } else {
+          console.log(sections[s].id + ':');
+          navlinks[s].classList.remove('active');
+      }
   }
 }
 
@@ -128,36 +128,36 @@ function validateForm() {
 
   // Validate name
   if (!nameRegex.test(name)) {
-    message += "Please enter a proper name (e.g. John Smith)\n";
-    valid = false;
+      message += "Please enter a proper name (e.g. John Smith)\n";
+      valid = false;
   }
 
   // Validate phone number
   if (!phoneRegex.test(phone)) {
-    message += "Please enter a valid mobile number (e.g. 0412345678)\n";
-    valid = false;
+      message += "Please enter a valid mobile number (e.g. 0412345678)\n";
+      valid = false;
   }
 
   // Validate credit card number
   if (!cardRegex.test(card)) {
-    message += "Please use and enter a 12-digit credit card number (e.g. 1234 1234 1234 1234)\n";
-    valid = false;
+      message += "Please use and enter a 12-digit credit card number (e.g. 1234 1234 1234 1234)\n";
+      valid = false;
   }
 
   // Validate expiry date
-  const exMonth = expiry.slice(5,7);
-  const exYear = expiry.slice(0,4);
+  const exMonth = expiry.slice(5, 7);
+  const exYear = expiry.slice(0, 4);
   const today = new Date();
   const someday = new Date(exYear, exMonth - 1, 1);
 
   if (someday < today) {
-    message += "The expiry date is before today's date. Please select a valid expiry date";
-    valid = false;
+      message += "The expiry date is before today's date. Please select a valid expiry date";
+      valid = false;
   }
 
   // Alert user if input is not valid
   if (!valid) {
-    alert(message);
+      alert(message);
   }
 
   return valid;

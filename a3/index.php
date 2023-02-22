@@ -1,10 +1,13 @@
 <?php
 require 'tools.php';
-?>
-
-<?= printIndexHeader()?>
+?><?= printIndexHeader()?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
 <body>
-<?= printNavbar()?>
+  <?= printNavbar()?>
   <main>
     <?= printBanner()?>
     <?= printAboutUs()?>
@@ -19,13 +22,12 @@ require 'tools.php';
           <?= moviePanel("ANM")?>
           <?= moviePanel("AHF")?>
         </div>
-</section>
-    </main>
-    <?= printFooter()?>
-    <div class="debug">
-      <hr>
-      <h4>Debug Area</h4>
-      <?= debugModule() ?>
-    </div>
+      </div>
+    </section>
+  </main><?= printFooter()?>
+  <div class="debug">
+    <hr>
+    <h4>Debug Area</h4><?= debugModule() ?>
+  </div>
 </body>
 </html>
