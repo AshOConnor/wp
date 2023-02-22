@@ -87,15 +87,23 @@ else {
         <input class="receiptButton" type="button" value="Print This Page" onClick="window.print()" />
       </div>
 </div>
-      </section>
-      <section id="ticket">
-      <div class="tickets">
-  <div class="ticket__content">
-    <p class="ticket__text">TEST</p>
-  </div>
+</section>
+<section id="ticket">
+  <div class=movieTicket>
+  <?php foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount): ?>
+    <div class="tickets">
+        <?php for ($i = 0; $i < $seatCount; $i++): ?>
+          <?php $ticket = createMovieTicket($seatType); ?>
+          <pre class=ticket><?php echo $ticket; ?></pre>
+        <?php endfor; ?>
+        </div>
+  <?php endforeach; ?>
+        </div>
 </section>
   </main>
+  <div class=receiptFooter>
   <?= printReceiptFooter() ?>
+        </div>
   <div class="debug">
       <hr>
       <h4>Debug Area</h4>

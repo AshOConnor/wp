@@ -696,6 +696,7 @@ button:disabled,input:disabled,select:disabled{
 }
 #Receipt{
 	text-align: center;
+	background-color: #004a61;
 }
 .receipt {
 	padding: 10px;
@@ -716,7 +717,6 @@ button:disabled,input:disabled,select:disabled{
 .receiptH1{
 	text-align: center;
 	margin-top: 40px;
-	margin-left: 0;
 	margin-bottom: 0;
 }
 .receiptTable{
@@ -766,43 +766,57 @@ button:disabled,input:disabled,select:disabled{
 @media print {
 	.receipt {page-break-after: always;}
 }
+@media print {
+	.tickets {page-break-after: always;}
+}
+@media print {
+	.ticket {
+	  page-break-inside: avoid;
+	}
+  }
+  #ticket {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #004a61;
+}
+
+.movieTicket {
+	margin: 20px;
+}
+
 .tickets {
-	position: relative;
-	box-sizing: border-box;
-	width: 300px;
-	height: 450px;
-	margin: 150px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #000;
+}
+
+.ticket {
+	background-color: #fff;
+	border: 2px solid #000;
+	margin: 10px;
 	padding: 20px;
-	border-radius: 10px;
-	background: #fbfbfb;
-	margin-bottom: 30px;
+	font-size: 14px;
+	font-family: 'Cinzel Decorative', cursive;
+	word-wrap: break-word;
+	text-align: center;
+	font-weight: bold;
 }
-.tickets:before, .tickets:after {
-	content: '';
-	position: absolute;
-	left: 5px;
-	height: 6px;
-	width: 290px;
+
+.ticket img {
+	width: 50px;
+	margin-bottom: 10px;
 }
-.tickets:before {
-	top: -5px;
-	background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -8px / 16px 16px repeat-x;
-}
-.tickets:after {
-	bottom: -5px;
-	background: radial-gradient(circle, transparent, transparent 50%, #fbfbfb 50%, #fbfbfb 100%) -7px -2px / 16px 16px repeat-x;
-}
-.ticket__content {
-	box-sizing: border-box;
-	height: 100%;
-	width: 100%;
-	border: 6px solid #d8d8d8;
-}
-.ticket__text {
-	width: 400px;
-	font-family: 'Cinzel Decorative',cursive;
-	font-size: 3rem;
-	font-weight: 900;
-	text-transform: uppercase;
-	color: #c6dede;
+@media print {
+    .debug, .receiptFooter, #navbarR,
+    #non-printable {
+        display: none !important;
+    }
+	body, #Receipt, #ticket,
+	#non-printable {
+		background-color: white;
+	}
 }

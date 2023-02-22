@@ -471,6 +471,7 @@ function bookMovie() {
       $prices[$priceKey]['FCP'] * $_SESSION["cart"]["seats"]["FCP"] +
       $prices[$priceKey]['FCC'] * $_SESSION["cart"]["seats"]["FCC"];
 
+      
       foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount) {
         $seatCount = isset($seatCount) ? $seatCount : 0; // set seat count to 0 if not set
         $seatPrice = $prices[$priceKey][$seatType];
@@ -511,6 +512,32 @@ function calculateSubTotal($totalPrice)
 function calculateGST($totalPrice)
 {
     return round(($totalPrice / 11) , 2);
+}
+
+function createMovieTicket($seatType) {
+  $ticket = array();
+  $ticket[] = "<a><img src='../../media/cinema-logo.png' alt='Lunardo-logo'></a>";
+  $ticket[] = "LUNARDO CINEMA";
+  $ticket[] = "=======================";
+  $ticket[] = "       MOVIE TICKET      ";
+  $ticket[] = "=======================";
+  $ticket[] = "";
+  $ticket[] = "Date: " . date("Y-m-d");
+  $ticket[] = "Name: " . $_SESSION["cart"]["cust"]["name"];
+  $ticket[] = "Mobile: " . $_SESSION["cart"]["cust"]["mobile"];
+  $ticket[] = "";
+  $ticket[] = "Movie Details:";
+  foreach ($_SESSION["cart"]["movie"] as $key => $value) {
+    $ticket[] = ucfirst($key) . ": " . $value;
+  }
+  $ticket[] = "Seat Type: " . $seatType;
+  $ticket[] = "";
+  $ticket[] = "Subtotal: $" . number_format($_SESSION["cart"]["subtotal"], 2);
+  $ticket[] = "GST: $" . number_format($_SESSION["cart"]["GST"], 2);
+  $ticket[] = "Total Price Of Sale: $" . number_format($_SESSION["cart"]["total"], 2);
+  $ticket[] = "";
+  $ticket[] = "Enjoy the movie!";
+  return implode("\n", $ticket);
 }
 
 function printFooter()
