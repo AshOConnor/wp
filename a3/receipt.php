@@ -41,21 +41,39 @@ else {
             </tr>
           </table>
           <table class="receiptTable">
-            <tr>
-              <th colspan="3">SEATS BOOKED</th>
-            </tr>
-            <tr>
-              <!-- unable to get pricing to work in sub totals next to ticket quantity. -->
-              <td>Seat Type</td>
-              <td>Quantity</td>
-              <td>Price</td>
-            </tr><?php foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount): ?><?php if ($seatCount > 0): ?>
-            <tr>
-              <td><?php echo ($seatType == 'STA') ? 'Standard Adult' : (($seatType == 'STP') ? 'Standard Concession' : (($seatType == 'STC') ? 'Standard Child' : (($seatType == 'FCA') ? 'First Class Adult' : (($seatType == 'FCP') ? 'First Class Concession' : 'First Class Child')))); ?></td>
-              <td><?php echo $seatCount; ?></td>
-              <td>$<?php echo number_format($seatCount * $prices[$priceKey][$seatType], 2); ?></td>
-            </tr><?php endif; ?><?php endforeach; ?>
-          </table>
+  <tr>
+    <th colspan="3">SEATS BOOKED</th>
+  </tr>
+  <tr>
+    <td>Seat Type</td>
+    <td>Quantity</td>
+    <td>Price</td>
+  </tr>
+  <?php 
+  foreach ($_SESSION["cart"]["seats"] as $seatType => $seatCount) { // unable to get seat pricing into table with this loop.
+    $seatCount = isset($seatCount) ? $seatCount : 0; // set seat count to 0 if not set
+    $seatPrice = $prices[$priceKey][$seatType];
+    if ($seatCount > 0) {
+      ?>
+      <tr>
+        <td><?php 
+          echo ($seatType == 'STA') ? 'Standard Adult' : 
+               (($seatType == 'STP') ? 'Standard Concession' : 
+               (($seatType == 'STC') ? 'Standard Child' : 
+               (($seatType == 'FCA') ? 'First Class Adult' : 
+               (($seatType == 'FCP') ? 'First Class Concession' :
+               'First Class Child')))); 
+        ?></td>
+        <td><?php echo $seatCount; ?></td>
+        <td>$<?php echo number_format($seatCount * $seatPrice, 2); ?></td>
+      </tr>
+    <?php 
+    }
+  }
+  ?>
+</table>
+
+
           <table class="receiptTable">
             <tr>
               <th colspan="2">CUSTOMER DETAILS</th>
