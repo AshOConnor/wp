@@ -79,6 +79,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p class="warningMsg"><?php echo ($errorMsgArray["email"]) ?></p>
                 <label>Mobile: </label><input type="tel" name="cust[mobile]" id="custmobile" placeholder="e.g. 0412 345 678" disabled required> <br>
                 <p class="warningMsg"><?php echo ($errorMsgArray["mobile"]) ?></p>
+                <label for="remember-me">Remember me:</label>
+                <input type="checkbox" name="remember-me" id="remember-me" value="true">
               </div><br>
             <p id="total">Total: $<a id="totalPrice">0.00</a></p>
             <button id="submitButton" type="submit" name="order" value="Book Tickets" disabled><img src='../../media/prices-icon.png' alt="price-icon">Book Tickets</button>

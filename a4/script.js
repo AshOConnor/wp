@@ -162,3 +162,32 @@ function validateForm() {
 
   return valid;
 }
+
+// Get the form and relevant input fields
+const form = document.getElementById("personalInfoForm");
+const nameInput = form.querySelector("input[name='cust[name]']");
+const emailInput = form.querySelector("input[name='cust[email]']");
+const mobileInput = form.querySelector("input[name='cust[mobile]']");
+const rememberMeCheckbox = form.querySelector("input[name='remember-me']");
+
+// Load previously stored data from localStorage
+if (rememberMeCheckbox.checked && localStorage.getItem("customerData")) {
+  const customerData = JSON.parse(localStorage.getItem("customerData"));
+  nameInput.value = customerData.name;
+  emailInput.value = customerData.email;
+  mobileInput.value = customerData.mobile;
+}
+
+// Save or remove data based on checkbox state
+rememberMeCheckbox.addEventListener("change", () => {
+  if (rememberMeCheckbox.checked) {
+    const customerData = {
+      name: nameInput.value,
+      email: emailInput.value,
+      mobile: mobileInput.value,
+    };
+    localStorage.setItem("customerData", JSON.stringify(customerData));
+  } else {
+    localStorage.removeItem("customerData");
+  }
+});
