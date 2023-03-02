@@ -826,7 +826,7 @@ button:disabled,input:disabled,select:disabled{
 	margin-bottom: 15px;
 }
 
-#checkButton{
+#checkBooking{
 	display: block;
 	margin: 1em auto;
 	text-align: center;

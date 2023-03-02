@@ -590,14 +590,25 @@ function printFooter()
   </ul>
 </div>
 <div>
-  <form id="cbookings" action="currentbookings.php" method="post">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br>
-    <label for="mobile">Mobile:</label>
-    <input type="tel" id="mobile" name="mobile" required>
-    <br>
-    <button id="checkButton" type="submit">Check Bookings</button>
+  <form id="cbookings" method="post">
+  <label for="bookingEmail">Email Address: </label>
+  <input type="email" name="bookingEmail" id='bookingEmail'>
+  <br>
+  <label for="bookingMobile">Mobile: </label>
+  <input type="text" name="bookingMobile" id='bookingMobile'>  
+  <br>
+  <input type="submit" id='checkBooking' value="Find Booking">
+CDATA;
+if((isset($_POST['bookingEmail']))&&(isset($_POST['bookingMobile']))) {
+if (checkIfBookingExists()) {
+$_SESSION = $_POST;
+header('Location: currentbookings.php');
+}
+else{
+echo "<p id='error'>No booking found!</p>";
+}
+}
+echo <<<CDATA
   </form>
 </div>
 <div>
@@ -647,6 +658,73 @@ function printReceiptFooter()
 </div>
 </footer>
 CDATA;
+}
+
+function checkIfBookingExists() {
+  if (!isset($_POST['bookingEmail'])) {
+      return false;
+  }
+  
+  $filename = 'bookings.txt';
+  if (!file_exists($filename)) {
+      return false;
+  }
+  
+  $bookingExists = false;
+  $handle = fopen($filename, 'r');
+  if ($handle !== false && flock($handle, LOCK_SH) !== false) {
+      // discard first line
+      fgets($handle);
+      
+      while (($line = fgets($handle)) !== false) {
+          $values = explode(',', $line);
+          if ($values[2] === $_POST['bookingEmail'] && $values[3] === $_POST['bookingMobile']) {
+              $bookingExists = true;
+              break;
+          }
+      }
+      
+      flock($handle, LOCK_UN);
+      fclose($handle);
+  }
+  
+  return $bookingExists;
+}
+
+function retrieveBookings($custDetails) {
+  $custemail = $custDetails['bookingEmail'];
+  $custmobile = $custDetails['bookingMobile'];
+  $filename = 'bookings.txt';
+  
+  $bookingsList = [];
+  
+  if (!file_exists($filename)) {
+      return $bookingsList;
+  }
+  
+  $handle = fopen($filename, 'r');
+  if ($handle !== false && flock($handle, LOCK_SH) !== false) {
+      $headers = fgetcsv($handle);
+      $bookingsList[] = $headers;
+      
+      while (($fields = fgetcsv($handle)) !== false) {
+          if ($fields[2] === $custemail && $fields[3] === $custmobile) {
+              $bookingsList[] = $fields;
+          }
+      }
+      
+      flock($handle, LOCK_UN);
+      fclose($handle);
+  }
+  
+  return $bookingsList;
+}
+
+function displayBookings() {
+  $bookingList = retrieveBookings($_SESSION);
+  foreach (array_slice($bookingList, 1) as $i => $booking) {
+      bookingPanel($bookingList[0], $booking, $i + 1);
+  }
 }
 
 ?>

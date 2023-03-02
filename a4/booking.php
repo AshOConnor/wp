@@ -75,9 +75,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label>Name: </label><input type="text" name="cust[name]" id="cust-name" placeholder="e.g. Jane Doe" disabled required> <br>
                 <p class="warningMsg"><?php error_reporting(0);
                 echo ($errorMsgArray["name"]); ?></p>
-                <label>Email: </label><input type="email" name="cust[email]" id="cust-email" placeholder="e.g. example@email.com" disabled required> <br>
+                <label>Email: </label><input type="email" name="cust[email]" id="custemail" placeholder="e.g. example@email.com" disabled required> <br>
                 <p class="warningMsg"><?php echo ($errorMsgArray["email"]) ?></p>
-                <label>Mobile: </label><input type="tel" name="cust[mobile]" id="cust-mobile" placeholder="e.g. 0412 345 678" disabled required> <br>
+                <label>Mobile: </label><input type="tel" name="cust[mobile]" id="custmobile" placeholder="e.g. 0412 345 678" disabled required> <br>
                 <p class="warningMsg"><?php echo ($errorMsgArray["mobile"]) ?></p>
               </div><br>
             <p id="total">Total: $<a id="totalPrice">0.00</a></p>
