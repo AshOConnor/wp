@@ -678,7 +678,7 @@ function checkIfBookingExists() {
       
       while (($line = fgets($handle)) !== false) {
           $values = explode(',', $line);
-          if ($values[2] === $_POST['bookingEmail'] && $values[3] === $_POST['bookingMobile']) {
+          if ($values[2] === $_POST['cust-email'] && $values[3] === $_POST['cust-mobile']) {
               $bookingExists = true;
               break;
           }
