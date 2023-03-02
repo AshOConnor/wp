@@ -817,3 +817,19 @@ button:disabled,input:disabled,select:disabled{
 		background-color: white;
    }
 }
+#cbookings{
+	font-size: 20px;
+	margin-left: 20px;
+	border: solid #45c0e6;
+	padding: 20px;
+	width: fit-content;
+	margin-bottom: 15px;
+}
+
+#checkButton{
+	display: block;
+	margin: 1em auto;
+	text-align: center;
+	width: 250px;
+	font-size: 18px;
+}
