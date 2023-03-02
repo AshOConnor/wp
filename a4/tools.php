@@ -602,7 +602,7 @@ CDATA;
 if((isset($_POST['bookingEmail']))&&(isset($_POST['bookingMobile']))) {
 if (checkIfBookingExists()) {
 $_SESSION = $_POST;
-header('Location: currentbookings.php');
+('Location: currentbookings.php');
 }
 else{
 echo "<p id='error'>No booking found!</p>";
