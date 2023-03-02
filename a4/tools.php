@@ -590,6 +590,17 @@ function printFooter()
   </ul>
 </div>
 <div>
+  <form action="currentbookings.php" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="mobile">Mobile:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+    <br>
+    <button type="submit">Check Bookings</button>
+  </form>
+</div>
+<div>
   <script>
 
 
