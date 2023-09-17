@@ -1,6 +1,6 @@
 # Lunardo Cinema
 
-The website in question was developed using a combination of PHP, JavaScript, CSS, and a modest amount of HTML. Here's a more refined explanation of the project's progression:
+The Lunardo website was developed using a combination of PHP, JavaScript, CSS, and a modest amount of HTML. Here's a more refined explanation of the project's progression:
 
 Our journey in building this cinema website involved four main assignments:
 
